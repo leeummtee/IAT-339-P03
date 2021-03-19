@@ -1,0 +1,418 @@
+<!DOCTYPE HTML>
+<!--I used P02 as reference -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title> P01 - Style Guide </title>
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/queries.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <nav>
+    <!-- reference for nav bar from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
+    <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_centered -->
+    <div class="topnav">
+      <div class="topnav-left">
+        <a href="home.html">
+          <span class="auto-detailing-font-top"> AUTO
+            <span class="mobile-font-top"> MOBILE </span>
+            <span> DETAILING </span>
+          </span>
+        </a>
+      </div>
+      <div class="navbar-buttons">
+        <ul>
+          <li> <a class="button-nav" href="#branding_ideas"> Project Analyses </a> </li>
+          <li> <a class="button-nav" href="#interactive_elements">Interactive Elements</a> </li>
+          <li> <a class="button-nav" href="#text_styling">Text Styling</a> </li>
+          <li> <a class="button-nav" href="#combined_elements">Combined Elements</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="block">
+      <div class="crop-header">
+        <img src="images/ext.jpg" alt="detailing header">
+      </div>
+      <header class="header-text">
+        <h1>Style Guide</h1>
+        <p>The library used to build our website.</p>
+      </header>
+    </div>
+  </div>
+
+  <section id="branding_ideas">
+    <h2> Project Analyses </h2>
+    <section class="section-divider">
+      <h3> Project 1: Poster  </h3>
+      <img class="image-project" alt="polishing car" src="images/poster.jpg">
+      <p> Automobile Detailing is a mobile automotive detailing company. We come to your home and make the interior and exterior of your vehicle look brand new! This includes carpet steaming, full waxes, and much more to restore the look of your
+        vehicle.
+      </p>
+    </section>
+  </section>
+
+  <!-- INTERACTIVE ELEMENTS SECTION -->
+  <section id="interactive_elements">
+    <h2> INTERACTIVE ELEMENTS </h2>
+
+    <section class="section-divider">
+      <h3> IN-TEXT LINK</h3>
+
+      <h4> CSS selector: </h4>
+      <p> .link </p>
+
+      <!-- For all my sample codes, I used the P01 Style Guide example used as reference (mainly for implementing "&lt;" and "&gt;") -->
+      <h4> Sample code: </h4>
+      <code>
+        &lt;p&gt; Click &lt;a class="link" href="https://www.sfu.ca/"&gt; here &lt;/a&gt; to find out more!/ &lt;p&gt;
+      </code>
+
+      <h4> Rendered element: </h4>
+      <p> Click <a class="link" href="https://www.sfu.ca/"> here </a> to find out more!</p>
+    </section>
+
+    <section class="element">
+      <h3> NAVIGATION LINK </h3>
+      <h4> CSS selector: </h4>
+      <p> .button-nav </p>
+
+      <h4> Sample code: </h4>
+      <code>
+        &lt;a class="button-nav" href="#home"&gt; Home&lt;/a&gt;
+      </code>
+
+      <h4> Rendered element: </h4>
+      <a class="button-nav" href="#branding_ideas">Home</a>
+
+    </section>
+
+    <section class="element">
+      <!-- label reference from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_label -->
+      <h3> SUBMIT & RESET BUTTONS </h3>
+      <h4> CSS selector: </h4>
+      <p>.button-form</p>
+
+      <h4> Sample code: </h4>
+      <code>
+        &lt;input class="button-form" type="submit" value="Submit"&gt; <br>
+        &lt;input class="button-form" type="reset" value="Reset"&gt; <br>
+      </code>
+
+      <h4> Rendered element </h4>
+      <input class="button-form" type="submit" value="Submit">
+      <input class="button-form" type="reset" value="Reset">
+    </section>
+
+    <section class="element">
+      <h3> TEXT INPUT FIELD </h3>
+      <!-- Input box reference from https://www.w3schools.com/tags/tag_input.asp -->
+
+      <h4> CSS selector: </h4>
+      <p> .input-text </p>
+      <p> .input-textlabel </p>
+
+      <h4> Sample code: </h4>
+      <code>
+        &lt;label class="input-textlabel" for="name"&gt; Name: &lt;/label&gt; <br>
+        &lt;input class="input-text" type="text" id = "name" name="name"&gt; <br>
+      </code>
+
+      <h4> Rendered element: </h4>
+      <form method="post" action="#">
+        <label class="input-text-label" for="name"> Name </label>
+        <input class="input-text" type="text" id="name" name="name">
+      </form>
+    </section>
+
+    <section class="element">
+      <!-- Radio button input reference: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_type_radio -->
+      <h3> RADIO BUTTON INPUT FIELD & LABEL </h3>
+      <h4> CSS selector: </h4>
+      <p> input </p>
+      <p> label </p>
+
+      <h4> Sample code: </h4>
+
+      <code>
+        &lt;input type="radio" id="elem1" name="type" value="elem1"&gt; <br>
+        &lt;label for="car"&gt;element 1&lt;/label&gt;
+      </code>
+
+      <h4> Rendered element: </h4>
+      <form method="get" action="#">
+        <input type="radio" id="elem1" name="type" value="elem1">
+        <label for="car">element 1</label><br>
+        <input type="radio" id="elem2" name="type" value="elem2">
+        <label for="suv">element 2</label><br>
+        <input type="radio" id="elem3" name="type" value="elem3">
+        <label for="truck">element 3</label><br>
+      </form>
+    </section>
+
+    <section class="element">
+      <!-- Reference from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_image -->
+      <h3> IMAGE AS A LINK </h3>
+      <h4> CSS selector: </h4>
+      <p> .block-img </p>
+      <p> .image-link </p>
+      <p> .overlay </p>
+      <p> .text-overlay </p>
+
+      <h4> Sample code: </h4>
+      <code>
+        &lt;div class = "block-img"&gt; <br>
+        &lt;a href = "https://www.sfu.ca/"&gt; <br>
+        &lt;img class="image-link" src="images/ext4.jpg" alt="trim cleanse"&gt; <br>
+        &lt;div class="overlay"&gt; <br>
+        &lt;div class="text-overlay">Find out more&lt;/div&gt; <br>
+        &lt;/div&gt; <br>
+        &lt;/a&gt; <br>
+        &lt;/div&gt; <br>
+      </code>
+
+      <h4> Rendered element: </h4>
+      <div class="block-img">
+        <a href="https://www.sfu.ca/">
+          <img class="image-link" src="images/ext4.jpg" alt="trim cleanse">
+          <div class="overlay">
+            <div class="text-overlay">Find out more</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </section>
+  <!-- END OF INTERACTIVE ELEMENTS SECTION -->
+
+  <!-- TEXT STYLING SECTION -->
+  <section id="text_styling">
+    <h2> TEXT STYLING </h2>
+
+    <section class="section-divider">
+      <h3> A PARAGRAPH </h3>
+      <h4> CSS selector: </h4>
+      <p> p </p>
+
+      <h4> Sample code: </h4>
+      <code>
+        &lt;p&gt; Lorem ipsum... &lt;/p&gt;
+      </code>
+
+      <h4> Rendered element: </h4>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+
+    <section class="element">
+      <h3> NUMBERED LISTS </h3>
+      <h4> CSS Selector: </h4>
+      <p> li </p>
+
+      <h4> Sample code: </h4>
+      <code>
+        &lt;ol&gt;
+        &lt;li&gt; element 1 &lt;/li&gt;
+        &lt;/ol&gt;
+      </code>
+
+      <h4> Renedered element: </h4>
+      <ol>
+        <li> element 1 </li>
+        <li> element 2 </li>
+      </ol>
+
+    </section>
+
+    <section class="element">
+      <h3> FOUR LEVELS OF HEADING </h3>
+      <h4> CSS Selector: </h4>
+      <p> h1, h2, h3, h4 </p>
+
+      <h4> Sample code: </h4>
+      <code>
+        &lt;h1&gt; level 1 &lt;/h1&gt; <br>
+        &lt;h2&gt; level 2 &lt;/h2&gt; <br>
+        &lt;h3&gt; level 3 &lt;/h3&gt; <br>
+        &lt;h4&gt; level 4 &lt;/h4&gt; <br>
+      </code>
+
+      <h4> Rendered element: </h4>
+      <h1> level 1 </h1>
+      <h2> level 2 </h2>
+      <h3> level 3 </h3>
+      <h4> level 4 </h4>
+    </section>
+  </section>
+  <!-- END OF TEXT STYLING SECTION -->
+
+  <!-- COMBINED ELEMENTS SECTION -->
+  <section id="combined_elements">
+
+  </section>
+  <!-- END OF COMBINED ELEMENTS SECTION -->
+
+  <!-- BRAND COMPONENTS SECTION-->
+  <section id="brand_components">
+    <h2> BRAND COMPONENTS </h2>
+    <section class="section-divider">
+      <p> Applied to Style Guide: </p>
+      <h3> Fonts: </h3>
+      <h2 class="h2-sample"> Montserrat </h2>
+
+      <h3> Colour palettes: </h3>
+      <ul>
+        <li> black, white, greys, gold </li>
+        <li> modern, simplistic and clinical look to emphasize precision and cleanliness</li>
+        <li> allows the images/colours of the cars themselves pop</li>
+      </ul>
+
+      <!-- Colored rectangles reference from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_shapes_rectangle -->
+      <div class="rectangle"> </div>
+      <p> #ededed </p>
+      <div class="rectangle1"> </div>
+      <p> #ABABAB </p>
+      <div class="rectangle2"> </div>
+      <p> #909090 </p>
+      <div class="rectangle3"> </div>
+      <p> #555 </p>
+      <div class="rectangle6"> </div>
+      <p> #1a1a1a</p>
+      <div class="rectangle4"> </div>
+      <p> #000000</p>
+      <div class="rectangle5"> </div>
+      <p> #95731C</p>
+    </section>
+
+    <section class="element">
+      <h3> Potential imagery: </h3>
+      <p> Compliment the components with: </p>
+      <ul>
+        <li> large images </li>
+        <li> minimal text </li>
+        <li> overall simple & clean layout </li>
+      </ul>
+
+      <h4> Potential exterior images </h4>
+      <!-- image from https://www.ziebart.com/images/default-source/blog-post-media/exterior_detailing_new.jpg?sfvrsn=66f56e_0 -->
+      <img class="image" alt="polishing car" src="images/ext.jpg">
+
+      <!-- image from https://www.ecocarcarefl.com/wp-content/uploads/2019/02/paint-correction-1.jpg -->
+      <img class="image" alt="before vs after" src="images/ext4.jpg">
+
+      <!-- image from https://www.georgiandetailing.com/wp-content/uploads/2017/12/georgiandetailing-blog-3.jpg -->
+      <img class="image" alt="wheel" src="images/tire2.jpg">
+
+      <!-- image from https://www.utahautospa.com/how-to-clean-your-engine-bay/ -->
+      <img class="image" alt="engine" src="images/engine2.jpg">
+
+      <h4> Potential interior images </h4>
+
+      <!-- image from https://ventsmagazine.com/2019/12/23/8-essential-elements-of-excellent-interior-car-detailing/ -->
+      <img class="image" alt="shampoo" src="images/interior.jpg">
+
+      <!-- image from https://www.the33carwash.com/collections/car-interior-detailing -->
+      <img class="image" alt="wipe down" src="images/int3.jpeg">
+
+      <!-- https://lh3.googleusercontent.com/proxy/hoJZb83x0vBVcbJYLvKzEiLo3L4rhhQkAwan9DV6Dax0IAya2TFuddnFsqXW1gtdh3u9Bp7p7J-CrvyAOqKQy9Ak5nRNfZGSX050xMkbRIfTBpsOJa7U -->
+      <img class="image" alt="trim cleanse" src="images/int4.png">
+    </section>
+
+
+
+  </section>
+  <!-- END OF BRAND COMPONENTS SECTION -->
+
+  <!-- CITATIONS -->
+  <section id="citations">
+    <h2> CITATIONS (for style guide)</h2>
+    <section class="section-divider">
+      <h3> Font </h3>
+      <ul>
+        <li> Montserrat: Ulanovsky, J. (2017). Retrieved from <a class="link" href="https://fonts.google.com/specimen/Montserrat?preview.text_type=custom "> here </a> </li>
+      </ul>
+
+      <h3> Images: Exterior </h3>
+      <ul>
+        <li> Polishing (ext.jpg): Ziebart Auto Detailing (2019). Retrieved from <a class="link" href="https://www.ziebart.com/images/default-source/blog-post-media/exterior_detailing_new.jpg?sfvrsn=66f56e_0  "> here </a> </li>
+
+        <li> Before vs After (ext3.jpg): Eco Car Care (2020). Retrieved from <a class="link" href="https://www.ecocarcarefl.com/wp-content/uploads/2019/02/paint-correction-1.jpg "> here</a> </li>
+
+        <li> Wheel (ext4.jpg): Georgian Detailing (2020). Retrieved from <a class="link" href="https://www.georgiandetailing.com/wp-content/uploads/2017/12/georgiandetailing-blog-3.jpg "> here </a> </li>
+
+        <li> Engine (ext5.jpg): Utah Auto Spa (2019). Retrieved from <a class="link" href="https://www.utahautospa.com/how-to-clean-your-engine-bay/ "> here </a> </li>
+      </ul>
+
+      <h3> Images: Interior </h3>
+      <ul>
+        <li> Interior Shampoo (int2.jpg): Vents Magazine (2019). Retrieved from <a class="link" href=" https://ventsmagazine.com/2019/12/23/8-essential-elements-of-excellent-interior-car-detailing/"> here </a> </li>
+
+        <li> Wipe down (int3.jpeg): 33 Carwash & Detailing (2020). Retrieved from <a class="link" href="https://www.the33carwash.com/collections/car-interior-detailing "> here </a> </li>
+
+        <li> Trim cleanse (int4.png): Anthony's Auto Salon (2020). Retrieved from <a class="link" href="http://anthonysautosalon.com/services/interior-detail  "> here </a> </li>
+      </ul>
+
+    </section>
+  </section>
+
+  <footer class="section-divider-footer">
+    <div class="container-footer">
+      <div class="block-footer">
+        <div class="topnav">
+          <div class="topnav-left">
+            <a href="home.html">
+              <span class="auto-detailing-font-top"> AUTO
+                <span class="mobile-font-top"> MOBILE </span>
+                <span> DETAILING </span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <p> Family owned and operated since 2005, we strive to be the best Detailing service in all of Vancouver.
+        </p>
+      </div>
+
+      <div class="block-footer">
+        <h3> Navigation </h3>
+        <ul>
+          <li><a class="link" href="home.html">Home</a> </li>
+          <li><a class="link" href="services.html">Services</a> </li>
+          <li><a class="link" href="contact.html">Contact Us</a> </li>
+          <li><a class="link" href="checkout.html">Checkout</a> </li>
+        </ul>
+      </div>
+
+      <div class="block-footer">
+        <h3> Resources </h3>
+        <ul>
+          <li><a class="link" href="index.html"> Style Guide </a> </li>
+          <li><a class="link" href="citations.html"> Citations </a> </li>
+          <li><a class="link" href="https://github.com/Ajxy2/Iat-339-Team-11"> Github </a> </li>
+        </ul>
+      </div>
+
+      <div class="block-footer">
+        <h3> Newsletter Sign Up</h3>
+        <form method="post" action="#">
+          <label class="input-text-label" for="name-footer"> Name </label>
+          <input class="input-text-contact-us" type="text" id="name-footer" name="name-footer">
+          <label class="input-text-label" for="email-footer"> Email </label>
+          <input class="input-text-contact-us" type="text" id="email-footer" name="email-footer">
+          <div class="container-payment">
+            <input class="button-form" type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

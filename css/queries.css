@@ -1,0 +1,276 @@
+/* Responsive navigation menu reference from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_centered */
+@media screen and (max-width: 800px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+
+/* making the header text move to the center when the screen is small enough */
+/* also making the contact page elements space properly at smaller sizes */
+@media screen and (max-width: 1050px) {
+  .header-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 30rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .block-contact-us:nth-child(2) {
+    margin-top: 1rem;
+  }
+
+  .section-divider-footer {
+    margin-top: 1rem;
+  }
+
+}
+
+/* making the elements  fill up the page once the screen is a certain size */
+@media screen and (max-width: 1279px) {
+  .block-about-us {
+    flex: 0 100%;
+    margin: 2rem;
+  }
+
+  .block-about-us p {
+    padding-top: 0rem;
+  }
+
+  .block-about-us img {
+    margin-bottom: -7rem;
+  }
+
+  .container-about-us .block-about-us h2 {
+    margin-bottom: 1rem;
+  }
+
+  .block-about-us ul {
+    margin-bottom: 1rem;
+  }
+}
+
+/* detailed view responsiveness */
+@media screen and (max-width: 1279px) {
+  .block-detailed-view {
+    flex: 0 100%;
+    margin: 2rem;
+  }
+
+  .block-detailed-view p {
+    padding-top: 0rem;
+  }
+
+  .block-detailed-view img {
+    margin-bottom: -7rem;
+  }
+
+  .container-detailed-view .block-detailed-view h2 {
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+  }
+
+  .container-detailed-view ul {
+    padding-bottom: 4rem;
+  }
+
+}
+
+/* making the margins shrink before the nav buttons hit the logo in the top left */
+@media screen and (max-width: 1125px) {
+  body {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+/* query for responsive checkout form & contact us */
+@media screen and (max-width: 1000px) {
+  .block-payment {
+    flex: 0 100%;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .container-payment {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .block-contact-us {
+    flex: 0 100%;
+  }
+
+  .container-contact-us {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .block-payment:nth-child(2) h3 {
+    margin-top: 1rem;
+  }
+
+  .block-payment:nth-child(3) h3 {
+    margin-top: 1rem;
+  }
+}
+
+/* MOBILE RESPONSIVENESS QUERIES */
+@media screen and (max-width: 800px) {
+  body {
+    margin-top: 0rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .image-link {
+    height: 30rem;
+    object-fit: cover;
+    vertical-align: bottom;
+  }
+
+  .block .button-nav {
+    width: 97%;
+    margin-top: 0.5rem;
+    height: 2rem;
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+
+  .block a {
+    margin-bottom: 4rem;
+  }
+
+  .block-about-us img {
+    margin-bottom: -5rem;
+  }
+
+  .auto-detailing-font-top {
+    font-size: 1.75rem;
+  }
+
+  .mobile-font-top {
+    font-size: 1.75rem;
+  }
+
+  .header-text {
+    padding-top: 10rem;
+    top: 30rem;
+  }
+
+  .container-about-us {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+
+  .input-text {
+    height: 2rem;
+  }
+
+  .topnav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-buttons {
+    width: 100%;
+  }
+
+  .navbar-buttons ul {
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .navbar-buttons ul li {
+    text-align: center;
+  }
+
+  .navbar-buttons ul li a {
+    padding: .6rem 1rem;
+    margin: 0.1rem;
+  }
+}
+
+/* resizing the footer elements */
+@media screen and (max-width: 530px) {
+  .block-footer:nth-child(2) {
+    padding-left: 2rem;
+  }
+}
+
+/* resizing the headings' & footer spacing */
+@media screen and (max-width: 457px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .header-text {
+    margin-top: 3rem;
+  }
+
+  .block-detailed-view:nth-child(2) {
+    padding-top: 4rem;
+  }
+
+  .container-detailed-view .block-detailed-view h2 {
+    margin-top: 1rem;
+  }
+}
+
+/* resizing the headings */
+@media screen and (max-width: 375px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* resizing the top logo */
+@media screen and (max-width: 388px) {
+  .auto-detailing-font-top {
+    font-size: 1.65rem;
+  }
+
+  .mobile-font-top {
+    font-size: 1.65rem;
+  }
+
+  .detailing-font-top {
+    font-size: 1.65rem;
+  }
+}
+
+/* resizing the top logo */
+@media screen and (max-width: 366px) {
+  .auto-detailing-font-top {
+    font-size: 1.5rem;
+  }
+
+  .mobile-font-top {
+    font-size: 1.5rem;
+  }
+
+  .detailing-font-top {
+    font-size: 1.5rem;
+  }
+}
+
+/* resizing the images for services */
+@media screen and (max-width: 900px) {
+  .image-link {
+    max-width: 100%;
+  }
+}
