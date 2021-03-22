@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-
 /* lines separating section - reference from style guide template */
 .section-divider {
   padding-bottom: 2rem;
@@ -66,15 +63,15 @@
 .button-nav {
   display: inline-block;
   padding: 0.5rem;
-  font-size: 1.3rem;
   color: white;
-  font-family: 'Nunito', sans-serif;
+  background-color: #333333;
   text-decoration: none;
+  transition-property: background-color;
   transition-duration: 0.5s;
 }
 
 .button-nav:hover {
-  /* background-color: #808080; */
+  background-color: #808080;
   border-bottom: 3px solid #DAA520;
 }
 
@@ -228,17 +225,36 @@
 }
 
 /* Styling for brand component headings */
-/* styling for the logo (my name)*/
-.logo {
+/* styling for the words "auto" and "detailing" for the top left corner*/
+.auto-detailing-font-top {
   margin-left: -2.5rem;
-  font-family: 'Nunito', sans-serif;
+  font-family: Montserrat;
   font-size: 2rem;
   color: #FFFFFF;
   font-weight: lighter;
 }
 
-.logo:hover {
+.detailing-font-top {
+  margin-left: -2.5rem;
+  font-family: Montserrat;
+  font-size: 2rem;
+  color: #FFFFFF;
+  font-weight: lighter;
+}
+
+.auto-detailing-font-top:hover, .mobile-font-top:hover {
   opacity: 80%;
+}
+
+/* styling for the word "mobile" for the top left corner*/
+.mobile-font-top {
+  margin-left: -0.5rem;
+  margin-right: 1rem;
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: Bold;
+  font-size: 2rem;
+  color: #DAA520;
 }
 
 .h2-sample {
@@ -254,6 +270,31 @@
   border-radius: 3px;
 }
 
+/* reference for blocks & overlays from https://css-tricks.com/adaptive-photo-layout-with-flexbox/ */
+.container-services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block-services {
+  margin: 1rem;
+  flex: 1 40%;
+}
+
+.listing-img {
+  max-width: 100%;
+}
+
+.product-info {
+  margin-top: auto;
+}
+
+.services-img {
+  width: 25rem;
+  height: 25rem;
+  width: 100%;
+  object-fit:cover;
+}
 
 .block-img {
   position: relative;
@@ -349,20 +390,11 @@
 .header-text {
   position: absolute;
   top: 20rem;
-  left: 10%;
+  left: 65%;
   /* right: 10rem; */
   color: white;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-.header-text h1 {
-  font-size: 5rem;
-  margin-top: 0rem;
-}
-
-.header-text p {
-  padding-top: 1rem;
 }
 
 
@@ -378,6 +410,159 @@
   height: 100%;
   margin: 0px 0 0 0px;
   object-fit: cover;
+}
+
+.container-payment {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  /* border-radius: 3px; */
+  justify-content: center;
+}
+
+.block-payment {
+  padding: 2%;
+  flex: 1;
+}
+
+.block-payment:nth-child(2) h3 {
+  margin-top: 8rem;
+}
+
+.block-payment:nth-child(3) h3 {
+  margin-top: 8rem;
+}
+
+.container-detailed-view{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 3px;
+  justify-content: center;
+}
+
+.container-detailed-view h2 {
+  margin-bottom: 1.5rem;
+}
+
+.container-detailed-view ul {
+  padding-bottom: 4rem;
+}
+
+.block-detailed-view .button-nav {
+  width: 99%;
+  margin-top: 0.5rem;
+  height: 2rem;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.block-detailed-view ul {
+  margin-bottom: -3rem;
+}
+
+.container-contact-us {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 3px;
+  justify-content: center;
+}
+
+.container-contact-us h2{
+  padding-bottom: 1rem;
+}
+
+.block-contact-us:nth-child(1) {
+  width: 30%;
+}
+
+.block-contact-us:nth-child(2) {
+  margin-top: 6rem;
+}
+
+.block-detailed-view img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.block-detailed-view:nth-child(2) {
+  padding-top: 6rem;
+}
+
+.block-detailed-view {
+  flex: 0 35%;
+  margin: 2rem;
+}
+
+.container-about-us {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 3px;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.block-about-us h2 {
+  margin-top: -2rem;
+}
+
+.block-about-us .button-nav {
+  width: 99%;
+  margin-top: 0.5rem;
+  height: 2rem;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.block-about-us ul {
+  margin-bottom: -3rem;
+}
+
+.container-contact-us {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 3px;
+  justify-content: center;
+}
+
+.block-about-us {
+  padding: 2%;
+}
+
+.block-about-us img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.block-about-us p {
+  padding-top: 6rem;
+}
+
+.block-contact-us {
+  padding: 2%;
+}
+
+.block-contact-us h2 {
+  margin-bottom: -1rem;
+}
+
+.block-contact-us h3 {
+  padding-top: 1rem;
+}
+
+#Message {
+  height: 12rem;
+}
+
+/* reference from https://stackoverflow.com/questions/29546550/flexbox-4-items-per-row */
+.block-about-us {
+  flex: 0 35%;
+  margin: 2rem;
 }
 
 /* Styling for footer */
@@ -452,23 +637,17 @@ span.price {
 
 h2 {
   margin-top: 3rem;
-  font-weight: 200;
-  font-size: 3.5rem;
-  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 2.5rem;
 }
 
 h1 {
   font-size: 4rem;
   margin-bottom: 0rem;
-  font-family: 'Montserrat', sans-serif;
 }
 
 p {
   max-width: 60rem;
-  font-family: 'Nunito', sans-serif;
-  font-weight: lighter;
-  font-size: 1.5rem;
-
 }
 
 h3 {
@@ -485,22 +664,4 @@ body {
   background-color: black;
   font-family: 'Montserrat', sans-serif;
   color: white;
-}
-
-/* P03 */
-.image-project {
-  width: 35rem;
-}
-
-.header-img {
-  width: 50rem;
-}
-
-.container-home {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border-radius: 3px;
-  justify-content: center;
-  padding-top: 3rem;
 }

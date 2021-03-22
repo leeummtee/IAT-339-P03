@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<!--I used P02 as reference -->
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title> Home </title>
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/queries.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <!-- reference for nav bar from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
+    <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_centered -->
+    <div class="topnav">
+      <div class="topnav-left">
+        <a href="home.html">
+          <span class="logo"> Liam Tangilag </span>
+        </a>
+      </div>
+      <div class="navbar-buttons">
+        <ul>
+          <li><a class="button-nav" href="home.html">home</a> </li>
+          <li><a class="button-nav" href="services.html">projects</a> </li>
+          <li><a class="button-nav" href="contact.html">contact</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- reference for flexbox gallery for images from https://css-tricks.com/adaptive-photo-layout-with-flexbox/ -->
+  <section class="container">
+    <div class="block">
+      <div class="crop-header">
+        <!-- <img src="images/placeholder.jpg" alt="pic of me"> -->
+      </div>
+      <header class="header-text">
+        <h1>an aspiring </h1>
+        <h1>Digital Designer</h1>
+        <p> currently enrolled in SFU's Interactive Arts & Technology Program </p>
+      </header>
+    </div>
+  </section>
+
+  <section class="container-home">
+    <div class="block-about-us">
+      <h2> about me</h2>
+      <!-- image from https://www.istockphoto.com/photo/car-polish-wax-worker-hands-applying-protective-tape-before-polishing-buffing-and-gm1060499948-283474997 -->
+      <img src="images/wax.jpg" alt="waxing a car">
+    </div>
+
+    <div class="block-about-us">
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui. Convallis posuere morbi leo urna molestie at. Consectetur libero id faucibus nisl tincidunt eget nullam non nisi. Cursus turpis massa tincidunt dui.
+      </p>
+      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui. Convallis posuere morbi leo urna molestie at. Consectetur libero id faucibus nisl tincidunt eget nullam non nisi. Cursus turpis massa tincidunt dui.
+      </p>
+    </div>
+  </section>
+
+  <footer class="section-divider-footer">
+    <div class="container-footer">
+      <div class="block-footer">
+        <div class="topnav">
+          <div class="topnav-left">
+            <a href="home.html">
+              <span class="auto-detailing-font-top"> AUTO
+                <span class="mobile-font-top"> MOBILE </span>
+                <span> DETAILING </span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <p> Family owned and operated since 2005, we strive to be the best Detailing service in all of Vancouver.
+        </p>
+      </div>
+
+      <div class="block-footer">
+        <h3> Navigation </h3>
+        <ul>
+          <li><a class="link" href="home.html">Home</a> </li>
+          <li><a class="link" href="services.html">Services</a> </li>
+          <li><a class="link" href="contact.html">Contact Us</a> </li>
+          <li><a class="link" href="checkout.html">Checkout</a> </li>
+        </ul>
+      </div>
+
+      <div class="block-footer">
+        <h3> Resources </h3>
+        <ul>
+          <li><a class="link" href="index.html"> Style Guide </a> </li>
+          <li><a class="link" href="citations.html"> Citations </a> </li>
+          <li><a class="link" href="https://github.com/Ajxy2/Iat-339-Team-11"> Github </a> </li>
+        </ul>
+      </div>
+
+      <div class="block-footer">
+        <h3> Newsletter Sign Up</h3>
+        <form method="post" action="#">
+          <label class="input-text-label" for="name"> Name </label>
+          <input class="input-text-contact-us" type="text" id="name" name="name">
+          <label class="input-text-label" for="email"> Email </label>
+          <input class="input-text-contact-us" type="text" id="email" name="email">
+          <div class="container-payment">
+            <input class="button-form" type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+</body>
