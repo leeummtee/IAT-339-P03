@@ -491,6 +491,14 @@ body {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ P03 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* ~~~~~~~~~~~~~~~~~~~~ABOUT PAGE~~~~~~~~~~~~~~~~~~~~~~~ */
 
+.container-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 3px;
+  margin-bottom: -20rem;
+}
+
 .header-img {
   width: 50rem;
 }
@@ -534,7 +542,6 @@ body {
 
 /* ~~~~~~~~~~~~~~~PROJECTS OVERVIEW~~~~~~~~~~~~~~~~~~~~~ */
 .container-projects {
-  padding-top: 10rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -543,7 +550,7 @@ body {
 .block-projects {
   flex-grow: 0 100%;
   overflow: hidden;
-
+  margin-top: 15rem;
 }
 
 .block-projects p {
@@ -556,17 +563,17 @@ body {
 
 .block-projects:nth-child(1) {
   z-index: 1;
-  padding-top: 17rem;
   margin-right: -10rem;
+  padding-top: 10rem;
 }
 
-.block-projects:nth-child(3) {
-  padding-top: 15rem;
-}
+/* .block-projects:nth-child(3) {
+  margin-top: 15rem;
+} */
 
 .block-projects:nth-child(4) {
   z-index: 1;
-  padding-top: 30rem;
+  padding-top: 10rem;
   margin-left: -10rem;
 
 }
@@ -611,11 +618,34 @@ body {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~DETAILED PROJECT VIEW PAGES ~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.container-summary {
+.container-poster {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 20rem;
+  /* justify-content: center; */
+  margin-left: 10rem;
+}
+
+.container-poster p {
+  max-width: 35vw;
 }
 
 .block-summary {
   padding-left: 3rem;
+}
+
+.block-poster {
+  padding-left: 3rem;
+  flex: 0 35%;
+  /* margin: 2rem; */
+}
+
+.block-poster img {
+  width: 100%;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.block-poster h2 {
+  margin-top: 0rem;
 }
