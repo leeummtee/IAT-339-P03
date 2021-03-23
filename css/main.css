@@ -349,7 +349,8 @@
 .header-text {
   position: absolute;
   top: 20rem;
-  left: 10%;
+  /* margin-left: 5rem; */
+  /* left: 10%; */
   /* right: 10rem; */
   color: white;
   padding-left: 20px;
@@ -608,12 +609,28 @@ body {
 }
 
 /* reference for hover interactions from https://www.youtube.com/watch?v=ltxxNidblts */
-.container-projects .block-projects img {
+/* .container-projects .block-projects img {
   transition: transform 1.2s;
 }
 
 .container-projects .block-projects:hover img {
   transform: scale(1.1);
+} */
+
+.image-link {
+  transition: transform 1.2s;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~ CONTACT PAGE ~~~~~~~~~~~~~~~~~~~~~~~~ */
+.image-link:hover {
+  transform: scale(1.1);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~DETAILED PROJECT VIEW PAGES ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.container-summary {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block-summary {
+  padding-left: 3rem;
+}
