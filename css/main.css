@@ -653,14 +653,22 @@ body {
 }
 
 .block-summary {
+  max-width: 35vw;
+}
 
+.block-img-test{
+
+}
+
+#process-img {
+  flex: 0 50%;
 }
 
 #full-width {
   flex: 0 100%;
 }
 
-#full-width-img {
+#full-width-img-id {
   flex: 0 100%;
   margin-top: -5rem;
 }
@@ -687,11 +695,6 @@ body {
   width: 100%;
   overflow: hidden;
 }
-
-/* .block-poster-img {
-  flex: 1;
-  overflow: hidden;
-} */
 
 /* reference for positioning individual flex items https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties/33856609#33856609 */
 #column-right {
