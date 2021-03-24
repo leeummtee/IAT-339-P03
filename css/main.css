@@ -711,3 +711,25 @@ body {
 .block-poster h2 {
   margin-top: 0rem;
 }
+
+.header-text-detailed {
+  padding-top: 10rem;
+  position: absolute;
+  top: 20rem;
+  color: white;
+  left: 35%;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  text-align: center;
+  /* margin-left: 30vw; */
+}
+
+.header-text-detailed h1 {
+  font-size: 5rem;
+  margin-top: 0rem;
+  text-align: center;
+}
+
+.header-text-detailed p {
+  padding-top: 1rem;
+}
