@@ -708,8 +708,10 @@ body {
 }
 
 /* reference for positioning individual flex items https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties/33856609#33856609 */
+
 /* making the block be alone to the right */
 .block-poster:nth-child(3){
+  /* flex: 0 100%; */
   align-self: flex-end;
   margin-left: auto;
 }

@@ -79,7 +79,7 @@
   }
 
   .block-summary {
-    flex-grow: 0 100%;
+    flex: 0 100%;
     margin-top: 0rem;
   }
 
@@ -97,7 +97,18 @@
   }
 
   .block-poster {
-    width: 0.1vw;
+    /* width: 0.1vw; */
+    margin-top: -2rem;
+  }
+
+  /* making the block be alone to the right */
+  .block-poster:nth-child(3){
+    flex: 0 100%;
+    margin-left: 0rem;
+  }
+
+  .full-width-img {
+    margin-top: -10rem;
   }
 
 
