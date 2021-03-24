@@ -624,6 +624,15 @@ body {
   padding-top: 20rem;
   /* justify-content: center; */
   margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.container-summary {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
 .container-poster p {
@@ -631,20 +640,25 @@ body {
 }
 
 .block-summary {
-  padding-left: 3rem;
+  
 }
 
 .block-poster {
-  padding-left: 3rem;
   flex: 0 35%;
   /* margin: 2rem; */
+  /* background-color: green; */
 }
 
-.block-poster img {
-  width: 100%;
-  padding: 1rem;
+.block-poster-img {
+  flex: 1;
   overflow: hidden;
 }
+
+#column-right {
+  justify-content: flex-end;
+  /* background-color: green; */
+}
+
 
 .block-poster h2 {
   margin-top: 0rem;
