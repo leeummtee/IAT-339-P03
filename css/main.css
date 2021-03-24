@@ -488,6 +488,18 @@ body {
   color: white;
 }
 
+/* body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50em;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+} */
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ P03 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* ~~~~~~~~~~~~~~~~~~~~ABOUT PAGE~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -633,6 +645,7 @@ body {
   padding-top: 20rem;
   margin-left: 10rem;
   margin-right: 10rem;
+  margin-bottom: -10rem;
 }
 
 .container-poster p {
@@ -640,25 +653,51 @@ body {
 }
 
 .block-summary {
-  
+
+}
+
+#full-width {
+  flex: 0 100%;
+}
+
+#full-width-img {
+  flex: 0 100%;
+  margin-top: -5rem;
+}
+
+.full-width-img {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 99.5vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
 }
 
 .block-poster {
   flex: 0 35%;
-  /* margin: 2rem; */
+  margin-top: 15rem;
+  margin-bottom: 15rem;
   /* background-color: green; */
+  /* margin-left: 10rem; */
 }
 
-.block-poster-img {
-  flex: 1;
+.block-poster img {
+  width: 100%;
   overflow: hidden;
 }
 
-#column-right {
-  justify-content: flex-end;
-  /* background-color: green; */
-}
+/* .block-poster-img {
+  flex: 1;
+  overflow: hidden;
+} */
 
+/* reference for positioning individual flex items https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties/33856609#33856609 */
+#column-right {
+  align-self: flex-end;
+  margin-left: auto;
+}
 
 .block-poster h2 {
   margin-top: 0rem;
