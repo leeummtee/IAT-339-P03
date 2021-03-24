@@ -55,32 +55,19 @@
     margin-left: 0rem;
   }
 
-  /*~~~~~~~~~~~~~~~~~~~~~~~ ABOUT PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  .container-about {
-    padding-top: 0rem;
-  }
-
-  .block-about p, h2{
-    width: 100%;
-  }
-
-  .about-img {
-    float: left;
-    width: 100%;
-    height: 30rem;
-    object-fit: cover;
-  }
-
   /*~~~~~~~~~~~~~~~~~~~~~~~ DETAILED VIEW ~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  .header-text-detailed {
 
+  .header-text-detailed {
+    padding-top: 0rem;
+    position: absolute;
+    top: 20rem;
+    color: white;
+    left: 0;
+    text-align: center;
   }
 
   .container-summary {
-    padding-top: 0rem;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    margin-bottom: 0rem;
+    margin-top: -10rem;
   }
 
   .block-summary p {
@@ -93,11 +80,16 @@
 
   .block-summary {
     flex-grow: 0 100%;
+    margin-top: 0rem;
   }
 
   .container-poster {
     margin-left: 0rem;
     margin-right: 0rem;
+  }
+
+  .container-poster p {
+    max-width: 100vw;
   }
 
   .block-poster p {
@@ -106,6 +98,28 @@
 
   .block-poster {
     width: 0.1vw;
+  }
+
+
+  /*~~~~~~~~~~~~~~~~~~~~~~~ ABOUT PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  .container-about {
+    padding-top: 0rem;
+  }
+
+  .block-about p{
+    width: 100vw;
+  }
+
+  .block-about h1 {
+    max-width: 100vw;
+    padding: 0px;
+  }
+
+  .about-img {
+    float: left;
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
   }
 }
 

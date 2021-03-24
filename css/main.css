@@ -613,13 +613,6 @@ body {
 }
 
 /* reference for hover interactions from https://www.youtube.com/watch?v=ltxxNidblts */
-/* .container-projects .block-projects img {
-  transition: transform 1.2s;
-}
-
-.container-projects .block-projects:hover img {
-  transform: scale(1.1);
-} */
 
 .image-link {
   transition: transform 1.2s;
@@ -634,30 +627,17 @@ body {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~DETAILED PROJECT VIEW PAGES ~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.container-poster {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 20rem;
-  /* justify-content: center; */
-  margin-left: 10rem;
-  margin-right: 10rem;
-}
-
 .container-summary {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 20rem;
+  justify-content: center;
   margin-left: 10rem;
   margin-right: 10rem;
-  margin-bottom: -10rem;
-}
-
-.container-poster p {
-  max-width: 35vw;
 }
 
 .block-summary {
-  max-width: 30vw;
+  margin-top: 15rem;
+  flex: 0 40%;
 }
 
 .block-summary:nth-child(2) {
@@ -665,16 +645,17 @@ body {
   margin-left: auto;
 }
 
-.block-img-test{
-
+.container-poster {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20rem;
+  justify-content: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
-#process-img {
-  flex: 0 50%;
-}
-
-#full-width {
-  flex: 0 100%;
+.container-poster p {
+  max-width: 30vw;
 }
 
 #full-width-img-id {
@@ -693,26 +674,48 @@ body {
 }
 
 .block-poster {
-  flex: 0 35%;
-  margin-top: 15rem;
-  margin-bottom: 15rem;
-  /* background-color: green; */
-  /* margin-left: 10rem; */
+  /* flex: 0 35%; */
+  margin-top: 10rem;
+  margin-bottom: 20rem;
 }
 
-.block-poster img {
-  width: 100%;
-  overflow: hidden;
+/* making image blocks span the whole width */
+.block-poster:nth-child(2){
+  flex-grow: 1;
+  flex: 0 100%;
+  margin-top: -10rem;
+}
+
+.block-poster:nth-child(4){
+  flex-grow: 1;
+  flex: 0 100%;
+  margin-top: -10rem;
+}
+
+.block-poster:nth-child(6){
+  flex-grow: 1;
+  flex: 0 100%;
+  margin-top: -10rem;
+}
+
+/* making the block be alone (left) */
+.block-poster:nth-child(1){
+  flex: 0 100%;
+}
+
+.block-poster:nth-child(5){
+  flex: 0 100%;
 }
 
 /* reference for positioning individual flex items https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties/33856609#33856609 */
-#column-right {
+/* making the block be alone to the right */
+.block-poster:nth-child(3){
   align-self: flex-end;
   margin-left: auto;
 }
 
 .block-poster h2 {
-  margin-top: 0rem;
+  margin-top: -15rem;
 }
 
 .header-text-detailed {
