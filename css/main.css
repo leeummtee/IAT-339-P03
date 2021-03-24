@@ -653,7 +653,13 @@ body {
 }
 
 .block-summary {
-  max-width: 35vw;
+  max-width: 30vw;
+}
+
+.block-summary:nth-child(2) {
+  /* margin-top: -10rem; */
+  align-self: flex-end;
+  margin-left: auto;
 }
 
 .block-img-test{
