@@ -1,5 +1,6 @@
-/* resizing the home page for mobile*/
+/* resizing the pages for mobile*/
 @media screen and (max-width: 457px) {
+  /*~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~*/
   body {
     margin-left: 0rem;
     margin-right: 0rem;
@@ -14,6 +15,10 @@
     text-align: left;
   }
 
+  .header-text {
+    margin-top: 5rem;
+  }
+
   .container {
     margin-bottom: -10rem;
   }
@@ -22,6 +27,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
+    padding-top: 0rem;
   }
 
   .block-projects p {
@@ -49,6 +55,52 @@
     margin-left: 0rem;
   }
 
+  /*~~~~~~~~~~~~~~~~~~~~~~~ ABOUT PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  .container-about {
+    padding-top: 0rem;
+  }
+
+  .block-about p, h2{
+    width: 100%;
+  }
+
+  .about-img {
+    float: left;
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  /*~~~~~~~~~~~~~~~~~~~~~~~ DETAILED VIEW ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  .header-text-detailed {
+
+  }
+
+  .container-summary {
+    padding-top: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .container-summary p {
+    width: 100%;
+  }
+
+  .block-summary {
+    width: 100%
+  }
+
+  .container-poster {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .block-poster {
+    flex: 0 100%;
+  }
 }
 
 /* Responsive navigation menu reference from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_centered */
@@ -85,6 +137,16 @@
 
   .section-divider-footer {
     margin-top: 1rem;
+  }
+
+  /* rearrange order so title goes before pic */
+  #project2-pic {
+    padding-top: 5rem;
+    order: 3;
+  }
+
+  #project2-desc {
+    order: 4;
   }
 
 }
@@ -219,7 +281,7 @@
   }
 
   .header-text {
-    padding-top: 10rem;
+    /* padding-top: 10rem; */
     top: 30rem;
   }
 

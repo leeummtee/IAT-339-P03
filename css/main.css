@@ -520,7 +520,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 10rem;
-
 }
 
 .about-img {
@@ -579,10 +578,6 @@ body {
   padding-top: 10rem;
 }
 
-/* .block-projects:nth-child(3) {
-  margin-top: 15rem;
-} */
-
 .block-projects:nth-child(4) {
   z-index: 1;
   padding-top: 10rem;
@@ -599,12 +594,18 @@ body {
   width: 50rem;
   height: 50rem;
   object-fit: cover;
-
-  /* padding: 1px; */
 }
 
 .container-projects h2{
   margin-top: 0rem;
+}
+
+#project2-pic {
+  order: 4;
+}
+
+#project2-desc {
+  order: 3;
 }
 
 /* reference for hover interactions from https://www.youtube.com/watch?v=ltxxNidblts */
@@ -656,7 +657,6 @@ body {
 }
 
 .block-summary:nth-child(2) {
-  /* margin-top: -10rem; */
   align-self: flex-end;
   margin-left: auto;
 }
