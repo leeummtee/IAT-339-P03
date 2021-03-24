@@ -522,6 +522,10 @@ body {
   padding-top: 10rem;
 }
 
+.container-about h1 {
+  padding-top: 5rem;
+}
+
 .about-img {
   float: left;
   width: 40rem;
