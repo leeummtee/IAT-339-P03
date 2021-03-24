@@ -5,56 +5,41 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title> P01 - Style Guide </title>
+  <title> Liam Tangilag </title>
   <link href="css/main.css" rel="stylesheet">
   <link href="css/queries.css" rel="stylesheet">
-
 </head>
 
 <body>
-
   <nav>
     <!-- reference for nav bar from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
     <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_centered -->
     <div class="topnav">
       <div class="topnav-left">
-        <a href="home.html">
-          <span class="auto-detailing-font-top"> AUTO
-            <span class="mobile-font-top"> MOBILE </span>
-            <span> DETAILING </span>
-          </span>
+        <a href="projects.html">
+          <span class="logo"> Liam Tangilag </span>
         </a>
       </div>
       <div class="navbar-buttons">
         <ul>
-          <li> <a class="button-nav" href="#branding_ideas"> Project Analyses </a> </li>
-          <li> <a class="button-nav" href="#interactive_elements">Interactive Elements</a> </li>
-          <li> <a class="button-nav" href="#text_styling">Text Styling</a> </li>
-          <li> <a class="button-nav" href="#combined_elements">Combined Elements</a> </li>
+          <li><a class="button-nav" href="#interactive_elements">interactive elements</a> </li>
+          <li><a class="button-nav" href="#text_styling"> text styling </a> </li>
+          <li><a class="button-nav" href="#combined_elements"> combined elements </a> </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container">
+  <!-- reference for flexbox gallery for images from https://css-tricks.com/adaptive-photo-layout-with-flexbox/ -->
+  <section class="container">
     <div class="block">
       <div class="crop-header">
-        <img src="images/ext.jpg" alt="detailing header">
+        <!-- <img src="images/placeholder.jpg" alt="pic of me"> -->
       </div>
       <header class="header-text">
-        <h1>Style Guide</h1>
-        <p>The library used to build our website.</p>
+        <h1> Style Guide </h1>
       </header>
     </div>
-  </div>
-
-  <section id="branding_ideas">
-    <h2> Draft Bio </h2>
-    <section class="section-divider">
-      <h3> Who I am </h3>
-      <p> I am a 21 year old student in SFU's School of Interactive Arts and Technology program who is planning on pursuing a concentration in Interactive Systems. With a particular interest in both graphic design and programming, pursuing
-      </p>
-    </section>
   </section>
 
   <!-- INTERACTIVE ELEMENTS SECTION -->
@@ -262,7 +247,6 @@
   <section id="brand_components">
     <h2> BRAND COMPONENTS </h2>
     <section class="section-divider">
-      <p> Applied to Style Guide: </p>
       <h3> Fonts: </h3>
       <h2 class="h2-sample"> Montserrat </h2>
 
@@ -329,64 +313,33 @@
   </section>
   <!-- END OF BRAND COMPONENTS SECTION -->
 
-  <!-- CITATIONS -->
-  <section id="citations">
-    <h2> CITATIONS (for style guide)</h2>
-    <section class="section-divider">
-      <h3> Font </h3>
-      <ul>
-        <li> Montserrat: Ulanovsky, J. (2017). Retrieved from <a class="link" href="https://fonts.google.com/specimen/Montserrat?preview.text_type=custom "> here </a> </li>
-      </ul>
-
-      <h3> Images: Exterior </h3>
-      <ul>
-        <li> Polishing (ext.jpg): Ziebart Auto Detailing (2019). Retrieved from <a class="link" href="https://www.ziebart.com/images/default-source/blog-post-media/exterior_detailing_new.jpg?sfvrsn=66f56e_0  "> here </a> </li>
-
-        <li> Before vs After (ext3.jpg): Eco Car Care (2020). Retrieved from <a class="link" href="https://www.ecocarcarefl.com/wp-content/uploads/2019/02/paint-correction-1.jpg "> here</a> </li>
-
-        <li> Wheel (ext4.jpg): Georgian Detailing (2020). Retrieved from <a class="link" href="https://www.georgiandetailing.com/wp-content/uploads/2017/12/georgiandetailing-blog-3.jpg "> here </a> </li>
-
-        <li> Engine (ext5.jpg): Utah Auto Spa (2019). Retrieved from <a class="link" href="https://www.utahautospa.com/how-to-clean-your-engine-bay/ "> here </a> </li>
-      </ul>
-
-      <h3> Images: Interior </h3>
-      <ul>
-        <li> Interior Shampoo (int2.jpg): Vents Magazine (2019). Retrieved from <a class="link" href=" https://ventsmagazine.com/2019/12/23/8-essential-elements-of-excellent-interior-car-detailing/"> here </a> </li>
-
-        <li> Wipe down (int3.jpeg): 33 Carwash & Detailing (2020). Retrieved from <a class="link" href="https://www.the33carwash.com/collections/car-interior-detailing "> here </a> </li>
-
-        <li> Trim cleanse (int4.png): Anthony's Auto Salon (2020). Retrieved from <a class="link" href="http://anthonysautosalon.com/services/interior-detail  "> here </a> </li>
-      </ul>
-
-    </section>
-  </section>
-
-  <section id="branding_ideas">
+  <!-- <section id="branding_ideas">
     <h2> Project Analyses </h2>
     <section class="section-divider">
       <h3> Project 1: Poster  </h3>
       <p> For 103W’s final project we were required to create a poster for the SIAT advisors to use during welcome day for incoming students. These posters were to give these new SIAT students a piece of advice based on experience and insider information. For my poster I wanted to introduce Discord as a tool for making communication for group projects much easier.
       </p>
 
-      <img class="image-project" alt="brainstorming sketch" src="images/ideation1.jpg">
-      <img class="image-project" alt="layout brainstorming sketch" src="images/ideation2.jpg">
-      <img class="image-project" alt="layout brainstorming sketch" src="images/ideation3.jpg">
+      <img class="img-style-guide" alt="brainstorming sketch" src="images/ideation1.jpg">
+      <img class="img-style-guide" alt="layout brainstorming sketch" src="images/ideation2.jpg">
+      <img class="img-style-guide" alt="layout brainstorming sketch" src="images/ideation3.jpg">
 
 
       <p>
         In terms of the design process, I started out with multiple ideation sketches for a large banner-style poster with tips on getting started with Discord (Figure 1, 2, 3). We were required by the IAT 103W teaching team to incorporate signs and symbols, so I decided to make a design with the Discord logo wearing a cape to symbolize it as a powerful tool that can save the day. I also placed the program’s name on a shooting star to symbolize how Discord can be the answer to students’ wishes for an easier way to communicate on projects. I then made a higher fidelity mock-up in Adobe Illustrator (Figure 4).
       </p>
 
-      <img class="image-project" alt="brainstorming sketch" src="images/illustrator-1.jpg">
-      <img class="image-project" alt="layout brainstorming sketch" src="images/illustrator-2.jpg">
+      <img class="img-style-guide" alt="brainstorming sketch" src="images/illustrator-1.jpg">
+      <img class="img-style-guide" alt="layout brainstorming sketch" src="images/illustrator-2.jpg">
 
       <p>
         My initial feedback from my peers was that a banner-style poster with all that information would be overwhelming for students to look at. Based on their critiques, I decided to shrink it down to an A0 size (841mm x 1189mm) by cutting out the steps and replacing it with a summary of Discord’s features (Figure 5).
       </p>
 
-      <img class="image-project" alt="layout brainstorming sketch" src="images/poster.jpg">
+      <img class="img-style-guide" alt="layout brainstorming sketch" src="images/poster.jpg">
+    </section> -->
 
-  <footer class="section-divider-footer">
+  <!-- <footer class="section-divider-footer">
     <div class="container-footer">
       <div class="block-footer">
         <div class="topnav">
@@ -435,7 +388,7 @@
         </form>
       </div>
     </div>
-  </footer>
+  </footer> -->
 </body>
 
 </html>

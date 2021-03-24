@@ -45,11 +45,13 @@
 /* Styling for in-text link: */
 .link {
   color: #DAA520;
+
 }
 
 .link:hover, .link:focus {
   color: #95731C;
   text-decoration: none;
+
 }
 
 /* Styling for navigation link. Style guide template used as reference */
@@ -74,8 +76,7 @@
 }
 
 .button-nav:hover {
-  /* background-color: #808080; */
-  border-bottom: 3px solid #DAA520;
+  color: #808080;
 }
 
 .block-add-to-cart {
@@ -235,10 +236,14 @@
   font-size: 2rem;
   color: #FFFFFF;
   font-weight: lighter;
+  transition-duration: 0.5s;
+
 }
 
 .logo:hover {
-  opacity: 80%;
+  color: #808080;
+  transition-duration: 0.5s;
+  /* opacity: 80%; */
 }
 
 .h2-sample {
@@ -483,22 +488,16 @@ body {
   margin-top: 3rem;
   margin-right: 5rem;
   margin-bottom: 5rem;
-  background-color: black;
   font-family: 'Montserrat', sans-serif;
+  /* color: white;
+  background-color: black; */
   color: white;
+  background-color: white;
 }
 
-/* body {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 50em;
-  margin-top: 3rem;
-  margin-bottom: 5rem;
-  background-color: black;
-  font-family: 'Montserrat', sans-serif;
-  color: white;
-} */
-
+p, h1, h2, h3 {
+  color: black;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ P03 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* ~~~~~~~~~~~~~~~~~~~~ABOUT PAGE~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -740,4 +739,8 @@ body {
 
 .header-text-detailed p {
   padding-top: 1rem;
+}
+
+.img-style-guide {
+  width: 20rem;
 }
