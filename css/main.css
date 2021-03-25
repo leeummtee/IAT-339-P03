@@ -489,14 +489,12 @@ body {
   margin-right: 5rem;
   margin-bottom: 5rem;
   font-family: 'Montserrat', sans-serif;
-  /* color: white;
-  background-color: black; */
   color: white;
-  background-color: white;
+  background-color: black;
 }
 
 p, h1, h2, h3 {
-  color: black;
+  color: white;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ P03 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -566,6 +564,7 @@ p, h1, h2, h3 {
   overflow: hidden;
   margin-top: 15rem;
 }
+
 
 .block-projects p {
   width: 30vw;
