@@ -45,13 +45,11 @@
 /* Styling for in-text link: */
 .link {
   color: #DAA520;
-
 }
 
 .link:hover, .link:focus {
   color: #95731C;
   text-decoration: none;
-
 }
 
 /* Styling for navigation link. Style guide template used as reference */
@@ -100,20 +98,22 @@
 
 /* Styling for form buttons. Reference from https://www.tyssendesign.com.au/articles/css/styling-form-buttons/ */
 .button-form {
-  font-family: Montserrat;
+  font-family: 'Open Sans';
+  font-size:1rem;
   color: #FFFFFF;
-  background: #323232;
-  border: 1px solid #323232;
-  transition-property: background-color;
+  background-color: transparent;
+  border: 2px solid white;
+  /* transition-property: background-color; */
   transition-duration: 0.5s;
-  width:15rem;
+  width:10rem;
   height:3rem;
+
 }
 
 .button-form:hover {
   color: #FFF;
-  background-color: #808080;
-  border-bottom: 3px solid #DAA520;
+  background-color: #d6d6d6;
+  /* border-bottom: 3px solid #DAA520; */
 }
 
 .button-form:focus {
@@ -130,13 +130,13 @@
 }
 
 .input-text:hover {
-  background: #DAA520;
+  background: #d6d6d6;
 }
 
 .input-text:focus {
   background: #e0e0e0;
-  border-color: #DAA520;
-  outline-color: #DAA520;
+  border-color: #d6d6d6;
+  outline-color: #d6d6d6;
 }
 
 .input-text-label {
@@ -201,7 +201,7 @@
 .rectangle2 {
   height: 2rem;
   width: 10rem;
-  background-color: #909090;
+  background-color: #808080;
 }
 
 .rectangle3 {
@@ -249,6 +249,7 @@
 .h2-sample {
   margin-top: 0rem;
   font-weight: lighter;
+  font-family: 'Montserrat';
 }
 
 /* flexbox container */
@@ -563,8 +564,14 @@ p, h1, h2, h3 {
   flex-grow: 0 100%;
   overflow: hidden;
   margin-top: 15rem;
+
 }
 
+
+/* .box {
+  width: 100px;
+  height: 800px;
+} */
 
 .block-projects p {
   width: 30vw;
@@ -589,6 +596,10 @@ p, h1, h2, h3 {
 .block-projects-img {
   position: relative;
   flex-grow: 1;
+}
+
+.section-divider .container-projects {
+  margin-top: -9rem;
 }
 
 .projects-img {
@@ -621,6 +632,7 @@ p, h1, h2, h3 {
 }
 
 .image-link:hover {
+  transition: transform 1.2s;
   transform: scale(1.1);
 }
 

@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title> Liam Tangilag </title>
+  <title> Style Guide </title>
   <link href="css/main.css" rel="stylesheet">
   <link href="css/queries.css" rel="stylesheet">
 </head>
@@ -25,6 +25,7 @@
           <li><a class="button-nav" href="#interactive_elements">interactive elements</a> </li>
           <li><a class="button-nav" href="#text_styling"> text styling </a> </li>
           <li><a class="button-nav" href="#combined_elements"> combined elements </a> </li>
+          <li><a class="button-nav" href="#components"> components </a> </li>
         </ul>
       </div>
     </div>
@@ -73,7 +74,7 @@
       </code>
 
       <h4> Rendered element: </h4>
-      <a class="button-nav" href="#branding_ideas">Home</a>
+      <a class="button-nav" href="#branding_ideas">home</a>
 
     </section>
 
@@ -144,30 +145,22 @@
       <!-- Reference from https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_image -->
       <h3> IMAGE AS A LINK </h3>
       <h4> CSS selector: </h4>
-      <p> .block-img </p>
+      <p> .block-projects </p>
       <p> .image-link </p>
-      <p> .overlay </p>
-      <p> .text-overlay </p>
 
       <h4> Sample code: </h4>
       <code>
-        &lt;div class = "block-img"&gt; <br>
+        &lt;div class = "block-projects"&gt; <br>
         &lt;a href = "https://www.sfu.ca/"&gt; <br>
-        &lt;img class="image-link" src="images/ext4.jpg" alt="trim cleanse"&gt; <br>
-        &lt;div class="overlay"&gt; <br>
-        &lt;div class="text-overlay">Find out more&lt;/div&gt; <br>
-        &lt;/div&gt; <br>
+        &lt;img class="image-link" src="images/placeholder.jpg" alt="trim cleanse"&gt; <br>
         &lt;/a&gt; <br>
         &lt;/div&gt; <br>
       </code>
 
       <h4> Rendered element: </h4>
-      <div class="block-img">
-        <a href="https://www.sfu.ca/">
-          <img class="image-link" src="images/ext4.jpg" alt="trim cleanse">
-          <div class="overlay">
-            <div class="text-overlay">Find out more</div>
-          </div>
+      <div class="block-projects">
+        <a href="poster.html">
+          <img class="image-link" src="images/placeholder.jpg" alt="placeholder img">
         </a>
       </div>
     </section>
@@ -239,73 +232,151 @@
 
   <!-- COMBINED ELEMENTS SECTION -->
   <section id="combined_elements">
+    <h2> COMBINED ELEMENTS </h2>
+    <section class="section-divider">
+      <h3> Project Listing Template </h3>
+      <div class="container-projects">
+        <div class="block-projects">
+          <h2> project 1: poster </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui.
+          </p>
+        </div>
 
+        <div class="block-projects">
+          <!-- <div class="block-projects-img"> -->
+            <a href="poster.html">
+              <img class="image-link" src="images/placeholder.jpg" alt="placeholder img">
+            </a>
+          <!-- </div> -->
+        </div>
+
+        <div class="block-projects" id=project2-desc>
+          <a href="poster.html">
+            <img class="image-link" src="images/placeholder.jpg" alt="placeholder img">
+          </a>
+        </div>
+
+        <div class="block-projects" id=project2-pic>
+          <h2> project 2: kinetic typography</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="element">
+      <h3> Detailed Project View Template </h3>
+      <div class="container-poster">
+        <div class="block-poster">
+          <h2> sketches </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui. Convallis posuere morbi leo urna molestie at. Consectetur libero id faucibus nisl tincidunt eget nullam non nisi. Cursus turpis massa tincidunt dui.
+          </p>
+        </div>
+
+        <div class="block-poster">
+          <img class="full-width-img" src="images/placeholder.jpg" alt="picture of staff">
+        </div>
+
+        <div class="block-poster">
+          <h2> initial renders </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui. Convallis posuere morbi leo urna molestie at. Consectetur libero id faucibus nisl tincidunt eget nullam non nisi. Cursus turpis massa tincidunt dui.
+          </p>
+        </div>
+
+        <div class="block-poster">
+          <img class="full-width-img" src="images/placeholder.jpg" alt="picture of staff">
+        </div>
+
+        <div class="block-poster">
+          <h2> final product </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui. Convallis posuere morbi leo urna molestie at. Consectetur libero id faucibus nisl tincidunt eget nullam non nisi. Cursus turpis massa tincidunt dui.
+          </p>
+        </div>
+
+        <div class="block-poster">
+          <img class="full-width-img" src="images/placeholder.jpg" alt="picture of staff">
+        </div>
+      </div>
+    </section>
+
+    <section class="element">
+      <h3> ABOUT PAGE TEMPLATE </h3>
+      <div class="container-about">
+        <div class="block-about">
+          <h1> Lorem ipsum dolor sit</h1>
+
+          <!-- image from https://www.istockphoto.com/photo/car-polish-wax-worker-hands-applying-protective-tape-before-polishing-buffing-and-gm1060499948-283474997 -->
+          <!-- <img src="images/wax.jpg" alt="waxing a car"> -->
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui. Convallis posuere morbi leo urna molestie at. Consectetur libero id faucibus nisl tincidunt eget nullam non nisi. Cursus turpis massa tincidunt dui.
+          </p>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui. Convallis posuere morbi leo urna molestie at. Consectetur libero id faucibus nisl tincidunt eget nullam non nisi. Cursus turpis massa tincidunt dui.
+          </p>
+        </div>
+
+        <div class="block-about">
+          <img class="about-img" src="images/placeholder.jpg" alt="test">
+        </div>
+      </div>
+    </section>
   </section>
   <!-- END OF COMBINED ELEMENTS SECTION -->
 
   <!-- BRAND COMPONENTS SECTION-->
-  <section id="brand_components">
-    <h2> BRAND COMPONENTS </h2>
+  <section id="components">
+    <h2> COMPONENTS </h2>
     <section class="section-divider">
       <h3> Fonts: </h3>
       <h2 class="h2-sample"> Montserrat </h2>
+      <h2> Open Sans </h2>
+
 
       <h3> Colour palettes: </h3>
       <ul>
-        <li> black, white, greys, gold </li>
-        <li> modern, simplistic and clinical look to emphasize precision and cleanliness</li>
-        <li> allows the images/colours of the cars themselves pop</li>
+        <li> monochromatic color scheme to allow my work to be the focus </li>
       </ul>
 
       <!-- Colored rectangles reference from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_shapes_rectangle -->
       <div class="rectangle"> </div>
       <p> #ededed </p>
       <div class="rectangle1"> </div>
-      <p> #ABABAB </p>
+      <p> #d6d6d6</p>
       <div class="rectangle2"> </div>
-      <p> #909090 </p>
-      <div class="rectangle3"> </div>
-      <p> #555 </p>
-      <div class="rectangle6"> </div>
-      <p> #1a1a1a</p>
+      <p> #808080; </p>
       <div class="rectangle4"> </div>
       <p> #000000</p>
-      <div class="rectangle5"> </div>
-      <p> #95731C</p>
     </section>
 
     <section class="element">
       <h3> Potential imagery: </h3>
-      <p> Compliment the components with: </p>
-      <ul>
-        <li> large images </li>
-        <li> minimal text </li>
-        <li> overall simple & clean layout </li>
-      </ul>
 
-      <h4> Potential exterior images </h4>
-      <!-- image from https://www.ziebart.com/images/default-source/blog-post-media/exterior_detailing_new.jpg?sfvrsn=66f56e_0 -->
-      <img class="image" alt="polishing car" src="images/ext.jpg">
+      <h4> Poster </h4>
+      <img class="image" alt="ideation sketches for logo" src="images/ideation1.jpg">
+      <img class="image" alt="layout sketches1" src="images/ideation2.jpg">
+      <img class="image" alt="layout sketches2" src="images/ideation3.jpg">
+      <img class="image" alt="initial render 1" src="images/illustrator-1.jpg">
+      <img class="image" alt="initial render 1" src="images/illustrator-2.jpg">
+      <img class="image" alt="final poster" src="images/poster.jpg">
 
-      <!-- image from https://www.ecocarcarefl.com/wp-content/uploads/2019/02/paint-correction-1.jpg -->
-      <img class="image" alt="before vs after" src="images/ext4.jpg">
+      <h4> Kinetic Typography </h4>
+      <img class="image" alt="initial storyboard" src="images/storyboard.jpg">
+      <img class="image" alt="century gothic font" src="images/century-gothic.jpg">
+      <img class="image" alt="tough mudder font" src="images/tough-mudder.jpg">
+      <img class="image" alt="complete storyboard page 1" src="images/complete-storyboard1.jpg">
+      <img class="image" alt="complete storyboard page 2" src="images/complete-storyboard2.jpg">
+      <img class="image" alt="complete storyboard page 3" src="images/complete-storyboard3.jpg">
+      <img class="image" alt="alligator illustrator" src="images/2.jpg">
+      <img class="image" alt="alligator photoshop" src="images/3.jpg">
+      <img class="image" alt="different graphics in illustrator" src="images/4.jpg">
+      <img class="image" alt="after effects progress" src="images/5.jpg">
 
-      <!-- image from https://www.georgiandetailing.com/wp-content/uploads/2017/12/georgiandetailing-blog-3.jpg -->
-      <img class="image" alt="wheel" src="images/tire2.jpg">
 
-      <!-- image from https://www.utahautospa.com/how-to-clean-your-engine-bay/ -->
-      <img class="image" alt="engine" src="images/engine2.jpg">
 
-      <h4> Potential interior images </h4>
 
-      <!-- image from https://ventsmagazine.com/2019/12/23/8-essential-elements-of-excellent-interior-car-detailing/ -->
-      <img class="image" alt="shampoo" src="images/interior.jpg">
-
-      <!-- image from https://www.the33carwash.com/collections/car-interior-detailing -->
-      <img class="image" alt="wipe down" src="images/int3.jpeg">
-
-      <!-- https://lh3.googleusercontent.com/proxy/hoJZb83x0vBVcbJYLvKzEiLo3L4rhhQkAwan9DV6Dax0IAya2TFuddnFsqXW1gtdh3u9Bp7p7J-CrvyAOqKQy9Ak5nRNfZGSX050xMkbRIfTBpsOJa7U -->
-      <img class="image" alt="trim cleanse" src="images/int4.png">
     </section>
 
 
