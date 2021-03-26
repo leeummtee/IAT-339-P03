@@ -729,7 +729,11 @@ p, h1, h2, h3 {
 
 /* making the block be alone to the right */
 .block-poster:nth-child(3){
-  /* flex: 0 100%; */
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.block-poster:nth-child(7){
   align-self: flex-end;
   margin-left: auto;
 }
