@@ -691,6 +691,16 @@ p, h1, h2, h3 {
   width: 100vw;
 }
 
+.almost-full-width-img {
+  left: 50%;
+  margin-left: -45vw;
+  margin-right: -50vw;
+  max-width: 90vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+}
+
 .block-poster {
   /* flex: 0 35%; */
   margin-top: 10rem;
@@ -742,16 +752,92 @@ p, h1, h2, h3 {
   margin-top: -15rem;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~ KINETIC TYPOGRAPHY DETAILED VIEW ~~~~~~~~~~~~~~~~ */
+
+.container-kinetic {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20rem;
+  justify-content: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.container-kinetic p {
+  max-width: 30vw;
+}
+
+.almost-full-width-img {
+  left: 50%;
+  margin-left: -45vw;
+  margin-right: -50vw;
+  max-width: 90vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
+}
+
+.block-kinetic {
+  margin-top: 10rem;
+  margin-bottom: 20rem;
+}
+
+/* making image blocks span the whole width */
+.block-kinetic:nth-child(2){
+  flex-grow: 1;
+  flex: 0 100%;
+  margin-top: -10rem;
+}
+
+.block-kinetic:nth-child(4){
+  flex-grow: 1;
+  flex: 0 100%;
+  margin-top: -6rem;
+}
+
+.block-kinetic:nth-child(6){
+  flex-grow: 1;
+  flex: 0 100%;
+  margin-top: -10rem;
+}
+
+/* making the block be alone (left) */
+.block-kinetic:nth-child(1){
+  flex: 0 100%;
+  margin-bottom: 1rem;
+}
+
+.block-kinetic:nth-child(5){
+  flex: 0 100%;
+}
+
+/* making the block be alone to the right */
+.block-kinetic:nth-child(3){
+  align-self: flex-end;
+  margin-left: auto;
+  margin-top: -2rem;
+  margin-bottom: -3rem;
+}
+
+.block-kinetic:nth-child(7){
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.block-poster h2 {
+  margin-top: -15rem;
+}
+
+
+
+
 .header-text-detailed {
   padding-top: 10rem;
   position: absolute;
   top: 20rem;
   color: white;
   left: 35%;
-  /* padding-left: 20px;
-  padding-right: 20px; */
   text-align: center;
-  /* margin-left: 30vw; */
 }
 
 .header-text-detailed h1 {
