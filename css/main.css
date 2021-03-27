@@ -778,33 +778,27 @@ p, h1, h2, h3 {
 }
 
 .block-kinetic {
-  margin-top: 10rem;
-  margin-bottom: 20rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-/* making image blocks span the whole width */
+/* making image blocks span the whole width & are moved up */
 .block-kinetic:nth-child(2){
   flex-grow: 1;
   flex: 0 100%;
-  margin-top: -10rem;
+  margin-top: -15rem;
 }
 
 .block-kinetic:nth-child(4){
   flex-grow: 1;
   flex: 0 100%;
-  margin-top: -6rem;
-}
-
-.block-kinetic:nth-child(6){
-  flex-grow: 1;
-  flex: 0 100%;
-  margin-top: -10rem;
+  margin-top: -15rem;
 }
 
 /* making the block be alone (left) */
 .block-kinetic:nth-child(1){
   flex: 0 100%;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .block-kinetic:nth-child(5){
@@ -815,14 +809,13 @@ p, h1, h2, h3 {
 .block-kinetic:nth-child(3){
   align-self: flex-end;
   margin-left: auto;
-  margin-top: -2rem;
-  margin-bottom: -3rem;
 }
 
-.block-kinetic:nth-child(7){
+.block-kinetic:nth-child(6){
   align-self: flex-end;
   margin-left: auto;
 }
+
 
 .block-poster h2 {
   margin-top: -15rem;
