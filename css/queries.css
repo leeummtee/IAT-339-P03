@@ -12,15 +12,19 @@
 
   .header-text h1{
     font-size: 5rem;
-    text-align: left;
+    text-align: center;
   }
 
   .header-text {
     margin-top: 5rem;
   }
 
+  .crop-header {
+    margin-top:
+  }
+
   .container {
-    margin-bottom: -10rem;
+    /* margin-bottom: -15rem; */
   }
 
   .container-projects {
@@ -31,7 +35,7 @@
   }
 
   .block-projects p {
-    width: 100vw;
+    width: 100%;
   }
 
   .block-projects h2 {
@@ -48,6 +52,11 @@
   .block-projects:nth-child(1) {
     margin-right: 0rem;
   }
+
+  .block-projects:nth-child(4) h2 {
+    font-size: 1.9rem;
+  }
+
 
   .block-projects:nth-child(4) {
     z-index: 1;
