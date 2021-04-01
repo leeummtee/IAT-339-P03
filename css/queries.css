@@ -76,15 +76,19 @@
   }
 
   .container-summary {
-    margin-top: -10rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 
   .block-summary p {
-    width: 100vw;
+    width: 100%;
   }
 
   .block-summary h2 {
-    max-width: 100vw;
+    max-width: 100%;
+    /* padding-top: 5rem; */
+    padding-top: 0rem;
   }
 
   .block-summary {
@@ -95,6 +99,7 @@
   .container-poster {
     margin-left: 0rem;
     margin-right: 0rem;
+    padding-top: 5rem;
   }
 
   .container-poster p {
@@ -107,10 +112,23 @@
 
   .block-poster {
     /* width: 0.1vw; */
-    margin-top: -2rem;
+    /* margin-top: 10rem; */
+    margin-bottom: 5rem;
+  }
+
+  .block-poster h3 {
+    padding-top: 5rem;
+  }
+
+  .block-poster:nth-child(6){
+    margin-top: -9rem;
   }
 
   /* making the block be alone to the right */
+  .block-poster:nth-child(2){
+    margin-top: -3rem;
+  }
+
   .block-poster:nth-child(3){
     flex: 0 100%;
     margin-left: 0rem;
@@ -119,6 +137,24 @@
   .full-width-img {
     margin-top: -10rem;
   }
+  /*~~~~~~~~~~~~~~~~~~~~~~~ MOTION GRAPHIC PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+  .block-kinetic {
+    padding-bottom: 3rem;
+  }
+
+  .block-kinetic h3 {
+    padding-top: 5rem;
+  }
+
+  .block-kinetic:nth-child(2){
+    margin-top: -6rem;
+  }
+
+  .block-kinetic:nth-child(4){
+    margin-top: -8rem;
+  }
+
+
 
 
   /*~~~~~~~~~~~~~~~~~~~~~~~ ABOUT PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -131,7 +167,7 @@
     flex: 1 100%;
   }
 
-  .block-about p{
+  .block-about p {
     width: 100vw;
   }
 
@@ -161,6 +197,55 @@
     left: 0;
     transform: none;
   }
+
+  .block-projects {
+    margin-top: 5rem;
+  }
+
+  .block-projects p {
+    width: 100%;
+  }
+
+  .block-projects h2 {
+    width: 100%;
+  }
+
+  /* .image-link {
+    width: 50rem;
+    height: 20rem;
+    object-fit: cover;
+  } */
+
+/* realigning text */
+  .block-projects:nth-child(1) {
+    z-index: 1;
+    margin-right: 0rem;
+    padding-top: 0rem;
+  }
+
+  .block-projects:nth-child(4) {
+    z-index: 1;
+    padding-top: 0rem;
+    margin-left: 0rem;
+  }
+
+  /* realigining images */
+  .block-projects:nth-child(2) {
+    margin-top: 0rem;
+    padding-top: 0rem;
+  }
+
+  .block-projects:nth-child(3) {
+    margin-top: 0rem;
+    padding-top: 0rem;
+  }
+
+  .container-poster {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+
 }
 
 /* making the header text move to the center when the screen is small enough */
