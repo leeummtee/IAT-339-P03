@@ -506,7 +506,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: white;
   background-color: black;
-  transition: background-color 0.2s;
+  /* transition: background-color 0.2s; */
+  transition: background-color 1s ease;
 }
 
 p, h1, h2, h3 {
@@ -884,13 +885,29 @@ p, h1, h2, h3 {
 
 /* background changing color */
 /* reference: https://codepen.io/patrickcameron/pen/WNGrpEw */
-body.changeColorGrey {
+/* body.changeColorGrey {
    background-color: #9B9B9B;
 }
 
 body.changeColorWhite {
    background-color: #e9edef;
+} */
+
+.panel {
+
 }
+
+/* colours, reference from https://codepen.io/daveredfern/pen/zBGBJV */
+.color-black {
+  background-color: #000000;
+}
+.color-white {
+  background-color: #e9edef;
+}
+.color-grey {
+  background-color: #9B9B9B;
+}
+
 
 
 /* arrow reference from https://www.w3schools.com/howto/howto_css_arrows.asp */

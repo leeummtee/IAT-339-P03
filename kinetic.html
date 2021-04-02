@@ -8,13 +8,6 @@
   <title> Motion Graphic </title>
   <link href="css/main.css" rel="stylesheet">
   <link href="css/queries.css" rel="stylesheet">
-
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
-
 </head>
 
 <body>
@@ -39,16 +32,19 @@
 
   <!-- reference for flexbox gallery for images from https://css-tricks.com/adaptive-photo-layout-with-flexbox/ -->
   <section class="container">
-    <div class="block">
+    <div class="block panel" data-color="black">
       <header class="header-text-detailed">
         <h1> Motion Graphic </h1>
         <p> Visualizing a clip of dialogue through the use of kinetic typography and motion graphics.</p>
+
+        <!-- down arrow reference: https://www.w3schools.com/howto/howto_css_arrows.asp -->
+        <p><i class="arrow down"></i></p>
       </header>
     </div>
   </section>
 
   <section class="container-summary">
-    <div class="block-summary">
+    <div class="block-summary panel" data-color="grey">
 
       <h2> summary </h2>
       <p>
@@ -66,7 +62,7 @@
 
   <section class="container-poster">
 
-    <div class="block-kinetic">
+    <div class="block-kinetic panel" data-color="white">
       <h2> storyboards </h2>
       <p>
         My process began with making an initial storyboard of my initial ideas for feedback. After being told that I was heading in the right direction, I decided to take my ideas a step further by incorporating even more graphics to
@@ -109,56 +105,7 @@
 
   </section>
 
-
-  <!-- <footer class="section-divider-footer">
-    <div class="container-footer">
-      <div class="block-footer">
-        <div class="topnav">
-          <div class="topnav-left">
-            <a href="home.html">
-              <span class="auto-detailing-font-top"> AUTO
-                <span class="mobile-font-top"> MOBILE </span>
-                <span> DETAILING </span>
-              </span>
-            </a>
-          </div>
-        </div>
-        <p> Family owned and operated since 2005, we strive to be the best Detailing service in all of Vancouver.
-        </p>
-      </div>
-
-      <div class="block-footer">
-        <h3> Navigation </h3>
-        <ul>
-          <li><a class="link" href="home.html">Home</a> </li>
-          <li><a class="link" href="services.html">Services</a> </li>
-          <li><a class="link" href="contact.html">Contact Us</a> </li>
-          <li><a class="link" href="checkout.html">Checkout</a> </li>
-        </ul>
-      </div>
-
-      <div class="block-footer">
-        <h3> Resources </h3>
-        <ul>
-          <li><a class="link" href="index.html"> Style Guide </a> </li>
-          <li><a class="link" href="citations.html"> Citations </a> </li>
-          <li><a class="link" href="https://github.com/Ajxy2/Iat-339-Team-11"> Github </a> </li>
-        </ul>
-      </div>
-
-      <div class="block-footer">
-        <h3> Newsletter Sign Up</h3>
-        <form method="post" action="#">
-          <label class="input-text-label" for="name"> Name </label>
-          <input class="input-text-contact-us" type="text" id="name" name="name">
-          <label class="input-text-label" for="email"> Email </label>
-          <input class="input-text-contact-us" type="text" id="email" name="email">
-          <div class="container-payment">
-            <input class="button-form" type="submit" value="Submit">
-          </div>
-        </form>
-      </div>
-    </div>
-  </footer> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
