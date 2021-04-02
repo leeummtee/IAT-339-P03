@@ -506,6 +506,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: white;
   background-color: black;
+  transition: background-color 0.2s;
 }
 
 p, h1, h2, h3 {
@@ -578,7 +579,6 @@ p, h1, h2, h3 {
   flex-grow: 0 100%;
   overflow: hidden;
   margin-top: 15rem;
-
 }
 
 
@@ -661,12 +661,18 @@ p, h1, h2, h3 {
 
 .container-summary h2 {
   margin-bottom: -1rem;
+  padding-top: 5rem;
 }
 
 .block-summary {
   flex: 0 40%;
   /* margin-left: 3rem;
   margin-right: 3rem; */
+}
+
+.block-summary p {
+  padding-bottom: 2rem;
+
 }
 
 .block-summary:nth-child(2) {
@@ -680,7 +686,7 @@ p, h1, h2, h3 {
   /* margin-top: -10rem; */
   /* align-self: flex-end;
   margin-left: auto; */
-  margin-left: 3rem;
+  /* margin-left: 3rem; */
 }
 
 .container-poster {
@@ -690,8 +696,8 @@ p, h1, h2, h3 {
   justify-content: center;
   margin-left: 10rem;
   margin-right: 10rem;
+  /* background-color: red; */
 }
-
 
 .container-poster p {
   max-width: 30vw;
@@ -746,7 +752,7 @@ p, h1, h2, h3 {
 .block-poster:nth-child(4){
   flex-grow: 1;
   flex: 0 100%;
-  margin-top: -27rem;
+  margin-top: -4rem;
 }
 
 .block-poster:nth-child(6){
@@ -762,6 +768,8 @@ p, h1, h2, h3 {
 
 .block-poster:nth-child(5){
   flex: 0 100%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 /* reference for positioning individual flex items https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties/33856609#33856609 */
@@ -859,7 +867,6 @@ p, h1, h2, h3 {
 }
 
 /* responsive video embed, reference from https://www.ostraining.com/blog/coding/responsive-videos/ */
-
 .video-responsive{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -873,4 +880,31 @@ p, h1, h2, h3 {
     width:100%;
     position:absolute;
     border: 0;
+}
+
+/* background changing color */
+/* reference: https://codepen.io/patrickcameron/pen/WNGrpEw */
+body.changeColorGrey {
+   background-color: #9B9B9B;
+}
+
+body.changeColorWhite {
+   background-color: #e9edef;
+}
+
+
+/* arrow reference from https://www.w3schools.com/howto/howto_css_arrows.asp */
+.arrow {
+  margin-top: 7rem;
+  border: solid white;
+  width: 50px;
+  height: 50px;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
