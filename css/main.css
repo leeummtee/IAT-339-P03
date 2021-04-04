@@ -704,11 +704,6 @@ p, h1, h2, h3 {
   max-width: 30vw;
 }
 
-#full-width-img-id {
-  flex: 0 100%;
-  margin-top: -5rem;
-}
-
 .full-width-img {
   left: 50%;
   margin-left: -50vw;
