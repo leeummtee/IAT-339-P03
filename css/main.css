@@ -903,6 +903,13 @@ body.changeColorWhite {
   background-color: #9B9B9B;
 }
 
+/* dividers for site */
+.dotted-divider {
+  padding-bottom: 0rem;
+  /* margin-top: -1.5rem; */
+  border-bottom: 3px dashed #FFFFFF;
+}
+
 
 
 /* arrow reference from https://www.w3schools.com/howto/howto_css_arrows.asp */
