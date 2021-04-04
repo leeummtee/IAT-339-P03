@@ -423,20 +423,20 @@
 }
 
 /* used the flexbox exercise as reference */
-.block-footer:nth-child(1) {
+.block-footer:nth-of-type(1) {
   flex: 1.5;
 }
 
-.block-footer:nth-child(2) {
+.block-footer:nth-of-type(2) {
   flex: 1;
   padding-left: 8rem;
 }
 
-.block-footer:nth-child(3) {
+.block-footer:nth-of-type(3) {
   flex: 1;
 }
 
-.block-footer:nth-child(4) {
+.block-footer:nth-of-type(4) {
   flex: 1.5;
 }
 
@@ -552,7 +552,7 @@ p, h1, h2, h3 {
 
 }
 
-.block-about:nth-child(1) {
+.block-about:nth-of-type(1) {
   margin-right: -3rem;
   z-index: 1;
 }
@@ -596,13 +596,13 @@ p, h1, h2, h3 {
   max-width: 25vw;
 }
 
-.block-projects:nth-child(1) {
+.block-projects:nth-of-type(1) {
   z-index: 1;
   margin-right: -10rem;
   padding-top: 10rem;
 }
 
-.block-projects:nth-child(4) {
+.block-projects:nth-of-type(4) {
   z-index: 1;
   padding-top: 10rem;
   margin-left: -10rem;
@@ -676,14 +676,14 @@ p, h1, h2, h3 {
 
 }
 
-.block-summary:nth-child(2) {
+.block-summary:nth-of-type(2) {
   /* margin-top: -10rem; */
   /* align-self: flex-end;
   margin-left: auto; */
   /* margin-right: 3rem; */
 }
 
-.block-summary:nth-child(2) {
+.block-summary:nth-of-type(2) {
   /* margin-top: -10rem; */
   /* align-self: flex-end;
   margin-left: auto; */
@@ -739,30 +739,30 @@ p, h1, h2, h3 {
 }
 
 /* making image blocks span the whole width */
-.block-poster:nth-child(2){
+.block-poster:nth-of-type(2){
   flex-grow: 1;
   flex: 0 100%;
   margin-top: -27rem;
 }
 
-.block-poster:nth-child(4){
+.block-poster:nth-of-type(4){
   flex-grow: 1;
   flex: 0 100%;
   margin-top: -4rem;
 }
 
-.block-poster:nth-child(6){
+.block-poster:nth-of-type(6){
   flex-grow: 1;
   flex: 0 100%;
   margin-top: -27rem;
 }
 
 /* making the block be alone (left) */
-.block-poster:nth-child(1){
+.block-poster:nth-of-type(1){
   flex: 0 100%;
 }
 
-.block-poster:nth-child(5){
+.block-poster:nth-of-type(5){
   flex: 0 100%;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -771,12 +771,12 @@ p, h1, h2, h3 {
 /* reference for positioning individual flex items https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties/33856609#33856609 */
 
 /* making the block be alone to the right */
-.block-poster:nth-child(3){
+.block-poster:nth-of-type(3){
   align-self: flex-end;
   margin-left: auto;
 }
 
-.block-poster:nth-child(7){
+.block-poster:nth-of-type(7){
   align-self: flex-end;
   margin-left: auto;
 }
@@ -807,35 +807,35 @@ p, h1, h2, h3 {
 }
 
 /* making image blocks span the whole width & are moved up */
-.block-kinetic:nth-child(2){
+.block-kinetic:nth-of-type(2){
   flex-grow: 1;
   flex: 0 100%;
   margin-top: -15rem;
 }
 
-.block-kinetic:nth-child(4){
+.block-kinetic:nth-of-type(4){
   flex-grow: 1;
   flex: 0 100%;
   margin-top: -15rem;
 }
 
 /* making the block be alone (left) */
-.block-kinetic:nth-child(1){
+.block-kinetic:nth-of-type(1){
   flex: 0 100%;
   /* margin-bottom: 1rem; */
 }
 
-.block-kinetic:nth-child(5){
+.block-kinetic:nth-of-type(5){
   flex: 0 100%;
 }
 
 /* making the block be alone to the right */
-.block-kinetic:nth-child(3){
+.block-kinetic:nth-of-type(3){
   align-self: flex-end;
   margin-left: auto;
 }
 
-.block-kinetic:nth-child(6){
+.block-kinetic:nth-of-type(6){
   align-self: flex-end;
   margin-left: auto;
 }
@@ -905,11 +905,16 @@ body.changeColorWhite {
 
 /* dividers for site */
 .dotted-divider {
-  padding-bottom: 0rem;
-  /* margin-top: -1.5rem; */
-  border-bottom: 3px dashed #FFFFFF;
+  padding-bottom: 2rem;
+  margin-top: -1.5rem;
+  border-bottom-width: 0.15rem;
+  border-bottom-style: solid;
+  border-bottom-color: white;
 }
 
+#test-color {
+  background-color: blue;
+}
 
 
 /* arrow reference from https://www.w3schools.com/howto/howto_css_arrows.asp */
