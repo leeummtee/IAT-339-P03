@@ -335,7 +335,6 @@
   }
 
   .block-poster:nth-of-type(2) {
-    /* padding-bottom: -20rem; */
     margin-bottom: 10rem;
   }
 
@@ -431,7 +430,7 @@
 }
 
 /* making the margins shrink before the nav buttons hit the logo in the top left */
-@media screen and (max-width: 1125px) {
+@media screen and (max-width: 1143px) {
   body {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -440,6 +439,9 @@
 
 /* query for responsive checkout form & contact us */
 @media screen and (max-width: 1000px) {
+  .container-projects {
+    overflow: hidden;
+  }
 }
 
 /* MOBILE RESPONSIVENESS QUERIES */

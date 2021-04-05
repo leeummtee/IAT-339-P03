@@ -8,6 +8,9 @@
   <title> Projects </title>
   <link href="css/main.css" rel="stylesheet">
   <link href="css/queries.css" rel="stylesheet">
+  <!-- animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- drop down nav bar -->
 </head>
 
 <body>
@@ -36,13 +39,14 @@
     <div class="block">
       <header class="header-text">
         <h1>a Digital Designer </h1>
-        <p> who is currently enrolled in SFU's Interactive Arts & Technology Program.  </p>
+        <p> who is currently enrolled in SFU's Interactive Arts & Technology Program. </p>
       </header>
     </div>
   </section>
 
   <section class="container-projects">
-    <div class="block-projects">
+    <!-- fading animation from https://stackoverflow.com/questions/38673081/how-to-make-the-content-appear-on-scrolling-down-the-webpage/38673529 -->
+    <div class="block-projects" data-aos-duration="1000" data-aos="fade-right">
       <h2> project 1: poster </h2>
       <p>
         Designing a poster that communicated a piece of advice to incoming freshmen.
@@ -51,27 +55,39 @@
 
     <div class="block-projects">
       <a href="poster.html">
-        <img class="image-link" src="images/placeholder.jpg" alt="placeholder img">
+        <img class="image-link" src="images/poster-render.jpg" alt="placeholder img">
       </a>
     </div>
 
     <div class="block-projects" id=project2-desc>
       <a href="kinetic.html">
-        <img class="image-link" src="images/placeholder.jpg" alt="placeholder img">
+        <img class="image-link" src="images/poster-render.jpg" alt="placeholder img">
       </a>
     </div>
 
-    <div class="block-projects" id=project2-pic>
+    <div class="block-projects" data-aos-duration="1000" data-aos="fade-left" id=project2-pic>
       <h2> project 2: motion graphic animation </h2>
       <p>
         Visualizing a clip of dialogue through the use of kinetic typography and motion graphics.
       </p>
     </div>
-
-
-
-
   </section>
 
+  <!-- reference from https://stackoverflow.com/questions/38673081/how-to-make-the-content-appear-on-scrolling-down-the-webpage/38673529 -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
+  <!-- dropdown https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_responsive_navbar_dropdown-->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 </body>

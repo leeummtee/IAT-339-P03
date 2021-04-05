@@ -20,12 +20,12 @@
 }
 
 /* divider for cart line (above total) */
-.divider {
+/* .divider {
   padding-bottom: 2rem;
   border-top-width: 0.15rem;
   border-top-style: solid;
   border-top-color: white;
-}
+} */
 
 /* lines separating inner elements - reference from https://www.w3schools.com/howto/howto_css_dividers.asp */
 .element {
@@ -259,7 +259,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   border-radius: 3px;
-  padding-bottom: 10rem;
+  padding-bottom: 15rem;
   /* justify-content: center; */
 }
 
@@ -462,9 +462,10 @@ span.price {
 
 h2 {
   margin-top: 3rem;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 3.5rem;
   font-family: 'Open Sans', sans-serif;
+
 }
 
 h1 {
@@ -476,7 +477,8 @@ h1 {
 p {
   /* max-width: 60rem; */
   font-family: 'Nunito', sans-serif;
-  font-weight: lighter;
+  font-weight: 500;
+  /* font-weight: lighter; */
   font-size: 1.5rem;
 
 }
@@ -486,7 +488,7 @@ h3 {
   font-style: italic;
   /* text-decoration: underline; */
   /* font-weight: 600; */
-  font-weight: 300;
+  font-weight: 500;
   font-size: 3rem
 }
 
@@ -513,6 +515,8 @@ body {
 p, h1, h2, h3 {
   color: white;
 }
+
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ P03 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* ~~~~~~~~~~~~~~~~~~~~ABOUT PAGE~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -574,6 +578,10 @@ p, h1, h2, h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.container-projects h2 {
+  color: white;
 }
 
 .block-projects {
@@ -739,6 +747,10 @@ p, h1, h2, h3 {
 }
 
 /* making image blocks span the whole width */
+.block-poster:nth-of-type(1){
+  padding-bottom: 10rem;
+}
+
 .block-poster:nth-of-type(2){
   flex-grow: 1;
   flex: 0 100%;
@@ -759,13 +771,14 @@ p, h1, h2, h3 {
 
 /* making the block be alone (left) */
 .block-poster:nth-of-type(1){
+  padding-top: 5rem;
   flex: 0 100%;
 }
 
 .block-poster:nth-of-type(5){
   flex: 0 100%;
   padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 0rem;
 }
 
 /* reference for positioning individual flex items https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties/33856609#33856609 */
@@ -774,6 +787,7 @@ p, h1, h2, h3 {
 .block-poster:nth-of-type(3){
   align-self: flex-end;
   margin-left: auto;
+  margin-bottom: 5rem;
 }
 
 .block-poster:nth-of-type(7){
@@ -785,6 +799,19 @@ p, h1, h2, h3 {
   margin-top: -15rem;
   margin-bottom: -1rem;
 }
+
+.container-summary p, h3, h2 {
+  color: white;
+
+}
+
+.container-poster p, h3, h2 {
+  color: white;
+}
+
+
+
+
 
 /* ~~~~~~~~~~~~~~~~~~~~~ KINETIC TYPOGRAPHY DETAILED VIEW ~~~~~~~~~~~~~~~~ */
 
@@ -904,12 +931,21 @@ body.changeColorWhite {
 }
 
 /* dividers for site */
-.dotted-divider {
+.divider {
   padding-bottom: 2rem;
   margin-top: -1.5rem;
   border-bottom-width: 0.15rem;
   border-bottom-style: solid;
+  /* border-bottom-color: white; */
   border-bottom-color: white;
+}
+
+.left-aligned {
+  flex: 0 100%;
+}
+
+.right-aligned {
+
 }
 
 #test-color {

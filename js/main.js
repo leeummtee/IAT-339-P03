@@ -21,7 +21,6 @@
 //making the background change colors when scrolling
 // https://codepen.io/daveredfern/pen/zBGBJV
 $(window).scroll(function() {
-
   // selectors
   var $window = $(window),
       $body = $('body'),
@@ -47,5 +46,4 @@ $(window).scroll(function() {
       $body.addClass('color-' + $(this).data('color'));
     }
   });
-
 }).scroll();
