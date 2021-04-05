@@ -8,26 +8,30 @@
   <title> Motion Graphic </title>
   <link href="css/main.css" rel="stylesheet">
   <link href="css/queries.css" rel="stylesheet">
+  <!-- linking the fade animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
   <nav>
-    <!-- reference for nav bar from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
-    <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_centered -->
+    <!-- logo in the top left -->
     <div class="topnav">
       <div class="topnav-left">
         <a href="projects.html">
           <span class="logo"> Liam Tangilag </span>
         </a>
       </div>
-      <div class="navbar-buttons">
-        <ul>
-          <li><a class="button-nav" href="projects.html">projects</a> </li>
-          <li><a class="button-nav" href="about.html"> about </a> </li>
-          <li><a class="button-nav" href="contact.html">contact</a> </li>
-        </ul>
-      </div>
     </div>
+
+    <!-- reference for sidenav from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="contact.html">contact</a>
+      <a href="about.html">about</a>
+      <a href="projects.html">projects</a>
+    </div>
+    <!-- hamburger icon -->
+    <span class="icon-right-justified" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
   </nav>
 
   <!-- reference for flexbox gallery for images from https://css-tricks.com/adaptive-photo-layout-with-flexbox/ -->
@@ -46,18 +50,15 @@
   <section class="container-summary">
     <h2 class="divider left-aligned"> 01. summary </h2>
 
-    <div class="block-summary panel">
-
+    <div class="block-summary">
       <h3> summary </h3>
       <p>
         Individual two-week project where students had to design posters for SIAT advisors to use when welcoming SIAT freshmen.
       </p>
-    </div>
 
-    <div class="block-summary">
       <h3> programs used </h3>
       <p>
-        Adobe Illustrator
+        Adobe Illustrator, Adobe After Effects, Adobe Photoshop
       </p>
     </div>
   </section>
@@ -65,7 +66,7 @@
   <section class="container-poster">
     <h2 class="divider left-aligned"> 02. process </h2>
 
-    <div class="block-kinetic panel">
+    <div class="block-kinetic">
       <h3> a. process </h3>
       <p>
         My process began with making an initial storyboard of my initial ideas for feedback. After being told that I was heading in the right direction, I decided to take my ideas a step further by incorporating even more graphics to
@@ -74,39 +75,56 @@
       </p>
     </div>
 
-    <div class="block-kinetic panel">
+    <div class="block-kinetic" data-aos-duration="1000" data-aos="fade-up">
       <img class="almost-full-width-img" src="images/kinetic-storyboard.png" alt="collage of sketches">
     </div>
 
-    <div class="block-kinetic panel">
+    <div class="block-kinetic">
       <h3> b. graphics & animating </h3>
       <p>
         With this storyboard as reference, I began creating the graphics in Adobe Illustrator and splitting the layers in Photoshop. This way they could be directly imported into After Effects where I would animate them alongside the text.
       </p>
     </div>
 
-    <div class="block-kinetic panel">
+    <div class="block-kinetic" data-aos-duration="1000" data-aos="fade-up">
       <img class="almost-full-width-img" src="images/graphics.png" alt="picture of staff">
     </div>
 
-    <div class="block-kinetic panel">
-      <h2> 03. final product </h2>
-      <div class="video-responsive">
+    <div class="block-kinetic">
+      <h2> c. outcome </h2>
+      <div class="video-responsive"  data-aos-duration="1000" data-aos="fade-up">
         <iframe src="https://www.youtube.com/embed/OHuBZqkaE6g"> </iframe>
       </div>
     </div>
 
-    <div class="block-kinetic panel">
-      <h2> 04. reflection </h2>
+    <div class="block-kinetic">
+      <h2 class="divider"> 04. reflection </h2>
       <p>
-        This project was quite a challenge as it was my first design course and my first time working with Photoshop, Illustrator, and After Effects.  However, the more I put time into it,
+        This project was quite a challenge as it was my first design course and my first time working with Photoshop, Illustrator, and After Effects. However, the more I put time into it,
         the more I realized that I was actually enjoying the process. As a result, this class and project were some of the things that pushed me to pursue a design major.
       </p>
     </div>
 
   </section>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
+
+  <!-- fade effects -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <!-- nav animations -->
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "25rem";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
+
 
 </body>
