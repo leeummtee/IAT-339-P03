@@ -45,11 +45,16 @@
 /* Styling for in-text link: */
 .link {
   color: #DAA520;
+  font-style: italic;
+  transition-duration: 0.5s;
+
 }
 
 .link:hover, .link:focus {
   color: #95731C;
   text-decoration: none;
+  transition-duration: 0.5s;
+
 }
 
 /* Styling for navigation link. Style guide template used as reference */
@@ -355,6 +360,12 @@
   position: absolute;
   right: 5.5rem;
   top: 4rem;
+  transition-duration: 0.5s;
+}
+
+.icon-right-justified:hover {
+  color: #808080;
+  transition-duration: 0.5s;
 }
 
 
@@ -579,7 +590,7 @@ p, h1, h2, h3 {
 }
 
 .about-img {
-  float: left;
+  /* float: left; */
   width: 40rem;
   height: 50rem;
   object-fit: cover;
@@ -624,18 +635,13 @@ p, h1, h2, h3 {
   margin-top: 15rem;
 }
 
-
-/* .box {
-  width: 100px;
-  height: 800px;
-} */
-
 .block-projects p {
   width: 30vw;
 }
 
 .block-projects h2 {
-  max-width: 25vw;
+  max-width: 30vw;
+
 }
 
 .block-projects:nth-of-type(1) {
@@ -709,8 +715,6 @@ p, h1, h2, h3 {
 
 .block-summary {
   flex: 0 40%;
-  /* margin-left: 3rem;
-  margin-right: 3rem; */
 }
 
 .block-summary p {
@@ -842,10 +846,6 @@ p, h1, h2, h3 {
 .container-poster p, h3, h2 {
   color: white;
 }
-
-
-
-
 
 /* ~~~~~~~~~~~~~~~~~~~~~ KINETIC TYPOGRAPHY DETAILED VIEW ~~~~~~~~~~~~~~~~ */
 
@@ -1004,4 +1004,18 @@ body.changeColorWhite {
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+
+.small-arrow {
+  border: solid white;
+  width: 5px;
+  height: 5px;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
