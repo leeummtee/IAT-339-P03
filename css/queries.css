@@ -1,34 +1,3 @@
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: center;
-  }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-}
-
 /* resizing the pages for mobile*/
 @media screen and (max-width: 457px) {
   /*~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -219,17 +188,25 @@
 
 /* Responsive navigation menu reference from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_centered */
 @media screen and (max-width: 800px) {
-  /* .topnav a, .topnav-right {
-    float: none;
-    display: block;
+  .topnav-left{
+    padding-top: 4rem;
+    padding-left: 3rem;
   }
 
-  .topnav-centered a {
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: none;
-  } */
+  .icon-right-justified {
+    position: absolute;
+    right: 0.5rem;
+    top: 4rem;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    right: 1.25rem;
+    top: 2.5rem;
+    font-size: 60px;
+    margin-left: 50px;
+  }
+
 
   .block-projects {
     margin-top: 5rem;
@@ -527,30 +504,6 @@
     height: 2rem;
   }
 
-  /* .topnav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar-buttons {
-    width: 100%;
-  }
-
-  .navbar-buttons ul {
-    width: 100%;
-    flex-direction: column;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-  }
-
-  .navbar-buttons ul li {
-    text-align: center;
-  }
-
-  .navbar-buttons ul li a {
-    padding: .6rem 1rem;
-    margin: 0.1rem;
-  } */
 }
 
 /* resizing the footer elements */
