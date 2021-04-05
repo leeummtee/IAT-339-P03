@@ -12,22 +12,24 @@
 
 <body>
   <nav>
-    <!-- reference for nav bar from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
-    <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_centered -->
+    <!-- logo in the top left -->
     <div class="topnav">
       <div class="topnav-left">
         <a href="projects.html">
           <span class="logo"> Liam Tangilag </span>
         </a>
       </div>
-      <div class="navbar-buttons">
-        <ul>
-          <li><a class="button-nav" href="projects.html">projects</a> </li>
-          <li><a class="button-nav" href="about.html"> about </a> </li>
-          <li><a class="button-nav" href="contact.html">contact</a> </li>
-        </ul>
-      </div>
     </div>
+
+    <!-- reference for sidenav from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="contact.html">contact</a>
+      <a href="about.html">about</a>
+      <a href="projects.html">projects</a>
+    </div>
+    <!-- hamburger icon -->
+    <span class="icon-right-justified" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
   </nav>
 
   <section class="container-about">
