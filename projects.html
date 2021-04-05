@@ -18,7 +18,7 @@
   <nav>
     <!-- reference for nav bar from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
     <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_centered -->
-    <div class="topnav">
+    <!-- <div class="topnav" id="myTopNav">
       <div class="topnav-left">
         <a href="projects.html">
           <span class="logo"> Liam Tangilag </span>
@@ -31,6 +31,21 @@
           <li><a class="button-nav" href="contact.html">contact</a> </li>
         </ul>
       </div>
+    </div> -->
+    <div class="topnav" id="myTopnav">
+      <a href="contact.html">contact</a>
+      <a href="about.html">about</a>
+      <a href="projects.html" class="active">projects</a>
+
+      <div class="dropdown">
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
   </nav>
 
