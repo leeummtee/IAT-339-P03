@@ -28,7 +28,16 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="contact.html">contact</a>
       <a href="about.html">about</a>
-      <a href="projects.html">projects</a>
+      <div class="dropdown">
+        <!-- reference for dropdown from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar -->
+        <button class="dropbtn">projects <i class="small-arrow down"> </i>
+        </button>
+        <div class="dropdown-content">
+          <a href="projects.html"> overview</a>
+          <a href="poster.html"> poster</a>
+          <a href="kinetic.html"> motion graphic</a>
+        </div>
+      </div>
     </div>
     <!-- hamburger icon -->
     <span class="icon-right-justified" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
@@ -53,7 +62,7 @@
     <div class="block-summary">
       <h3> objective </h3>
       <p>
-        Final project for IAT 100: Digital Image Design. Students were given a three-week timeframe to communicate motion through kinetic typography based on a clip of dialogue.
+        Final project for a Digital Image Design class. Students were given a three-week timeframe to communicate motion through kinetic typography based on a clip of dialogue.
       </p>
 
       <h3> programs used </h3>
@@ -63,7 +72,7 @@
     </div>
   </section>
 
-  <section class="container-poster">
+  <section class="container-detailed">
     <h2 class="divider left-aligned"> 02. process </h2>
 <!--
     <div class="block-poster">
