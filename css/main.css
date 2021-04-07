@@ -355,6 +355,8 @@
   font-size: 60px;
   margin-left: 50px;
 }
+/* end of sidenav reference */
+
 
 .icon-right-justified {
   position: absolute;
@@ -367,6 +369,77 @@
   color: #808080;
   transition-duration: 0.5s;
 }
+
+/* reference for drop down from  */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  /* border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0; */
+  font-family: inherit;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+.dropdown .dropbtn:hover{
+  color: #808080;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+
+.dropdown-content a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+  color: #808080;
+  transition-duration: 0.5s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* end of reference */
+
+
 
 
 /* logo in the top left */
@@ -563,7 +636,6 @@ p, h1, h2, h3 {
 
 
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ P03 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /* ~~~~~~~~~~~~~~~~~~~~ABOUT PAGE~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .container-header {
@@ -641,7 +713,6 @@ p, h1, h2, h3 {
 
 .block-projects h2 {
   max-width: 30vw;
-
 }
 
 .block-projects:nth-of-type(1) {
@@ -748,6 +819,10 @@ p, h1, h2, h3 {
 
 .container-poster p {
   max-width: 30vw;
+  /* max-width: 45%; */
+  /* width: 45%; */
+  /* max-width: 45rem; */
+    /* max-width: 45vw; */
 }
 
 .full-width-img {
@@ -860,6 +935,7 @@ p, h1, h2, h3 {
 
 .container-kinetic p {
   max-width: 30vw;
+  /* max-width: 35vw; */
 }
 
 .block-kinetic {

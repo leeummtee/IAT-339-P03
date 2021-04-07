@@ -11,24 +11,27 @@
 </head>
 
 <body>
+  <script src="js/main.js"></script>
+
   <nav>
-    <!-- reference for nav bar from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
-    <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_centered -->
+    <!-- logo in the top left -->
     <div class="topnav">
       <div class="topnav-left">
         <a href="projects.html">
           <span class="logo"> Liam Tangilag </span>
         </a>
       </div>
-      <div class="navbar-buttons">
-        <ul>
-          <li><a class="button-nav" href="#interactive_elements">interactive elements</a> </li>
-          <li><a class="button-nav" href="#text_styling"> text styling </a> </li>
-          <li><a class="button-nav" href="#combined_elements"> combined elements </a> </li>
-          <li><a class="button-nav" href="#components"> components </a> </li>
-        </ul>
-      </div>
     </div>
+
+    <!-- reference for sidenav from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="contact.html">contact</a>
+      <a href="about.html">about</a>
+      <a href="projects.html">projects</a>
+    </div>
+    <!-- hamburger icon -->
+    <span class="icon-right-justified" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
   </nav>
 
   <!-- reference for flexbox gallery for images from https://css-tricks.com/adaptive-photo-layout-with-flexbox/ -->
@@ -155,11 +158,13 @@
       </code>
 
       <h4> Rendered element: </h4>
-      <div class="block-projects">
-        <a href="poster.html">
-          <img class="image-link" src="images/placeholder.jpg" alt="placeholder img">
-        </a>
-      </div>
+      <section class="container-projects">
+        <div class="block-projects">
+          <a href="poster.html">
+            <img class="image-link" src="images/placeholder.jpg" alt="placeholder img">
+          </a>
+        </div>
+      </section>
     </section>
 
   </section>
@@ -347,37 +352,6 @@
       <div class="rectangle4"> </div>
       <p> #000000</p>
     </section>
-
-    <section class="element">
-      <h3> Potential imagery: </h3>
-
-      <h4> Poster </h4>
-      <img class="image" alt="ideation sketches for logo" src="images/ideation1.jpg">
-      <img class="image" alt="layout sketches1" src="images/ideation2.jpg">
-      <img class="image" alt="layout sketches2" src="images/ideation3.jpg">
-      <img class="image" alt="initial render 1" src="images/illustrator-1.jpg">
-      <img class="image" alt="initial render 1" src="images/illustrator-2.jpg">
-      <img class="image" alt="final poster" src="images/poster.jpg">
-
-      <h4> Kinetic Typography </h4>
-      <img class="image" alt="initial storyboard" src="images/storyboard.jpg">
-      <img class="image" alt="century gothic font" src="images/century-gothic.jpg">
-      <img class="image" alt="tough mudder font" src="images/tough-mudder.jpg">
-      <img class="image" alt="complete storyboard page 1" src="images/complete-storyboard1.jpg">
-      <img class="image" alt="complete storyboard page 2" src="images/complete-storyboard2.jpg">
-      <img class="image" alt="complete storyboard page 3" src="images/complete-storyboard3.jpg">
-      <img class="image" alt="alligator illustrator" src="images/2.jpg">
-      <img class="image" alt="alligator photoshop" src="images/3.jpg">
-      <img class="image" alt="different graphics in illustrator" src="images/4.jpg">
-      <img class="image" alt="after effects progress" src="images/5.jpg">
-
-
-
-
-    </section>
-
-
-
   </section>
   <!-- END OF BRAND COMPONENTS SECTION -->
 

@@ -32,7 +32,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    margin-top: 15rem;
+    /* margin-top: 5rem; */
+    padding-top: 0rem;
+    margin-top: -10rem;
   }
 
   .block-projects p {
@@ -66,6 +68,8 @@
     margin-bottom: 1rem;
   }
 
+
+
   /*~~~~~~~~~~~~~~~~~~~~~~~ DETAILED VIEW ~~~~~~~~~~~~~~~~~~~~~~~~~*/
   .header-text-detailed {
     padding-top: 0rem;
@@ -77,7 +81,7 @@
   }
 
   .container-summary {
-    margin-top: 0rem;
+    margin-top: -10rem;
     margin-left: 0rem;
     margin-right: 0rem;
   }
@@ -111,23 +115,19 @@
     width: 100vw;
   }
 
-  .block-poster {
-    /* width: 0.1vw; */
-    /* margin-top: 10rem; */
-    margin-bottom: 5rem;
+  /* .block-poster {
+    margin-bottom: 10rem;
   }
 
   .block-poster h3 {
-    padding-top: 5rem;
+    padding-top: 0rem;
   }
 
   .block-poster:nth-of-type(6) {
     margin-top: -9rem;
   }
 
-  /* making the block be alone to the right */
   .block-poster:nth-of-type(2) {
-    margin-top: -3rem;
   }
 
   .block-poster:nth-of-type(3) {
@@ -137,7 +137,7 @@
 
   .full-width-img {
     margin-top: -10rem;
-  }
+  } */
 
   /*~~~~~~~~~~~~~~~~~~~~~~~ MOTION GRAPHIC PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~*/
   .container {
@@ -481,12 +481,72 @@
 }
 
 /* making the elements  fill up the page once the screen is a certain size */
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1240px) {
+  /* ~~~~~~~~~~~~~~~~~poster page ~~~~~~~~~~~~~~~~~ */
+  /* .container-poster {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: -10rem;
+  }
 
+  .container-poster p {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .container-summary {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  } */
+
+  /* .block-summary p {
+    width: vw;
+  } */
+
+  .block-summary {
+    flex: 0 100%;
+  }
+
+  /* .block-summary {
+    flex: 0 100%;
+  }
+
+  .block-poster {
+    flex: 0 100%;
+  } */
+
+
+  /* .block-poster:nth-of-type(1) {
+    padding-bottom: 7rem;
+  }
+
+  .block-poster:nth-of-type(2) {
+    margin-bottom: 10rem;
+  }
+
+  .block-poster:nth-of-type(3) {
+    padding-top: 5rem;
+    margin-bottom: 4rem;
+  }
+
+  .block-poster:nth-of-type(5) {
+    margin-top: 5rem;
+    padding-top: 0rem;
+    margin-bottom: 11rem;
+  }
+
+  .block-poster:nth-of-type(6) {
+    padding-top: 15rem;
+    margin-bottom: 15rem;
+  }
+
+  .block-poster:nth-of-type(7) {
+    margin-bottom: 0rem;
+  } */
 }
 
-/* detailed view responsiveness */
-@media screen and (max-width: 1279px) {}
 
 /* making the margins shrink before the nav buttons hit the logo in the top left */
 @media screen and (max-width: 1143px) {
