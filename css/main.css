@@ -13,10 +13,15 @@
 }
 
 .section-divider-footer {
-  padding-bottom: 1rem;
+  /* padding-bottom: 1rem;
   margin-top: 4rem;
   padding-top: 2rem;
+  margin-bottom: -10rem; */
+  margin-top: 10rem;
   margin-bottom: -10rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: white;
 }
 
 /* divider for cart line (above total) */
@@ -38,7 +43,7 @@
   margin-bottom: 6rem;
 }
 
-.element .container-detailed-view h2 {
+.element .container-poster-view h2 {
   margin-top: 1rem;
 }
 
@@ -510,12 +515,20 @@
 
 /* Styling for footer */
 .container-footer{
- display: flex;
+ /* display: flex;
  flex-wrap: wrap;
  justify-content: space-around;
  background-color: #1a1a1a;
  padding-bottom: 3rem;
- padding-top: 3rem;
+ padding-top: 3rem; */
+ justify-content: center;
+
+ display: flex;
+ flex-wrap: wrap;
+ /* justify-content: space-around; */
+ align-items: center;
+ padding-bottom: 0rem;
+ margin-bottom: 0rem;
 }
 
 .container-footer a{
@@ -538,38 +551,6 @@
 
 .block-footer p {
    margin-top: -1px;
-}
-
-/* used the flexbox exercise as reference */
-.block-footer:nth-of-type(1) {
-  flex: 1.5;
-}
-
-.block-footer:nth-of-type(2) {
-  flex: 1;
-  padding-left: 8rem;
-}
-
-.block-footer:nth-of-type(3) {
-  flex: 1;
-}
-
-.block-footer:nth-of-type(4) {
-  flex: 1.5;
-}
-
-.container-footer .mobile-font-top {
-  padding-left: 2px;
-  font-size: 1.3rem;
-}
-
-.container-footer .auto-detailing-font-top {
-  margin-left: -3.5rem;
-  font-size: 1.23rem;
-}
-
-.container-footer .topnav {
-  margin-top: -1rem;
 }
 
 /* Reference for using span for checkout from https://www.w3schools.com/howto/howto_css_checkout_form.asp */
@@ -622,7 +603,7 @@ body {
   margin-left: 5rem;
   margin-right: 5rem;
   margin-top: 3rem;
-  margin-bottom: 5rem;
+  margin-bottom: 0rem;
   font-family: 'Montserrat', sans-serif;
   color: white;
   background-color: black;
@@ -669,19 +650,15 @@ p, h1, h2, h3 {
   /* padding: 1px; */
 }
 
-.block-about {
-  max-width: 40vw;
-}
-
 .block-about:nth-of-type(1) {
   /* margin-right: -3rem; */
   z-index: 1;
 }
 
 
-/* .block-about p {
+.block-about p {
   width: 30vw;
-} */
+}
 
 .block-about h2 {
   max-width: 50rem;
@@ -787,7 +764,8 @@ p, h1, h2, h3 {
 .block-summary {
   /* flex: 0 40%; */
   /* max-width: 50%; */
-  max-width: 40vw;
+  /* max-width: 40vw; */
+  max-width: 50%;
 
 }
 
@@ -796,36 +774,20 @@ p, h1, h2, h3 {
   margin-top: -2rem;
 }
 
-.block-summary:nth-of-type(2) {
-  /* margin-top: -10rem; */
-  /* align-self: flex-end;
-  margin-left: auto; */
-  /* margin-right: 3rem; */
-}
-
-.block-summary:nth-of-type(2) {
-  /* margin-top: -10rem; */
-  /* align-self: flex-end;
-  margin-left: auto; */
-  /* margin-left: 3rem; */
-}
-
-.container-detailed {
+.container-poster {
   display: flex;
   flex-wrap: wrap;
   padding-top: 20rem;
   justify-content: center;
   margin-left: 10rem;
   margin-right: 10rem;
+  /* margin-bottom: -20rem; */
+  /* padding-bottom: 0rem; */
   /* background-color: red; */
 }
 
-.container-detailed p {
-  max-width: 40vw;
-  /* max-width: 45%; */
-  /* width: 45%; */
-  /* max-width: 45rem; */
-    /* max-width: 45vw; */
+.container-poster p {
+  max-width: 35vw;
 }
 
 .full-width-img {
@@ -909,6 +871,7 @@ p, h1, h2, h3 {
 .block-poster:nth-of-type(7){
   align-self: flex-end;
   margin-left: auto;
+  margin-bottom: 0rem;
 }
 
 .block-poster h3 {
@@ -921,8 +884,14 @@ p, h1, h2, h3 {
 
 }
 
-.container-detailed p, h3, h2 {
+.container-poster p, h3, h2 {
   color: white;
+}
+
+.block-poster:nth-of-type(2){
+  flex-grow: 1;
+  flex: 0 100%;
+  margin-top: -27rem;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~ KINETIC TYPOGRAPHY DETAILED VIEW ~~~~~~~~~~~~~~~~ */
@@ -937,7 +906,7 @@ p, h1, h2, h3 {
 }
 
 .container-kinetic p {
-  max-width: 30vw;
+  max-width: 35vw;
   /* max-width: 35vw; */
 }
 
@@ -950,38 +919,65 @@ p, h1, h2, h3 {
 .block-kinetic:nth-of-type(2){
   flex-grow: 1;
   flex: 0 100%;
-  margin-top: -35rem;
+  margin-top: -5rem;
 }
 
 .block-kinetic:nth-of-type(4){
   flex-grow: 1;
   flex: 0 100%;
-  margin-top: -15rem;
+  margin-top: 3rem;
 }
 
 /* making the block be alone (left) */
 .block-kinetic:nth-of-type(1){
   flex: 0 100%;
   margin-top: -7rem;
-  /* margin-bottom: -25rem; */
+  margin-bottom: -5rem;
 }
 
 .block-kinetic:nth-of-type(5){
   flex: 0 100%;
+  margin-top: 8rem;
 }
+
 
 /* making the block be alone to the right */
 .block-kinetic:nth-of-type(3){
   align-self: flex-end;
   margin-left: auto;
-  padding-top: 15rem;
+  padding-top: 5rem;
   margin-bottom: -10rem;
 }
 
-.block-kinetic:nth-of-type(6){
+.block-kinetic:nth-of-type(7){
   align-self: flex-end;
   margin-left: auto;
+  padding-top: 10rem;
+  margin-bottom: -8rem;
 }
+
+.block-kinetic:nth-of-type(6){
+  flex-grow: 1;
+  flex: 0 100%;
+  margin-top: -8rem;
+}
+
+.block-kinetic:nth-of-type(8){
+  flex-grow: 1;
+  flex: 0 100%;
+}
+
+.block-kinetic:nth-of-type(9){
+  flex-grow: 1;
+  flex: 0 100%;
+}
+
+.block-kinetic:nth-of-type(10){
+  align-self: flex-end;
+  margin-left: auto;
+  padding-top: 5rem;
+}
+
 
 .block-kinetic h3 {
   margin-bottom: -1rem;
