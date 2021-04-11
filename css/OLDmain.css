@@ -1,5 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 /* lines separating section - reference from style guide template */
 .section-divider {
   padding-bottom: 2rem;
@@ -28,6 +31,7 @@
   border-top-style: solid;
   border-top-color: white;
 } */
+
 /* lines separating inner elements - reference from https://www.w3schools.com/howto/howto_css_dividers.asp */
 .element {
   padding-bottom: 2rem;
@@ -48,12 +52,14 @@
   color: #DAA520;
   font-style: italic;
   transition-duration: 0.5s;
+
 }
 
 .link:hover, .link:focus {
   color: #95731C;
   text-decoration: none;
   transition-duration: 0.5s;
+
 }
 
 /* Styling for navigation link. Style guide template used as reference */
@@ -93,6 +99,7 @@
   padding-top: 1.5rem;
 }
 
+
 /* focus border reference from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_navbar_border */
 .button-nav:focus {
   border-color: #DAA520;
@@ -102,14 +109,15 @@
 /* Styling for form buttons. Reference from https://www.tyssendesign.com.au/articles/css/styling-form-buttons/ */
 .button-form {
   font-family: 'Open Sans';
-  font-size: 1rem;
+  font-size:1rem;
   color: #FFFFFF;
   background-color: transparent;
   border: 2px solid white;
   /* transition-property: background-color; */
   transition-duration: 0.5s;
-  width: 10rem;
-  height: 3rem;
+  width:10rem;
+  height:3rem;
+
 }
 
 .button-form:hover {
@@ -239,6 +247,7 @@
   color: #FFFFFF;
   font-weight: lighter;
   transition-duration: 0.5s;
+
 }
 
 .logo:hover {
@@ -263,6 +272,7 @@
   padding-bottom: 15rem;
   /* justify-content: center; */
 }
+
 
 .block-img {
   position: relative;
@@ -316,6 +326,7 @@
 }
 
 /* side navbar reference from https://www.w3schools.com/howto/howto_js_sidenav.asp */
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -349,8 +360,9 @@
   font-size: 60px;
   margin-left: 50px;
 }
-
 /* end of sidenav reference */
+
+
 .icon-right-justified {
   position: absolute;
   right: 5.5rem;
@@ -384,15 +396,16 @@
   color: white;
   display: block;
   transition: 0.3s;
+
   background-color: Transparent;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   border: none;
-  cursor: pointer;
+  cursor:pointer;
   overflow: hidden;
-  outline: none;
+  outline:none;
 }
 
-.dropdown .dropbtn:hover {
+.dropdown .dropbtn:hover{
   color: #808080;
 }
 
@@ -401,14 +414,15 @@
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+
   background-color: Transparent;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   border: none;
-  cursor: pointer;
+  cursor:pointer;
   overflow: hidden;
-  outline: none;
+  outline:none;
 }
 
 .dropdown-content a {
@@ -428,8 +442,11 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 /* end of reference */
+
+
+
+
 /* logo in the top left */
 .topnav-left {
   float: left;
@@ -449,7 +466,7 @@
   position: absolute;
   overflow: hidden;
   justify-content: space-between;
-  align-items: center;
+   align-items: center;
 }
 
 /* header reference from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_style_header */
@@ -481,6 +498,7 @@
   padding-top: 1rem;
 }
 
+
 /* crop for services header https://stackoverflow.com/questions/493296/css-display-an-image-resized-and-cropped */
 .crop-header {
   width: 100%;
@@ -496,23 +514,24 @@
 }
 
 /* Styling for footer */
-.container-footer {
-  /* display: flex;
+.container-footer{
+ /* display: flex;
  flex-wrap: wrap;
  justify-content: space-around;
  background-color: #1a1a1a;
  padding-bottom: 3rem;
  padding-top: 3rem; */
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  /* justify-content: space-around; */
-  align-items: center;
-  padding-bottom: 0rem;
-  margin-bottom: 0rem;
+ justify-content: center;
+
+ display: flex;
+ flex-wrap: wrap;
+ /* justify-content: space-around; */
+ align-items: center;
+ padding-bottom: 0rem;
+ margin-bottom: 0rem;
 }
 
-.container-footer a {
+.container-footer a{
   padding: 15px;
 }
 
@@ -522,16 +541,16 @@
 }
 
 .block-footer ul {
-  list-style-type: none;
-  margin-left: -3.5rem;
+   list-style-type: none;
+   margin-left: -3.5rem;
 }
 
 .block-footer li {
-  padding-bottom: 1rem;
+   padding-bottom: 1rem;
 }
 
 .block-footer p {
-  margin-top: -1px;
+   margin-top: -1px;
 }
 
 /* Reference for using span for checkout from https://www.w3schools.com/howto/howto_css_checkout_form.asp */
@@ -545,6 +564,7 @@ h2 {
   font-weight: 600;
   font-size: 3.5rem;
   font-family: 'Open Sans', sans-serif;
+
 }
 
 h1 {
@@ -559,6 +579,7 @@ p {
   font-weight: 500;
   /* font-weight: lighter; */
   font-size: 1.5rem;
+
 }
 
 h3 {
@@ -567,7 +588,7 @@ h3 {
   /* text-decoration: underline; */
   /* font-weight: 600; */
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 3rem
 }
 
 h4 {
@@ -575,6 +596,7 @@ h4 {
   font-family: 'Open Sans';
   font-size: 1.2rem;
   text-decoration: underline;
+
 }
 
 body {
@@ -593,7 +615,10 @@ p, h1, h2, h3 {
   color: white;
 }
 
+
+
 /* ~~~~~~~~~~~~~~~~~~~~ABOUT PAGE~~~~~~~~~~~~~~~~~~~~~~~ */
+
 .container-header {
   display: flex;
   flex-direction: row;
@@ -630,6 +655,7 @@ p, h1, h2, h3 {
   z-index: 1;
 }
 
+
 .block-about p {
   width: 30vw;
 }
@@ -638,6 +664,7 @@ p, h1, h2, h3 {
   max-width: 50rem;
   margin-top: 6rem;
   margin-bottom: 2rem;
+
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~ CONTACT PAGE ~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -657,9 +684,12 @@ p, h1, h2, h3 {
   z-index: 1;
 }
 
-.block-contact a {
+.block-contact a{
   text-align: center;
 }
+
+
+
 
 /* ~~~~~~~~~~~~~~~PROJECTS OVERVIEW~~~~~~~~~~~~~~~~~~~~~ */
 .container-projects {
@@ -714,7 +744,7 @@ p, h1, h2, h3 {
   object-fit: cover;
 }
 
-.container-projects h2 {
+.container-projects h2{
   margin-top: 0rem;
 }
 
@@ -727,6 +757,7 @@ p, h1, h2, h3 {
 }
 
 /* reference for hover interactions from https://www.youtube.com/watch?v=ltxxNidblts */
+
 .image-link {
   transition: transform 1.2s;
   float: left;
@@ -759,6 +790,7 @@ p, h1, h2, h3 {
   /* max-width: 50%; */
   /* max-width: 40vw; */
   /* max-width: 50%; */
+
 }
 
 .block-summary p {
@@ -778,7 +810,7 @@ p, h1, h2, h3 {
   /* background-color: red; */
 }
 
-.container-poster h2.left-aligned {
+.container-poster h2.left-aligned{
   margin-bottom: 2rem;
 }
 
@@ -808,7 +840,7 @@ p, h1, h2, h3 {
   position: relative;
   right: 50%;
   width: 100vw;
-  /*
+/*
   left: 50%;
   margin-left: -45vw;
   margin-right: -50vw;
@@ -825,61 +857,61 @@ p, h1, h2, h3 {
 }
 
 /* making image blocks span the whole width */
-.block-poster:nth-of-type(1) {
+.block-poster:nth-of-type(1){
   /* padding-bottom: 10rem;
   padding-top: 0rem; */
   flex: 0 100%;
 }
 
-.block-poster:nth-of-type(2) {
+.block-poster:nth-of-type(2){
   /* flex-grow: 1;
   margin-top: -27rem; */
   flex: 0 100%;
 }
 
 /* making the block be alone to the right */
-.block-poster:nth-of-type(3) {
+.block-poster:nth-of-type(3){
   align-self: flex-end;
   margin-left: auto;
   /* margin-bottom: 5rem; */
 }
 
-.block-poster:nth-of-type(4) {
+.block-poster:nth-of-type(4){
   /* flex-grow: 1; */
   flex: 0 100%;
   /* margin-top: -4rem; */
 }
 
-.block-poster:nth-of-type(5) {
+.block-poster:nth-of-type(5){
   flex: 0 100%;
   /* padding-top: 0rem;
   padding-bottom: 0rem; */
 }
 
-.block-poster:nth-of-type(6) {
+.block-poster:nth-of-type(6){
   /* flex-grow: 1;
   margin-top: -27rem; */
   flex: 0 100%;
 }
 
-.block-poster:nth-of-type(7) {
+.block-poster:nth-of-type(7){
   align-self: flex-end;
   margin-left: auto;
   /* margin-bottom: 0rem; */
 }
 
-.block-poster:nth-of-type(8) {
+.block-poster:nth-of-type(8){
   margin-top: 2rem;
   flex-grow: 1;
   flex: 0 100%;
 }
 
-.block-poster:nth-of-type(9) {
+.block-poster:nth-of-type(9){
   flex-grow: 1;
   flex: 0 100%;
 }
 
-.block-poster:nth-of-type(10) {
+.block-poster:nth-of-type(10){
   align-self: flex-end;
   margin-left: auto;
   margin-bottom: 0;
@@ -897,6 +929,7 @@ p, h1, h2, h3 {
 
 .container-summary p, h3, h2 {
   color: white;
+
 }
 
 .container-poster p, h3, h2 {
@@ -904,6 +937,7 @@ p, h1, h2, h3 {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~ KINETIC TYPOGRAPHY DETAILED VIEW ~~~~~~~~~~~~~~~~ */
+
 .container-kinetic {
   display: flex;
   flex-wrap: wrap;
@@ -912,6 +946,7 @@ p, h1, h2, h3 {
   margin-left: 10rem;
   margin-right: 10rem;
 }
+
 
 .container-kinetic p {
   max-width: 35vw;
@@ -924,70 +959,73 @@ p, h1, h2, h3 {
 }
 
 /* making image blocks span the whole width & are moved up */
-.block-kinetic:nth-of-type(2) {
+.block-kinetic:nth-of-type(2){
   flex-grow: 1;
   flex: 0 100%;
   margin-top: -5rem;
 }
 
-.block-kinetic:nth-of-type(4) {
+.block-kinetic:nth-of-type(4){
   flex-grow: 1;
   flex: 0 100%;
   margin-top: 3rem;
 }
 
 /* making the block be alone (left) */
-.block-kinetic:nth-of-type(1) {
+.block-kinetic:nth-of-type(1){
   flex: 0 100%;
   margin-top: -7rem;
   margin-bottom: -5rem;
 }
 
-.block-kinetic:nth-of-type(5) {
+.block-kinetic:nth-of-type(5){
   flex: 0 100%;
   margin-top: 8rem;
 }
 
+
 /* making the block be alone to the right */
-.block-kinetic:nth-of-type(3) {
+.block-kinetic:nth-of-type(3){
   align-self: flex-end;
   margin-left: auto;
   padding-top: 5rem;
   margin-bottom: -10rem;
 }
 
-.block-kinetic:nth-of-type(7) {
+.block-kinetic:nth-of-type(7){
   align-self: flex-end;
   margin-left: auto;
   padding-top: 10rem;
   margin-bottom: -8rem;
 }
 
-.block-kinetic:nth-of-type(6) {
+.block-kinetic:nth-of-type(6){
   flex-grow: 1;
   flex: 0 100%;
   margin-top: -8rem;
 }
 
-.block-kinetic:nth-of-type(8) {
+.block-kinetic:nth-of-type(8){
   flex-grow: 1;
   flex: 0 100%;
 }
 
-.block-kinetic:nth-of-type(9) {
+.block-kinetic:nth-of-type(9){
   flex-grow: 1;
   flex: 0 100%;
 }
 
-.block-kinetic:nth-of-type(10) {
+.block-kinetic:nth-of-type(10){
   align-self: flex-end;
   margin-left: auto;
   padding-top: 5rem;
 }
 
+
 .block-kinetic h3 {
   margin-bottom: -1rem;
 }
+
 
 .block-poster h2 {
   margin-top: -15rem;
@@ -1011,20 +1049,19 @@ p, h1, h2, h3 {
 }
 
 /* responsive video embed, reference from https://www.ostraining.com/blog/coding/responsive-videos/ */
-.video-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
 }
-
-.video-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  border: 0;
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    border: 0;
 }
 
 /* background changing color */
@@ -1036,15 +1073,14 @@ p, h1, h2, h3 {
 body.changeColorWhite {
    background-color: #e9edef;
 } */
+
 /* colours, reference from https://codepen.io/daveredfern/pen/zBGBJV */
 .color-black {
   background-color: #000000;
 }
-
 .color-white {
   background-color: #e9edef;
 }
-
 .color-grey {
   background-color: #9B9B9B;
 }
@@ -1063,9 +1099,14 @@ body.changeColorWhite {
   flex: 0 100%;
 }
 
+.right-aligned {
+
+}
+
 #test-color {
   background-color: blue;
 }
+
 
 /* arrow reference from https://www.w3schools.com/howto/howto_css_arrows.asp */
 .arrow {
