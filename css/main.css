@@ -820,79 +820,29 @@ p, h1, h2, h3 {
 
 .block-poster {
   /* flex: 0 35%; */
-  margin-top: 10rem;
   /* margin-bottom: 20rem; */
 }
 
-/* making image blocks span the whole width */
-.block-poster:nth-of-type(1) {
-  /* padding-bottom: 10rem;
-  padding-top: 0rem; */
-  flex: 0 100%;
-}
-
-.block-poster:nth-of-type(2) {
-  /* flex-grow: 1;
-  margin-top: -27rem; */
-  flex: 0 100%;
-}
-
-/* making the block be alone to the right */
-.block-poster:nth-of-type(3) {
-  align-self: flex-end;
-  margin-left: auto;
-  /* margin-bottom: 5rem; */
-}
-
-.block-poster:nth-of-type(4) {
-  /* flex-grow: 1; */
-  flex: 0 100%;
-  /* margin-top: -4rem; */
-}
-
-.block-poster:nth-of-type(5) {
-  flex: 0 100%;
-  /* padding-top: 0rem;
-  padding-bottom: 0rem; */
-}
-
-.block-poster:nth-of-type(6) {
-  /* flex-grow: 1;
-  margin-top: -27rem; */
-  flex: 0 100%;
-}
-
-.block-poster:nth-of-type(7) {
-  align-self: flex-end;
-  margin-left: auto;
-  /* margin-bottom: 0rem; */
-}
-
-.block-poster:nth-of-type(8) {
-  margin-top: 2rem;
-  flex-grow: 1;
-  flex: 0 100%;
-}
-
-.block-poster:nth-of-type(9) {
-  flex-grow: 1;
-  flex: 0 100%;
-}
-
-.block-poster:nth-of-type(10) {
-  align-self: flex-end;
-  margin-left: auto;
-  margin-bottom: 0;
-}
-
-#graphics-padding-kinetic {
-  padding-top: 8rem;
-}
-
 .block-poster h3 {
-  /* margin-top: -15rem; */
-  /* margin-top: -10rem;
-  margin-bottom: -1rem; */
+  margin-top: 20rem;
+  margin-bottom: -1rem;
+}
+
+.block-poster h2 {
+  margin-top: 20rem;
+}
+
+.block-poster:nth-of-type(1), .block-poster:nth-of-type(2), .block-poster:nth-of-type(4), .block-poster:nth-of-type(5), .block-poster:nth-of-type(6), .block-poster:nth-of-type(8), .block-poster:nth-of-type(9) {
+  flex: 0 100%;
+}
+
+.block-poster:nth-of-type(3), .block-poster:nth-of-type(7), .block-poster:nth-of-type(10) {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.block-poster:nth-of-type(1) {
+  margin-top: -20rem;
 }
 
 .container-summary p, h3, h2 {
@@ -904,95 +854,6 @@ p, h1, h2, h3 {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~ KINETIC TYPOGRAPHY DETAILED VIEW ~~~~~~~~~~~~~~~~ */
-.container-kinetic {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 20rem;
-  justify-content: center;
-  margin-left: 10rem;
-  margin-right: 10rem;
-}
-
-.container-kinetic p {
-  max-width: 35vw;
-  /* max-width: 35vw; */
-}
-
-.block-kinetic {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-/* making image blocks span the whole width & are moved up */
-.block-kinetic:nth-of-type(2) {
-  flex-grow: 1;
-  flex: 0 100%;
-  margin-top: -5rem;
-}
-
-.block-kinetic:nth-of-type(4) {
-  flex-grow: 1;
-  flex: 0 100%;
-  margin-top: 3rem;
-}
-
-/* making the block be alone (left) */
-.block-kinetic:nth-of-type(1) {
-  flex: 0 100%;
-  margin-top: -7rem;
-  margin-bottom: -5rem;
-}
-
-.block-kinetic:nth-of-type(5) {
-  flex: 0 100%;
-  margin-top: 8rem;
-}
-
-/* making the block be alone to the right */
-.block-kinetic:nth-of-type(3) {
-  align-self: flex-end;
-  margin-left: auto;
-  padding-top: 5rem;
-  margin-bottom: -10rem;
-}
-
-.block-kinetic:nth-of-type(7) {
-  align-self: flex-end;
-  margin-left: auto;
-  padding-top: 10rem;
-  margin-bottom: -8rem;
-}
-
-.block-kinetic:nth-of-type(6) {
-  flex-grow: 1;
-  flex: 0 100%;
-  margin-top: -8rem;
-}
-
-.block-kinetic:nth-of-type(8) {
-  flex-grow: 1;
-  flex: 0 100%;
-}
-
-.block-kinetic:nth-of-type(9) {
-  flex-grow: 1;
-  flex: 0 100%;
-}
-
-.block-kinetic:nth-of-type(10) {
-  align-self: flex-end;
-  margin-left: auto;
-  padding-top: 5rem;
-}
-
-.block-kinetic h3 {
-  margin-bottom: -1rem;
-}
-
-.block-poster h2 {
-  margin-top: -15rem;
-}
-
 .header-text-detailed {
   text-align: center;
 }
