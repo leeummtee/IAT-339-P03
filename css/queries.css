@@ -86,15 +86,13 @@
     margin-right: 0rem;
   }
 
-  .block-summary p {
-    /* flex: 0 100%; */
-    /* width: 100vw; */
-  }
-
   .block-summary h2 {
     max-width: 100%;
-    /* padding-top: 5rem; */
     padding-top: 0rem;
+  }
+
+  #summary-padding-kinetic{
+    padding-top: 10rem;
   }
 
   .block-summary {
@@ -116,29 +114,28 @@
     width: 100vw;
   }
 
-  /* .block-poster {
-    margin-bottom: 10rem;
-  }
-
-  .block-poster h3 {
-    padding-top: 0rem;
-  }
-
-  .block-poster:nth-of-type(6) {
-    margin-top: -9rem;
-  }
-
-  .block-poster:nth-of-type(2) {
-  }
-
   .block-poster:nth-of-type(3) {
-    flex: 0 100%;
-    margin-left: 0rem;
+    margin-top: 0;
   }
 
-  .full-width-img {
-    margin-top: -10rem;
-  } */
+  .block-poster:nth-of-type(8) {
+    margin-top: 0;
+  }
+
+  .block-poster:nth-of-type(9) {
+    margin-top: 5rem;
+  }
+
+
+  .block-poster:nth-of-type(10) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .video-responsive {
+    margin-top: -6rem;
+    margin-bottom: 5rem;
+  }
 
   /*~~~~~~~~~~~~~~~~~~~~~~~ MOTION GRAPHIC PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~*/
   .container {
@@ -159,6 +156,7 @@
 
   .container-poster h2 {
     font-size: 3rem;
+    margin-bottom: 8rem;
   }
 
   .container-poster h3 {
@@ -167,10 +165,6 @@
 
   .container-summary {
     margin-bottom: 10rem;
-  }
-
-  .block-kinetic h3 {
-    padding-top: 5rem;
   }
 
   .block-kinetic:nth-of-type(1) {
@@ -195,23 +189,28 @@
     margin-top: 2rem;
   }
 
+  #graphics-padding-kinetic {
+    margin-top: -23rem;
+  }
+
   /*~~~~~~~~~~~~~~~~~~~~~~~ ABOUT PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~*/
   .container-about {
-    /* margin-top: 10rem; */
+    justify-content: center;
+    display: flex;
   }
 
   .block-about {
     flex-grow: 1;
-    flex: 1 100%;
+    flex: 0 100%;
   }
 
   .block-about p {
-    width: 100vw;
+    width: 100%;
   }
 
   .block-about h1 {
     padding-top: 0rem;
-    max-width: 100vw;
+    width: 100%;
     font-size: 3rem;
     margin: 0rem;
   }
@@ -352,6 +351,10 @@
     padding-top: 0rem;
   }
 
+  #graphics-padding-kinetic {
+    padding-top: 13rem;
+  }
+
   /* ~~~~~~~~~~~~~~~~~poster page ~~~~~~~~~~~~~~~~~ */
   .container-poster {
     margin-left: 1rem;
@@ -408,7 +411,7 @@
 
   .block-poster:nth-of-type(6) {
     padding-top: 15rem;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
   }
 
   .block-poster:nth-of-type(7) {
@@ -460,7 +463,7 @@
   }
 }
 
-@media screen and (max-width: 1219px) {
+@media screen and (max-width: 1265px) {
 
   /* ~~~~~~~~~~~~~~~~~~~ about page ~~~~~~~~~~~~~~~~~~~~~~~~ */
   .container-about {
