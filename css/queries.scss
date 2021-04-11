@@ -152,7 +152,7 @@
 
   .container-poster h2 {
     font-size: 3rem;
-    margin-bottom: 8rem;
+    // margin-bottom: 8rem;
   }
 
   .container-poster h3 {
@@ -230,11 +230,6 @@
     width: 100%;
   }
 
-  /* .image-link {
-    width: 50rem;
-    height: 20rem;
-    object-fit: cover;
-  } */
   /* realigning text */
   .block-projects:nth-of-type(1) {
     z-index: 1;
@@ -325,10 +320,8 @@
     padding-top: 0rem;
   }
 
-  #graphics-padding-kinetic {
-    padding-top: 13rem;
-  }
 
+// ~~~~~~~~~~~~~DETAILED VIEWS~~~~~~~~~~~~~~~
   .container-poster {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -361,34 +354,16 @@
 
   .block-poster h2 {
     width: 100%;
+    margin-top: 10rem;
   }
 
-  .block-poster:nth-of-type(1) {
-    padding-bottom: 7rem;
+  .block-poster h3{
+    margin-top: 10rem;
+    margin-bottom: -1rem;
   }
 
-  .block-poster:nth-of-type(2) {
-    margin-bottom: 10rem;
-  }
-
-  .block-poster:nth-of-type(3) {
-    padding-top: 5rem;
-    margin-bottom: 4rem;
-  }
-
-  .block-poster:nth-of-type(5) {
-    margin-top: 5rem;
-    padding-top: 0rem;
-    margin-bottom: 11rem;
-  }
-
-  .block-poster:nth-of-type(6) {
-    padding-top: 15rem;
-    margin-bottom: 15rem;
-  }
-
-  .block-poster:nth-of-type(7) {
-    margin-bottom: 0rem;
+  .block-poster:nth-of-type(1){
+    margin-top: -10rem;
   }
 
   /* ~~~~~~~~~~~~~~~~~~~ about page ~~~~~~~~~~~~~~~~~~~~~~~~ */

@@ -236,7 +236,7 @@
   margin-left: -2.5rem;
   font-family: 'Nunito', sans-serif;
   font-size: 2rem;
-  color: #FFFFFF;
+  color: white;
   font-weight: lighter;
   transition-duration: 0.5s;
 }
@@ -253,7 +253,6 @@
   font-family: 'Montserrat';
 }
 
-/* flexbox container */
 .container {
   padding-top: 16rem;
   display: flex;
@@ -262,51 +261,6 @@
   border-radius: 3px;
   padding-bottom: 15rem;
   /* justify-content: center; */
-}
-
-.block-img {
-  position: relative;
-  height: 25rem;
-  flex-grow: 1;
-}
-
-/* label for service listing images, reference above */
-.block-img h3 {
-  color: #fff;
-  text-align: left;
-  margin: 0px;
-  position: absolute;
-  left: 3rem;
-  bottom: 3rem;
-}
-
-/* overlay for hovering over images, reference above */
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #000;
-}
-
-.block-img:hover .overlay {
-  opacity: .5;
-}
-
-/* text overlay that appears over images while hovering, reference above */
-.text-overlay {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 /* end of reference for block image overlays */
@@ -497,12 +451,6 @@
 
 /* Styling for footer */
 .container-footer {
-  /* display: flex;
- flex-wrap: wrap;
- justify-content: space-around;
- background-color: #1a1a1a;
- padding-bottom: 3rem;
- padding-top: 3rem; */
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
@@ -625,11 +573,6 @@ p, h1, h2, h3 {
   /* padding: 1px; */
 }
 
-.block-about:nth-of-type(1) {
-  /* margin-right: -3rem; */
-  z-index: 1;
-}
-
 .block-about p {
   width: 30vw;
 }
@@ -688,8 +631,8 @@ p, h1, h2, h3 {
 
 .block-projects:nth-of-type(1) {
   z-index: 1;
-  margin-right: -10rem;
   padding-top: 10rem;
+  margin-right: -10rem;
 }
 
 .block-projects:nth-of-type(4) {
@@ -742,11 +685,11 @@ p, h1, h2, h3 {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~DETAILED PROJECT VIEW PAGES ~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .container-summary {
+  margin-left: 10rem;
+  margin-right: 10rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 10rem;
-  margin-right: 10rem;
 }
 
 .container-summary h2 {
@@ -756,9 +699,6 @@ p, h1, h2, h3 {
 
 .block-summary {
   flex: 0 50%;
-  /* max-width: 50%; */
-  /* max-width: 40vw; */
-  /* max-width: 50%; */
 }
 
 .block-summary p {
@@ -767,12 +707,12 @@ p, h1, h2, h3 {
 }
 
 .container-poster {
+  margin-left: 10rem;
+  margin-right: 10rem;
   display: flex;
   flex-wrap: wrap;
   padding-top: 20rem;
   justify-content: center;
-  margin-left: 10rem;
-  margin-right: 10rem;
   /* margin-bottom: -20rem; */
   /* padding-bottom: 0rem; */
   /* background-color: red; */
@@ -832,15 +772,18 @@ p, h1, h2, h3 {
   margin-top: 20rem;
 }
 
+/* making sure these blocks do not share a row with another block */
 .block-poster:nth-of-type(1), .block-poster:nth-of-type(2), .block-poster:nth-of-type(4), .block-poster:nth-of-type(5), .block-poster:nth-of-type(6), .block-poster:nth-of-type(8), .block-poster:nth-of-type(9) {
   flex: 0 100%;
 }
 
+/* making these blocks move to the right of the screen */
 .block-poster:nth-of-type(3), .block-poster:nth-of-type(7), .block-poster:nth-of-type(10) {
   align-self: flex-end;
   margin-left: auto;
 }
 
+/* moving the first block element closer to the top */
 .block-poster:nth-of-type(1) {
   margin-top: -20rem;
 }
@@ -888,16 +831,6 @@ p, h1, h2, h3 {
   border: 0;
 }
 
-/* background changing color */
-/* reference: https://codepen.io/patrickcameron/pen/WNGrpEw */
-/* body.changeColorGrey {
-   background-color: #9B9B9B;
-}
-
-body.changeColorWhite {
-   background-color: #e9edef;
-} */
-/* colours, reference from https://codepen.io/daveredfern/pen/zBGBJV */
 .color-black {
   background-color: #000000;
 }
@@ -922,10 +855,6 @@ body.changeColorWhite {
 
 .left-aligned {
   flex: 0 100%;
-}
-
-#test-color {
-  background-color: blue;
 }
 
 /* arrow reference from https://www.w3schools.com/howto/howto_css_arrows.asp */
@@ -957,7 +886,3 @@ body.changeColorWhite {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
-
-/* .small-arrow:hover {
-  color: #808080;
-} */

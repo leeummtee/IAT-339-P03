@@ -2,6 +2,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+//main colors
+$grey-hover: #808080;
+
+$link-color: #DAA520;
+
+$link-hover: #95731C;
+
+
+//rectangle dimensions for style style guide
+@mixin rectangle {
+  height: 2rem;
+  width: 10rem;
+}
+
+@mixin project-listing-text{
+  z-index: 1;
+  padding-top: 10rem;
+}
+
+@mixin detailed-view-margins {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+
 
 /* lines separating section - reference from style guide template */
 .section-divider {
@@ -49,14 +74,14 @@
 
 /* Styling for in-text link: */
 .link {
-  color: #DAA520;
+  color: $link-color;
   font-style: italic;
   transition-duration: 0.5s;
 
 }
 
 .link:hover, .link:focus {
-  color: #95731C;
+  color: $link-hover;
   text-decoration: none;
   transition-duration: 0.5s;
 
@@ -84,7 +109,7 @@
 }
 
 .button-nav:hover {
-  color: #808080;
+  color: $grey-hover;
 }
 
 .block-add-to-cart {
@@ -197,44 +222,37 @@
 
 /* Styling the colored boxes */
 .rectangle {
-  height: 2rem;
-  width: 10rem;
+  @include rectangle;
   background-color: #ededed;
 }
 
 .rectangle1 {
-  height: 2rem;
-  width: 10rem;
+  @include rectangle;
   background-color: #ABABAB;
 }
 
 .rectangle2 {
-  height: 2rem;
-  width: 10rem;
+  @include rectangle;
   background-color: #808080;
 }
 
 .rectangle3 {
-  height: 2rem;
-  width: 10rem;
+  @include rectangle;
   background-color: #555;
 }
 
 .rectangle4 {
-  height: 2rem;
-  width: 10rem;
+  @include rectangle;
   background-color: #000000;
 }
 
 .rectangle6 {
-  height: 2rem;
-  width: 10rem;
+  @include rectangle;
   background-color: #1a1a1a;
 }
 
 .rectangle5 {
-  height: 2rem;
-  width: 10rem;
+  @include rectangle;
   background-color: #95731C;
 }
 
@@ -244,14 +262,14 @@
   margin-left: -2.5rem;
   font-family: 'Nunito', sans-serif;
   font-size: 2rem;
-  color: #FFFFFF;
+  color: white;
   font-weight: lighter;
   transition-duration: 0.5s;
 
 }
 
 .logo:hover {
-  color: #808080;
+  color: $grey-hover;
   transition-duration: 0.5s;
   /* opacity: 80%; */
 }
@@ -262,7 +280,6 @@
   font-family: 'Montserrat';
 }
 
-/* flexbox container */
 .container {
   padding-top: 16rem;
   display: flex;
@@ -273,52 +290,6 @@
   /* justify-content: center; */
 }
 
-
-.block-img {
-  position: relative;
-  height: 25rem;
-  flex-grow: 1;
-}
-
-/* label for service listing images, reference above */
-.block-img h3 {
-  color: #fff;
-  text-align: left;
-  margin: 0px;
-  position: absolute;
-  left: 3rem;
-  bottom: 3rem;
-}
-
-/* overlay for hovering over images, reference above */
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #000;
-}
-
-.block-img:hover .overlay {
-  opacity: .5;
-}
-
-/* text overlay that appears over images while hovering, reference above */
-.text-overlay {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
 /* end of reference for block image overlays */
 .block {
   flex-grow: 1;
@@ -326,7 +297,6 @@
 }
 
 /* side navbar reference from https://www.w3schools.com/howto/howto_js_sidenav.asp */
-
 .sidenav {
   height: 100%;
   width: 0;
@@ -350,7 +320,7 @@
 }
 
 .sidenav a:hover {
-  color: #808080;
+  color: $grey-hover;
 }
 
 .sidenav .closebtn {
@@ -371,7 +341,7 @@
 }
 
 .icon-right-justified:hover {
-  color: #808080;
+  color: $grey-hover;
   transition-duration: 0.5s;
 }
 
@@ -406,7 +376,7 @@
 }
 
 .dropdown .dropbtn:hover{
-  color: #808080;
+  color: $grey-hover;
 }
 
 .dropdown-content {
@@ -435,7 +405,7 @@
 }
 
 .dropdown-content a:hover {
-  color: #808080;
+  color: $grey-hover;
   transition-duration: 0.5s;
 }
 
@@ -515,12 +485,7 @@
 
 /* Styling for footer */
 .container-footer{
- /* display: flex;
- flex-wrap: wrap;
- justify-content: space-around;
- background-color: #1a1a1a;
- padding-bottom: 3rem;
- padding-top: 3rem; */
+
  justify-content: center;
 
  display: flex;
@@ -650,10 +615,9 @@ p, h1, h2, h3 {
   /* padding: 1px; */
 }
 
-.block-about:nth-of-type(1) {
-  /* margin-right: -3rem; */
-  z-index: 1;
-}
+// .block-about:nth-of-type(1) {
+//   z-index: 1;
+// }
 
 
 .block-about p {
@@ -717,14 +681,12 @@ p, h1, h2, h3 {
 }
 
 .block-projects:nth-of-type(1) {
-  z-index: 1;
+  @include project-listing-text;
   margin-right: -10rem;
-  padding-top: 10rem;
 }
 
 .block-projects:nth-of-type(4) {
-  z-index: 1;
-  padding-top: 10rem;
+  @include project-listing-text;
   margin-left: -10rem;
 }
 
@@ -773,11 +735,10 @@ p, h1, h2, h3 {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~DETAILED PROJECT VIEW PAGES ~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .container-summary {
+  @include detailed-view-margins;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 10rem;
-  margin-right: 10rem;
 }
 
 .container-summary h2 {
@@ -787,10 +748,6 @@ p, h1, h2, h3 {
 
 .block-summary {
   flex: 0 50%;
-  /* max-width: 50%; */
-  /* max-width: 40vw; */
-  /* max-width: 50%; */
-
 }
 
 .block-summary p {
@@ -799,12 +756,11 @@ p, h1, h2, h3 {
 }
 
 .container-poster {
+  @include detailed-view-margins;
   display: flex;
   flex-wrap: wrap;
   padding-top: 20rem;
   justify-content: center;
-  margin-left: 10rem;
-  margin-right: 10rem;
   /* margin-bottom: -20rem; */
   /* padding-bottom: 0rem; */
   /* background-color: red; */
@@ -865,64 +821,21 @@ p, h1, h2, h3 {
   margin-top: 20rem;
 }
 
-// making sure these blocks do not share a row with another block
+/* making sure these blocks do not share a row with another block */
 .block-poster:nth-of-type(1), .block-poster:nth-of-type(2), .block-poster:nth-of-type(4), .block-poster:nth-of-type(5), .block-poster:nth-of-type(6), .block-poster:nth-of-type(8), .block-poster:nth-of-type(9) {
   flex: 0 100%;
 }
 
-//making these blocks move to the right of the screen
+/* making these blocks move to the right of the screen */
 .block-poster:nth-of-type(3), .block-poster:nth-of-type(7), .block-poster:nth-of-type(10) {
   align-self: flex-end;
   margin-left: auto;
 }
 
-//moving the first block element closer to the top
+/* moving the first block element closer to the top */
 .block-poster:nth-of-type(1){
   margin-top: -20rem;
 }
-
-// .block-poster:nth-of-type(2){
-//   flex: 0 100%;
-// }
-//
-// .block-poster:nth-of-type(3){
-//   align-self: flex-end;
-//   margin-left: auto;
-// }
-//
-// .block-poster:nth-of-type(4){
-//   flex: 0 100%;
-// }
-//
-// .block-poster:nth-of-type(5){
-//   flex: 0 100%;
-// }
-//
-// .block-poster:nth-of-type(6){
-//   flex: 0 100%;
-// }
-//
-// .block-poster:nth-of-type(7){
-//   align-self: flex-end;
-//   margin-left: auto;
-// }
-//
-// .block-poster:nth-of-type(8){
-//   margin-top: 2rem;
-//   flex-grow: 1;
-//   flex: 0 100%;
-// }
-//
-// .block-poster:nth-of-type(9){
-//   flex-grow: 1;
-//   flex: 0 100%;
-// }
-//
-// .block-poster:nth-of-type(10){
-//   align-self: flex-end;
-//   margin-left: auto;
-//   margin-bottom: 0;
-// }
 
 .container-summary p, h3, h2 {
   color: white;
@@ -967,17 +880,6 @@ p, h1, h2, h3 {
     border: 0;
 }
 
-/* background changing color */
-/* reference: https://codepen.io/patrickcameron/pen/WNGrpEw */
-/* body.changeColorGrey {
-   background-color: #9B9B9B;
-}
-
-body.changeColorWhite {
-   background-color: #e9edef;
-} */
-
-/* colours, reference from https://codepen.io/daveredfern/pen/zBGBJV */
 .color-black {
   background-color: #000000;
 }
@@ -1004,10 +906,6 @@ body.changeColorWhite {
 
 .right-aligned {
 
-}
-
-#test-color {
-  background-color: blue;
 }
 
 
@@ -1040,7 +938,3 @@ body.changeColorWhite {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
-
-/* .small-arrow:hover {
-  color: #808080;
-} */
