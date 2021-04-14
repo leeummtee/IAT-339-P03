@@ -485,9 +485,7 @@ $link-hover: #95731C;
 
 /* Styling for footer */
 .container-footer{
-
  justify-content: center;
-
  display: flex;
  flex-wrap: wrap;
  /* justify-content: space-around; */
@@ -637,6 +635,7 @@ p, h1, h2, h3 {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 10rem;
+  text-align: center;
 }
 
 .container-contact h1 {
@@ -716,6 +715,12 @@ p, h1, h2, h3 {
 
 #project2-desc {
   order: 3;
+}
+
+strong {
+  margin-top: 3rem;
+  font-size: 2rem;
+  padding-top: 10rem;
 }
 
 /* reference for hover interactions from https://www.youtube.com/watch?v=ltxxNidblts */

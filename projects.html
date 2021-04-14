@@ -10,10 +10,10 @@
   <link href="css/queries.css" rel="stylesheet">
   <!-- linking the fade animations -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- <script src="js/main.js"></script> -->
 </head>
 
 <body>
-  <script src="js/main.js"></script>
   <nav>
     <!-- logo in the top left -->
     <div class="topnav">
@@ -44,7 +44,6 @@
     <span class="icon-right-justified" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
   </nav>
 
-  <!-- reference for flexbox gallery for images from https://css-tricks.com/adaptive-photo-layout-with-flexbox/ -->
   <section class="container">
     <div class="block">
       <header class="header-text">
@@ -97,13 +96,11 @@
     </div>
   </footer>
 
-  <!-- reference from https://stackoverflow.com/questions/38673081/how-to-make-the-content-appear-on-scrolling-down-the-webpage/38673529 -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
 
-  <!-- side nav https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav -->
   <script>
     function openNav() {
       document.getElementById("mySidenav").style.width = "25rem";
@@ -113,4 +110,10 @@
       document.getElementById("mySidenav").style.width = "0";
     }
   </script>
+
+  <script src = "https://unpkg.com/aos@next/dist/aos.js"> </script>
+  <!-- AOS.init(); -->
+
+  <script src="js/main.js"></script>
+
 </body>

@@ -1,49 +1,43 @@
-// background color changing while scrolling
-// reference: https://codepen.io/patrickcameron/pen/WNGrpEw
+// reference from https: stackoverflow.com/questions/38673081/how-to-make-the-content-appear-on-scrolling-down-the-webpage/38673529
 
-// $(function() {
-//   $(window).scroll(function() {
-//     if( $(this).scrollTop() > 600 ) {
-//       $('body').addClass('changeColorGrey');
-//
-//     } else if( $(this).scrollTop() > 1200 ) {
-//       $('body').removeClass('changeColorGrey');
-//       $('body').addClass('changeColorWhite');
-//
-//     } else {
-//       $('body').removeClass('changeColorGrey');
-//     }
-//   })
-// })
+// <script src = "https://unpkg.com/aos@next/dist/aos.js" > < /script>
+// AOS.init();
+
+// nav reference from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav --
+function openNav() {
+  document.getElementById("mySidenav").style.width = "25rem";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 
 
+//changing image sources for certain images when in mobile view
+window.addEventListener('resize', resize);
 
-//making the background change colors when scrolling
-// https://codepen.io/daveredfern/pen/zBGBJV
-// $(window).scroll(function() {
-//   // selectors
-//   var $window = $(window),
-//       $body = $('body'),
-//       $panel = $('.panel');
-//
-//   // Change 33% earlier than scroll position so colour is there when you arrive.
-//   var scroll = $window.scrollTop() + ($window.height() / 3);
-//
-//   $panel.each(function () {
-//     var $this = $(this);
-//
-//     // if position is within range of this panel.
-//     // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
-//     // Remember we set the scroll to 33% earlier in scroll var.
-//     if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
-//
-//       // Remove all classes on body with color-
-//       $body.removeClass(function (index, css) {
-//         return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
-//       });
-//
-//       // Add class of currently active div
-//       $body.addClass('color-' + $(this).data('color'));
-//     }
-//   });
-// }).scroll();
+function resize() {
+  if (window.innerWidth < 600) {
+    // console.log('window.innerWidth < 700');
+    document.getElementById("poster-sketches").src = "images/poster-sketches-mobile.png";
+    document.getElementById("poster-outcome").src = "images/poster-outcome-mobile.png";
+  } else {
+    document.getElementById("poster-sketches").src = "images/poster-sketches-desktop.png";
+    document.getElementById("poster-outcome").src = "images/poster-outcome.png";
+
+    // document.getElementById("storyboard-sketches").src = "images/storyboard-sketches.png";
+  }
+}
+
+window.addEventListener('resize2', resize);
+
+function resize2() {
+  if (window.innerWidth < 600) {
+    // console.log('window.innerWidth < 700');
+    document.getElementById("storyboard-sketches").src = "images/mobile-storyboard.png";
+  } else {
+    document.getElementById("storyboard-sketches").src = "images/kinetic-storyboard.png";
+
+    // document.getElementById("storyboard-sketches").src = "images/storyboard-sketches.png";
+  }
+}
