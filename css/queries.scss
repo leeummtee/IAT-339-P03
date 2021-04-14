@@ -269,59 +269,8 @@
     width: 100%;
   }
 
-  /* rearrange order so title goes before pic */
-  #project2-pic {
-    padding-top: 5rem;
-    order: 3;
-  }
 
-  #project2-desc {
-    order: 4;
-  }
-
-  .container-projects {
-    /* margin-left: 2rem;
-    margin-right: 2rem; */
-  }
-
-  .block-projects p {
-    width: 99vw;
-  }
-
-  .block-projects h2 {
-    width: 99vw;
-    max-width: 99vw;
-  }
-
-  /* realigning text */
-  .block-projects:nth-of-type(1) {
-    z-index: 1;
-    padding-top: 0rem;
-    margin-left: 0rem;
-    margin-right: 0rem;
-  }
-
-  .block-projects:nth-of-type(4) {
-    z-index: 1;
-    padding-top: 0rem;
-    margin-left: 0rem;
-    margin-right: 0rem;
-  }
-
-  /* realigining images */
-  .block-projects:nth-of-type(2) {
-    margin-top: 0rem;
-    padding-top: 0rem;
-    margin-bottom: -5rem;
-  }
-
-  .block-projects:nth-of-type(3) {
-    margin-top: 0rem;
-    padding-top: 0rem;
-  }
-
-
-// ~~~~~~~~~~~~~DETAILED VIEWS~~~~~~~~~~~~~~~
+/* ~~~~~~~~~~~~~DETAILED VIEWS~~~~~~~~~~~~~~~ */
   .container-poster {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -393,6 +342,52 @@
   .section-divider-footer {
     margin-top: 1rem;
   }
+
+  /* rearrange order so title goes before pic */
+  #project2-pic {
+    padding-top: 5rem;
+    order: 3;
+  }
+
+  #project2-desc {
+    order: 4;
+  }
+
+  .block-projects p {
+    width: 99vw;
+  }
+
+  .block-projects h2 {
+    width: 99vw;
+    max-width: 99vw;
+  }
+
+  /* realigning text */
+  .block-projects:nth-of-type(1) {
+    z-index: 1;
+    padding-top: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .block-projects:nth-of-type(4) {
+    z-index: 1;
+    padding-top: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  /* realigining images */
+  .block-projects:nth-of-type(2) {
+    margin-top: 0rem;
+    padding-top: 0rem;
+    margin-bottom: -5rem;
+  }
+
+  .block-projects:nth-of-type(3) {
+    margin-top: 0rem;
+    padding-top: 0rem;
+  }
 }
 
 @media screen and (max-width: 1265px) {
@@ -424,73 +419,15 @@
 /* making the elements  fill up the page once the screen is a certain size */
 @media screen and (max-width: 1240px) {
   /* ~~~~~~~~~~~~~~~~~poster page ~~~~~~~~~~~~~~~~~ */
-  /* .container-poster {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-top: -10rem;
-  }
-
-  .container-poster p {
-    width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-    max-width: 100%;
-  }
-
-  .container-summary {
-    margin-right: 1rem;
-    margin-left: 1rem;
-  } */
-
-  /* .block-summary p {
-    width: vw;
-  } */
-
   .block-summary {
     flex: 0 100%;
   }
-
-  /* .block-summary {
-    flex: 0 100%;
-  }
-
-  .block-poster {
-    flex: 0 100%;
-  } */
-
-
-  /* .block-poster:nth-of-type(1) {
-    padding-bottom: 7rem;
-  }
-
-  .block-poster:nth-of-type(2) {
-    margin-bottom: 10rem;
-  }
-
-  .block-poster:nth-of-type(3) {
-    padding-top: 5rem;
-    margin-bottom: 4rem;
-  }
-
-  .block-poster:nth-of-type(5) {
-    margin-top: 5rem;
-    padding-top: 0rem;
-    margin-bottom: 11rem;
-  }
-
-  .block-poster:nth-of-type(6) {
-    padding-top: 15rem;
-    margin-bottom: 15rem;
-  }
-
-  .block-poster:nth-of-type(7) {
-    margin-bottom: 0rem;
-  } */
 }
 
 
 /* making the margins shrink before the nav buttons hit the logo in the top left */
-@media screen and (max-width: 1143px) {
+// @media screen and (max-width: 1143px) {
+@media screen and (max-width: 1231px) {
   body {
     margin-left: 1rem;
     margin-right: 1rem;

@@ -27,28 +27,24 @@
       <a href="contact.html">contact</a>
       <a href="about.html">about</a>
       <div class="dropdown">
+        <!-- reference for dropdown from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar -->
+        <button class="dropbtn">projects <i class="small-arrow down"> </i>
+        </button>
+        <div class="dropdown-content">
+          <a href="projects.html"> overview</a>
+          <a href="poster.html"> poster</a>
+          <a href="kinetic.html"> motion graphic</a>
+        </div>
       </div>
     </div>
     <!-- hamburger icon -->
     <span class="icon-right-justified" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
   </nav>
 
-  <!-- <section class="container-about">
-    <div class="block-about" data-aos-duration="1000" data-aos="fade-right">
-      <h1> I can be reached via: </h1>
-      <p>
-        <a class="link" href="#"> linkedin </a>
-      </p>
-      <p>
-        <a class="link" href="#"> email </a>
-      </p>
-    </div>
-  </section> -->
-
   <section class="container-contact">
     <div class="block-contact" data-aos-duration="1000" data-aos="fade-right">
       <h1> Let's get in touch! </h1>
-      <p> If you want to collaborate or simply get in contact, I can be reached at: </p>
+      <p> If you want to collaborate or simply connect, I can be reached at: </p>
       <strong> liam_tangilag@sfu.ca </strong>
 
     </div>
@@ -63,14 +59,8 @@
     </div>
   </footer>
 
-  <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "25rem";
-    }
+  <!-- linking the animation library  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-  </script>
-
+  <script src="js/main.js"></script>
 </body>
