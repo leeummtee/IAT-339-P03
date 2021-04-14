@@ -464,6 +464,10 @@
   padding: 15px;
 }
 
+.container-footer p {
+  font-size: 1rem;
+}
+
 .block-footer {
   padding-left: 2rem;
   padding-right: 2rem;
