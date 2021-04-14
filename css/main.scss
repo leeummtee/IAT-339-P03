@@ -38,24 +38,12 @@ $link-hover: #95731C;
 }
 
 .section-divider-footer {
-  /* padding-bottom: 1rem;
-  margin-top: 4rem;
-  padding-top: 2rem;
-  margin-bottom: -10rem; */
   margin-top: 10rem;
   margin-bottom: -10rem;
   border-top-width: 0.15rem;
   border-top-style: solid;
   border-top-color: white;
 }
-
-/* divider for cart line (above total) */
-/* .divider {
-  padding-bottom: 2rem;
-  border-top-width: 0.15rem;
-  border-top-style: solid;
-  border-top-color: white;
-} */
 
 /* lines separating inner elements - reference from https://www.w3schools.com/howto/howto_css_dividers.asp */
 .element {
@@ -98,6 +86,26 @@ $link-hover: #95731C;
   display: block;
 }
 
+/*nav button styling */
+// .button-nav {
+//   display: inline-block;
+//   padding: 0.5rem;
+//   font-size: 1.3rem;
+//   color: white;
+//   font-family: 'Nunito', sans-serif;
+//   text-decoration: none;
+//   transition-duration: 0.5s;
+// }
+//
+// .button-nav:hover {
+//   color: $grey-hover;
+// }
+//
+// .button-nav:focus {
+//   border-color: #DAA520;
+//   border: 3px solid #DAA520;
+// }
+
 .button-nav {
   display: inline-block;
   padding: 0.5rem;
@@ -105,30 +113,18 @@ $link-hover: #95731C;
   color: white;
   font-family: 'Nunito', sans-serif;
   text-decoration: none;
+  border: 2px solid white;
   transition-duration: 0.5s;
 }
 
 .button-nav:hover {
   color: $grey-hover;
+  background-color: #d6d6d6;
 }
 
-.block-add-to-cart {
-  flex: 0 100%;
-}
-
-.block .button-nav {
-  width: 99%;
-  margin-top: 0.5rem;
-  height: 2rem;
-  text-align: center;
-  padding-top: 1.5rem;
-}
-
-
-/* focus border reference from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_navbar_border */
 .button-nav:focus {
   border-color: #DAA520;
-  border: 3px solid #DAA520;
+  border: 3px solid $grey-hover;
 }
 
 /* Styling for form buttons. Reference from https://www.tyssendesign.com.au/articles/css/styling-form-buttons/ */
@@ -340,6 +336,14 @@ $link-hover: #95731C;
   transition-duration: 0.5s;
 }
 
+.icon-right-justified-styleguide {
+  position: relative;
+  align-self: flex-end;
+  left: 95%;
+  top:4rem;
+  transition-duration: 0.5s;
+}
+
 .icon-right-justified:hover {
   color: $grey-hover;
   transition-duration: 0.5s;
@@ -494,6 +498,10 @@ $link-hover: #95731C;
  margin-bottom: 0rem;
 }
 
+.element .container-footer {
+  padding-bottom: 10rem;
+}
+
 .container-footer a{
   padding: 15px;
 }
@@ -641,6 +649,7 @@ p, h1, h2, h3 {
   text-align: center;
 }
 
+
 .container-contact h1 {
   padding-top: 5rem;
 }
@@ -672,6 +681,15 @@ p, h1, h2, h3 {
   flex-grow: 0 100%;
   overflow: hidden;
   margin-top: 15rem;
+}
+
+.element .block-projects {
+  margin-top: -5rem;
+}
+
+.element .container-contact {
+  margin-top: -10rem;
+  margin-bottom: 10rem;
 }
 
 .block-projects p {

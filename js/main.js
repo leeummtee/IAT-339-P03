@@ -12,6 +12,14 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+//nav for styleguide. I will have one navbar at the top for the main navigation, and another one as a template within the page. This is why I am repeating - my code won't be valid if I have a duplicate ID
+function openNavStyleGuide() {
+  document.getElementById("mySidenavStyleGuide").style.width = "25rem";
+}
+
+function closeNavStyleGuide() {
+  document.getElementById("mySidenavStyleGuide").style.width = "0";
+}
 
 //changing image sources for certain images when in mobile view
 window.addEventListener('resize', resize);
