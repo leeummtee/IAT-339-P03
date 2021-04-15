@@ -23,11 +23,11 @@ function closeNavStyleGuide() {
 window.addEventListener('resize', resizePoster);
 function resizePoster() {
   if (document.getElementById("poster") && window.innerWidth < 600) {
-    document.getElementById("poster-sketches").src = "images/poster-sketches-mobile.png";
-    document.getElementById("poster-outcome").src = "images/poster-outcome-mobile.png";
+    document.getElementById("poster-sketches").src = "compressed-images/poster-sketches-mobile.png";
+    document.getElementById("poster-outcome").src = "compressed-images/poster-outcome-mobile.png";
   } else if (document.getElementById("poster") && window.innerWidth >= 600) {
-    document.getElementById("poster-sketches").src = "images/poster-sketches-desktop.png";
-    document.getElementById("poster-outcome").src = "images/poster-outcome.png";
+    document.getElementById("poster-sketches").src = "compressed-images/poster-sketches-desktop.png";
+    document.getElementById("poster-outcome").src = "compressed-images/poster-outcome.png";
   }
 }
 
@@ -35,8 +35,11 @@ function resizePoster() {
 window.addEventListener('resize', resizeKinetic);
 function resizeKinetic() {
   if (document.getElementById("kinetic") && window.innerWidth < 600) {
-    document.getElementById("storyboard-sketches").src = "images/mobile-storyboard.png";
+    document.getElementById("storyboard-sketches").src = "compressed-images/mobile-storyboard.png";
+    document.getElementById("after-effects").src = "compressed-images/after-effects-mobile.png";
+
   } else if (document.getElementById("kinetic") && window.innerWidth >= 600) {
-    document.getElementById("storyboard-sketches").src = "images/kinetic-storyboard.png";
+    document.getElementById("storyboard-sketches").src = "compressed-images/kinetic-storyboard.png";
+    document.getElementById("after-effects").src = "compressed-images/after-effects.png";
   }
 }

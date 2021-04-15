@@ -94,7 +94,7 @@ $link-hover: #95731C;
 
 .button-nav:focus {
   border-color: #DAA520;
-  border: 3px solid $grey-hover;
+  border: 3px solid #DAA520;
 }
 
 /* Styling for form buttons. Reference from https://www.tyssendesign.com.au/articles/css/styling-form-buttons/ */
@@ -174,6 +174,10 @@ $link-hover: #95731C;
   vertical-align: bottom;
 }
 
+.image-link:focus {
+  outline: 3px solid #DAA520;
+}
+
 .larger-element {
   padding-top: 0.5rem;
   margin-bottom: 0.3rem;
@@ -245,7 +249,7 @@ $link-hover: #95731C;
   font-family: 'Montserrat';
 }
 
-.container {
+.container-header {
   padding-top: 16rem;
   display: flex;
   flex-direction: row;
@@ -497,10 +501,16 @@ $link-hover: #95731C;
    margin-top: -1px;
 }
 
-/* Reference for using span for checkout from https://www.w3schools.com/howto/howto_css_checkout_form.asp */
-span.price {
-  float: right;
-  color: #909090;
+button {
+  border:none;
+  background-color:transparent;
+  color: white;
+  // outline:none;
+  // background-color: transparent;
+  // background-repeat:no-repeat;
+  // cursor:pointer;
+  // overflow: hidden;
+  // outline:none;
 }
 
 h2 {
@@ -623,9 +633,9 @@ p, h1, h2, h3 {
   padding-top: 5rem;
 }
 
-.block-contact:nth-of-type(1) {
-  /* margin-right: -3rem; */
+.block-contact {
   z-index: 1;
+  padding-bottom: 10rem;
 }
 
 .block-contact a{
@@ -649,7 +659,7 @@ p, h1, h2, h3 {
 }
 
 .block-projects {
-  flex-grow: 0 100%;
+  // flex-grow: 0 100%;
   overflow: hidden;
   margin-top: 15rem;
 }
@@ -736,6 +746,7 @@ strong {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 15rem;
 }
 
 .container-summary h2 {
@@ -818,13 +829,19 @@ strong {
   margin-top: 20rem;
 }
 
-/* making sure these blocks do not share a row with another block */
-.block-poster:nth-of-type(1), .block-poster:nth-of-type(2), .block-poster:nth-of-type(4), .block-poster:nth-of-type(5), .block-poster:nth-of-type(6), .block-poster:nth-of-type(8), .block-poster:nth-of-type(9) {
+/* making sure these left-aligned blocks do not share a row with another block */
+.block-poster:nth-of-type(1), .block-poster:nth-of-type(2), .block-poster:nth-of-type(4), .block-poster:nth-of-type(5), .block-poster:nth-of-type(6), #reflection-poster, .block-poster:nth-of-type(8), .block-poster:nth-of-type(9), .block-poster:nth-of-type(10), {
   flex: 0 100%;
 }
 
 /* making these blocks move to the right of the screen */
-.block-poster:nth-of-type(3), .block-poster:nth-of-type(7), .block-poster:nth-of-type(10) {
+// .block-poster:nth-of-type(3), .block-poster:nth-of-type(7), .block-poster:nth-of-type(10) {
+//   align-self: flex-end;
+//   margin-left: auto;
+// }
+
+/* right-aligning these blocks */
+.block-poster:nth-of-type(3), #animating-block {
   align-self: flex-end;
   margin-left: auto;
 }
@@ -893,7 +910,6 @@ strong {
   margin-top: -1.5rem;
   border-bottom-width: 0.15rem;
   border-bottom-style: solid;
-  /* border-bottom-color: white; */
   border-bottom-color: white;
 }
 
@@ -901,8 +917,13 @@ strong {
   flex: 0 100%;
 }
 
-.right-aligned {
-
+.right-aligned .divider {
+  width: 100%;
+  padding-bottom: 0.5rem;
+  margin-top: -1.5rem;
+  border-bottom-width: 0.15rem;
+  border-bottom-style: solid;
+  border-bottom-color: white;
 }
 
 

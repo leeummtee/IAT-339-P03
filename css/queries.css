@@ -2,8 +2,8 @@
 @media screen and (max-width: 457px) {
   /*~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~*/
   body {
-    margin-left: 0rem;
-    margin-right: 0rem;
+    margin-left: 0;
+    margin-right: 0;
   }
   .block-projects h2 {
     font-size: 2.2rem;
@@ -12,18 +12,15 @@
     font-size: 5rem;
     text-align: center;
   }
-  .header-text {
-    margin-top: 5rem;
+  #project-header {
+    font-size: 4.5rem;
   }
-  .container {
+  .container-header {
     margin-bottom: 7rem;
   }
   .container-projects {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    padding-top: 0rem;
-    margin-top: -10rem;
+    padding-top: 20rem;
+    margin-top: 0;
   }
   .block-projects p {
     width: 100%;
@@ -38,6 +35,7 @@
     margin-bottom: -4rem;
   }
   .block-projects:nth-of-type(1) {
+    margin-top: 20rem;
     margin-right: 0rem;
     margin-bottom: 1rem;
   }
@@ -62,24 +60,24 @@
     text-align: center;
   }
   .container-summary {
-    margin-top: -10rem;
-    margin-left: 0rem;
-    margin-right: 0rem;
+    margin-top: -20rem;
+    margin-left: 0;
+    margin-right: 0;
   }
   .block-summary h2 {
     max-width: 100%;
-    padding-top: 0rem;
+    padding-top: 0;
   }
   #summary-padding-kinetic {
-    padding-top: 10rem;
+    padding-top: 21rem;
   }
   .block-summary {
     flex: 0 100%;
-    margin-top: 0rem;
+    margin-top: 0;
   }
   .container-poster {
-    margin-left: 0rem;
-    margin-right: 0rem;
+    margin-left: 0;
+    margin-right: 0;
     padding-top: 5rem;
   }
   .container-poster p {
@@ -105,7 +103,7 @@
     margin-top: -1.5rem;
   }
   /*~~~~~~~~~~~~~~~~~~~~~~~ MOTION GRAPHIC PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~*/
-  .container {
+  .container-header {
     margin-bottom: 25rem;
   }
   .block-kinetic {
@@ -177,41 +175,12 @@
     font-size: 60px;
     margin-left: 50px;
   }
-  .block-projects {
-    margin-top: 5rem;
-  }
-  .block-projects p {
-    width: 100%;
-  }
-  .block-projects h2 {
-    width: 100%;
-  }
-  /* realigning text */
-  .block-projects:nth-of-type(1) {
-    z-index: 1;
-    margin-right: 0rem;
-    padding-top: 0rem;
-  }
-  .block-projects:nth-of-type(4) {
-    z-index: 1;
-    padding-top: 0rem;
-    margin-left: 0rem;
-  }
-  /* realigining images */
-  .block-projects:nth-of-type(2) {
-    margin-top: 0rem;
-    padding-top: 0rem;
-  }
-  .block-projects:nth-of-type(3) {
-    margin-top: 0rem;
-    padding-top: 0rem;
-  }
   .container-poster {
-    margin-left: 0rem;
-    margin-right: 0rem;
+    margin-left: 0;
+    margin-right: 0;
   }
   .container-projects {
-    padding-top: 5rem;
+    padding-top: 0rem;
   }
 }
 
@@ -219,32 +188,26 @@
   .image-link {
     width: 100%;
   }
-  .button-nav {
-    width: 100%;
-    text-align: center;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
   .container-projects {
-    overflow: hidden;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   /* ~~~~~~~~~~~~~DETAILED VIEWS~~~~~~~~~~~~~~~ */
   .container-poster {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: -10rem;
+    margin-bottom: 10rem;
   }
   .container-poster p {
     width: 100%;
-    margin-right: 0;
     margin-left: 0;
+    margin-right: 0;
     max-width: 100%;
   }
   .container-summary {
-    margin-right: 1rem;
     margin-left: 1rem;
+    margin-right: 1rem;
   }
   .block-summary h2 {
     width: 100%;
@@ -275,18 +238,12 @@
 /* making the header text move to the center when the screen is small enough */
 /* also making the contact page elements space properly at smaller sizes */
 @media screen and (max-width: 1050px) {
-  .header-text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 30rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100vw;
-  }
   .section-divider-footer {
     margin-top: 1rem;
+  }
+  .container-projects {
+    overflow: hidden;
+    margin-top: -20rem;
   }
   /* rearrange order so title goes before pic */
   #project2-pic {
@@ -296,24 +253,36 @@
   #project2-desc {
     order: 4;
   }
-  .block-projects p {
-    width: 100%;
+  .button-nav {
+    width: 99%;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .block-projects {
+    flex: 0 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   .block-projects h2 {
-    max-width: 99vw;
+    width: 100%;
+    max-width: 100%;
+  }
+  .block-projects p {
+    width: 100%;
   }
   /* realigning text */
   .block-projects:nth-of-type(1) {
     z-index: 1;
     padding-top: 0rem;
-    margin-left: 0rem;
-    margin-right: 0rem;
+    margin-left: 0;
+    margin-right: 0;
   }
   .block-projects:nth-of-type(4) {
     z-index: 1;
     padding-top: 0rem;
-    margin-left: 0rem;
-    margin-right: 0rem;
+    margin-left: 0;
+    margin-right: 0;
   }
   /* realigining images */
   .block-projects:nth-of-type(2) {
