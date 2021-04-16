@@ -58,7 +58,6 @@
       <h4> CSS selector: </h4>
       <p> .link </p>
 
-      <!-- For all my sample codes, I used the P01 Style Guide example used as reference (mainly for implementing "&lt;" and "&gt;") -->
       <h4> Sample code: </h4>
       <code>
         &lt;p&gt; Click &lt;a class="link" href="https://www.sfu.ca/"&gt; here &lt;/a&gt; to find out more!/ &lt;p&gt;
@@ -164,7 +163,7 @@
       <h4> Rendered element: </h4>
       <section class="container-projects">
         <div class="block-projects">
-          <a href="poster.html">
+          <a href="poster.html" onclick="this.focus()" class="imageAnchor" >
             <img class="image-link" src="compressed-images/placeholder.jpg" alt="placeholder img">
           </a>
         </div>
@@ -252,14 +251,16 @@
         </div>
 
         <div class="block-projects">
-          <a href="poster.html">
-            <img class="image-link" src="compressed-images/placeholder.jpg" alt="placeholder img">
+          <!-- making image respond to tab focus reference from http://jsfiddle.net/4x7wg7sb/1/ -->
+          <a href="poster.html" onclick="this.focus()" class="imageAnchor" >
+            <img class="image-link" src="compressed-images/placeholder.jpg" alt="mockup render of my poster">
           </a>
         </div>
 
+        <!-- making image respond to tab focus reference from http://jsfiddle.net/4x7wg7sb/1/ -->
         <div class="block-projects" id=project2-desc>
-          <a href="poster.html">
-            <img class="image-link" src="compressed-images/placeholder.jpg" alt="placeholder img">
+          <a href="kinetic.html" class="imageAnchor" onclick="this.focus()">
+            <img class="image-link" src="compressed-images/placeholder.jpg" alt="screenshot of my motion graphic">
           </a>
         </div>
 

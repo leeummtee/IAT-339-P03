@@ -191,8 +191,10 @@ $black: #000000;
   vertical-align: bottom;
 }
 
-.image-link:focus {
-  outline: 3px solid $gold-color;
+/* making image respond to tab focus reference from http://jsfiddle.net/4x7wg7sb/1/ */
+.imageAnchor:focus img{
+  transition: transform 1.2s;
+  transform: scale(1.1);
 }
 
 .larger-element {
@@ -240,7 +242,6 @@ $black: #000000;
   color: white;
   font-weight: lighter;
   transition-duration: 0.5s;
-
 }
 
 .logo:hover {
@@ -250,7 +251,7 @@ $black: #000000;
 }
 
 .logo:focus{
-  outline-color: $gold-color;
+  outline: $gold-color;
   color: $grey-hover;
 }
 
@@ -479,6 +480,10 @@ button {
   color: white;
 }
 
+button:focus {
+  outline-color: $gold-color;
+}
+
 h2 {
   margin-top: 3rem;
   font-weight: 600;
@@ -685,6 +690,11 @@ strong {
 }
 
 .image-link:hover {
+  transition: transform 1.2s;
+  transform: scale(1.1);
+}
+
+.image-link:focus {
   transition: transform 1.2s;
   transform: scale(1.1);
 }
