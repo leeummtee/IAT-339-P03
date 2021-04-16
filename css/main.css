@@ -39,10 +39,14 @@
   transition-duration: 0.5s;
 }
 
-.link:hover, .link:focus {
+.link:hover {
   color: #95731C;
   text-decoration: none;
   transition-duration: 0.5s;
+}
+
+.link:focus {
+  outline-color: #DAA520;
 }
 
 /*nav button styling */
@@ -177,28 +181,16 @@
   background-color: #808080;
 }
 
-.rectangle3 {
-  height: 2rem;
-  width: 10rem;
-  background-color: #555;
-}
-
 .rectangle4 {
   height: 2rem;
   width: 10rem;
   background-color: #000000;
 }
 
-.rectangle6 {
-  height: 2rem;
-  width: 10rem;
-  background-color: #1a1a1a;
-}
-
 .rectangle5 {
   height: 2rem;
   width: 10rem;
-  background-color: #95731C;
+  background-color: #DAA520;
 }
 
 /* Styling for brand component headings */
@@ -216,6 +208,11 @@
   color: #808080;
   transition-duration: 0.5s;
   /* opacity: 80%; */
+}
+
+.logo:focus {
+  outline-color: #DAA520;
+  color: #808080;
 }
 
 .h2-sample {
@@ -267,6 +264,10 @@
   color: #808080;
 }
 
+.sidenav a:focus {
+  outline-color: #DAA520;
+}
+
 .sidenav .closebtn {
   position: absolute;
   right: 4.75rem;
@@ -275,12 +276,18 @@
   margin-left: 50px;
 }
 
+.closebtn:focus {
+  outline-color: #DAA520;
+}
+
 /* end of sidenav reference */
 .icon-right-justified {
   position: absolute;
   right: 5.5rem;
   top: 4rem;
   transition-duration: 0.5s;
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .icon-right-justified-styleguide {
@@ -296,20 +303,14 @@
   transition-duration: 0.5s;
 }
 
-/* reference for drop down from  */
-.dropdown {
-  float: left;
-  overflow: hidden;
+.icon-right-justified:focus {
+  outline-color: #DAA520;
+  color: #808080;
+  transition-duration: 0.5s;
 }
 
-.dropdown .dropbtn {
-  /* border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0; */
+/* reference for drop down from https://stackoverflow.com/questions/35579569/hide-show-menu-onclick-javascript  */
+.dropbtn {
   font-family: inherit;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -317,52 +318,17 @@
   color: white;
   display: block;
   transition: 0.3s;
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
   cursor: pointer;
-  overflow: hidden;
-  outline: none;
 }
 
-.dropdown .dropbtn:hover {
+.dropbtn:hover {
   color: #808080;
 }
 
-.dropdown-content {
+.drop-content {
   display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
 }
 
-.dropdown-content a {
-  padding: 8px 8px 8px 62px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
-
-.dropdown-content a:hover {
-  color: #808080;
-  transition-duration: 0.5s;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* end of reference */
 /* logo in the top left */
 .topnav-left {
   float: left;
@@ -899,4 +865,15 @@ strong {
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+}
+
+/* making the side navbar more accessible */
+.active {
+  visibility: visible;
+  width: 25rem;
+}
+
+.inactive {
+  visibility: hidden;
+  width: 0;
 }

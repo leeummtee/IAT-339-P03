@@ -24,31 +24,27 @@
     </div>
 
     <!-- reference for sidenav from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav -->
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a aria-hidden="true" href="contact.html">contact</a>
-      <a aria-hidden="true" href="about.html">about</a>
-      <div aria-hidden="true" class="dropdown">
-        <!-- reference for dropdown from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar -->
-        <button class="dropbtn" >projects <i class="small-arrow down"> </i>
-        </button>
-        <div class="dropdown-content">
-          <a aria-hidden="true" href="projects.html"> overview</a>
-          <a aria-hidden="true" href="poster.html"> poster</a>
-          <a aria-hidden="true" href="kinetic.html"> motion graphic</a>
-        </div>
-      </div>
-    </div>
-    <!-- hamburger icon -->
-    <!-- <span class="icon-right-justified button-nav" style="font-size:30px;cursor:pointer" onclick="openNav()">test</span> -->
-    <button role="button" class="icon-right-justified" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</button>
+    <!-- reference for making sidenav accessible with tab index https://knowbility.org/blog/2020/accessible-slide-menus/ -->
+    <button role="menu" class="icon-right-justified" onclick="openNav()">&#9776;</button>
+    <div id="mySidenav" class="sidenav inactive">
+      <a href="javascript:void(0)" role="button" class="closebtn" aria-label="close navigation" onclick="closeNav()">&times;</a>
+      <a href="contact.html">contact</a>
+      <a href="about.html">about</a>
+
+      <!-- drop down reference from https://stackoverflow.com/questions/35579569/hide-show-menu-onclick-javascript -->
+      <button id="menu" class="dropbtn" onclick="toggleMenu()"> projects <i class="small-arrow down"> </i></button>
+      <ul id="menu-box" class="drop-content">
+        <a href="projects.html">overview</a>
+        <a href="poster.html">poster</a>
+        <a href="kinetic.html">motion graphic</a>
+      </ul>
     </div>
   </nav>
 
   <section class="container-header">
     <div class="block">
       <header class="header-text-detailed">
-        <h1 id="project-header">a Digital Designer </h1>
+        <h1 id="project-header"> a Digital Designer </h1>
         <p> who is currently enrolled in SFU's Interactive Arts & Technology Program. </p>
         <!-- down arrow reference: https://www.w3schools.com/howto/howto_css_arrows.asp -->
         <p><i class="arrow down"></i></p>
@@ -102,6 +98,7 @@
 
   <!-- linking the animation library  -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
   <!-- linking javascript file -->
   <script src="js/main.js"></script>
 </body>

@@ -5,9 +5,11 @@
 //main colors
 $grey-hover: #808080;
 
-$link-color: #DAA520;
+$gold-color: #DAA520;
 
 $link-hover: #95731C;
+
+$gold-focus: #d6d6d6;
 
 
 //rectangle dimensions for style style guide
@@ -62,17 +64,20 @@ $link-hover: #95731C;
 
 /* Styling for in-text link: */
 .link {
-  color: $link-color;
+  color: $gold-color;
   font-style: italic;
   transition-duration: 0.5s;
 
 }
 
-.link:hover, .link:focus {
+.link:hover{
   color: $link-hover;
   text-decoration: none;
   transition-duration: 0.5s;
+}
 
+.link:focus{
+  outline-color: $gold-color;
 }
 
 /*nav button styling */
@@ -93,7 +98,7 @@ $link-hover: #95731C;
 }
 
 .button-nav:focus {
-  border-color: #DAA520;
+  border-color: $gold-color;
   border: 3px solid #DAA520;
 }
 
@@ -205,24 +210,14 @@ $link-hover: #95731C;
   background-color: #808080;
 }
 
-.rectangle3 {
-  @include rectangle;
-  background-color: #555;
-}
-
 .rectangle4 {
   @include rectangle;
   background-color: #000000;
 }
 
-.rectangle6 {
-  @include rectangle;
-  background-color: #1a1a1a;
-}
-
 .rectangle5 {
   @include rectangle;
-  background-color: #95731C;
+  background-color: $gold-color;
 }
 
 /* Styling for brand component headings */
@@ -241,6 +236,11 @@ $link-hover: #95731C;
   color: $grey-hover;
   transition-duration: 0.5s;
   /* opacity: 80%; */
+}
+
+.logo:focus{
+  outline-color: $gold-color;
+  color: $grey-hover;
 }
 
 .h2-sample {
@@ -292,12 +292,20 @@ $link-hover: #95731C;
   color: $grey-hover;
 }
 
+.sidenav a:focus {
+  outline-color: $gold-color;
+}
+
 .sidenav .closebtn {
   position: absolute;
   right: 4.75rem;
   top: 2.5rem;
   font-size: 60px;
   margin-left: 50px;
+}
+
+.closebtn:focus{
+  outline-color: $gold-color;
 }
 /* end of sidenav reference */
 
@@ -307,6 +315,8 @@ $link-hover: #95731C;
   right: 5.5rem;
   top: 4rem;
   transition-duration: 0.5s;
+  font-size:30px;
+  cursor:pointer
 }
 
 .icon-right-justified-styleguide {
@@ -322,20 +332,15 @@ $link-hover: #95731C;
   transition-duration: 0.5s;
 }
 
-/* reference for drop down from  */
-.dropdown {
-  float: left;
-  overflow: hidden;
+.icon-right-justified:focus {
+  outline-color: $gold-color;
+  color: $grey-hover;
+  transition-duration: 0.5s;
 }
 
-.dropdown .dropbtn {
-  /* border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0; */
+/* reference for drop down from https://stackoverflow.com/questions/35579569/hide-show-menu-onclick-javascript  */
+
+.dropbtn {
   font-family: inherit;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -344,54 +349,21 @@ $link-hover: #95731C;
   display: block;
   transition: 0.3s;
 
-  background-color: Transparent;
-  background-repeat:no-repeat;
-  border: none;
+  // background-color: Transparent;
+  // background-repeat:no-repeat;
+  // border: none;
   cursor:pointer;
-  overflow: hidden;
-  outline:none;
+  // overflow: hidden;
+  // outline:none;
 }
 
-.dropdown .dropbtn:hover{
+.dropbtn:hover{
   color: $grey-hover;
 }
 
-.dropdown-content {
+.drop-content {
   display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-
-  background-color: Transparent;
-  background-repeat:no-repeat;
-  border: none;
-  cursor:pointer;
-  overflow: hidden;
-  outline:none;
 }
-
-.dropdown-content a {
-  padding: 8px 8px 8px 62px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
-}
-
-.dropdown-content a:hover {
-  color: $grey-hover;
-  transition-duration: 0.5s;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-/* end of reference */
-
-
 
 
 /* logo in the top left */
@@ -926,7 +898,6 @@ strong {
   border-bottom-color: white;
 }
 
-
 /* arrow reference from https://www.w3schools.com/howto/howto_css_arrows.asp */
 .arrow {
   margin-top: 7rem;
@@ -955,4 +926,15 @@ strong {
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+}
+
+/* making the side navbar more accessible */
+.active {
+  visibility: visible;
+  width: 25rem;
+}
+
+.inactive {
+  visibility: hidden;
+  width: 0;
 }

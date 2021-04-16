@@ -13,30 +13,35 @@
 </head>
 
 <body>
-  <script src="js/main.js"></script>
-
   <nav>
     <!-- logo in the top left -->
     <div class="topnav">
       <div class="topnav-left">
         <a href="projects.html">
-          <span class="logo"> Liam Tangilag </span>
+          <span class="logo" tabindex="0"> Liam Tangilag </span>
         </a>
       </div>
     </div>
 
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#interactive_elements">interactive elements</a>
-      <a href="#text_styling">text styling</a>
-      <a href="#combined_elements">combined elements</a>
-      <a href="#components">components</a>
+    <!-- reference for sidenav from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav -->
+    <!-- reference for making sidenav accessible with tab index https://knowbility.org/blog/2020/accessible-slide-menus/ -->
+    <button role="menu" class="icon-right-justified" onclick="openNav()">&#9776;</button>
+    <div id="mySidenav" class="sidenav inactive">
+      <a href="javascript:void(0)" role="button" class="closebtn" aria-label="close navigation" onclick="closeNav()">&times;</a>
+      <a href="contact.html">contact</a>
+      <a href="about.html">about</a>
 
+      <!-- drop down reference from https://stackoverflow.com/questions/35579569/hide-show-menu-onclick-javascript -->
+      <button id="menu" class="dropbtn" onclick="toggleMenu()"> projects <i class="small-arrow down"> </i></button>
+      <ul id="menu-box" class="drop-content">
+        <a href="projects.html">overview</a>
+        <a href="poster.html">poster</a>
+        <a href="kinetic.html">motion graphic</a>
+      </ul>
     </div>
-    <button role="button" tabindex="10" class="icon-right-justified" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</button>
   </nav>
 
-  <section class="container">
+  <section class="container-header">
     <div class="block">
       <header class="header-text-detailed">
         <h1>Style Guide</h1>
@@ -340,7 +345,7 @@
 
       <!-- type 7 -->
       <div class="block-poster">
-        <h2 class="divider"> 03. reflection </h2>
+        <h2 class="divider" id="reflection-poster"> 03. reflection </h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui. Convallis posuere morbi leo urna molestie at. Consectetur libero id faucibus
           nisl tincidunt eget nullam non nisi. Cursus turpis massa tincidunt dui.
@@ -449,6 +454,8 @@
       <p> #808080; </p>
       <div class="rectangle4"> </div>
       <p> #000000</p>
+      <div class="rectangle5"> </div>
+      <p> #000000</p>
     </section>
   </section>
   <!-- END OF COMPONENTS SECTION -->
@@ -465,19 +472,6 @@
 
   <!-- fade effects -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-  <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "25rem";
-    }
-
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-  </script>
 
   <script src="js/main.js"></script>
 </body>

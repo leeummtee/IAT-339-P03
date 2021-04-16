@@ -1,11 +1,32 @@
 // nav reference from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav --
+var sideNavigation = document.querySelector("#mySidenav");
 function openNav() {
-  document.getElementById("mySidenav").style.width = "25rem";
+  sideNavigation.classList.remove('inactive');
+  sideNavigation.classList.add("active");
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  sideNavigation.classList.remove("active");
+  sideNavigation.classList.add("inactive");
 }
+
+function toggleMenu() {
+  var menuBox = document.getElementById('menu-box');
+  if(menuBox.style.display == "block") { // if is menuBox displayed, hide it
+    menuBox.style.display = "none";
+  }
+  else { // if is menuBox hidden, display it
+    menuBox.style.display = "block";
+  }
+}
+
+//detecting esc key press to close nav - reference from https://jsfiddle.net/m9w8m/
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 27) {
+        closeNav();
+    }
+};
 
 //initializing the animation library
 AOS.init();
@@ -21,6 +42,7 @@ function closeNavStyleGuide() {
 
 //changing image sources for certain images in the poster project page when in mobile view
 window.addEventListener('resize', resizePoster);
+
 function resizePoster() {
   if (document.getElementById("poster") && window.innerWidth < 600) {
     document.getElementById("poster-sketches").src = "compressed-images/poster-sketches-mobile.png";
@@ -33,6 +55,7 @@ function resizePoster() {
 
 //changing image sources for certain images in the kinetic project page when in mobile view
 window.addEventListener('resize', resizeKinetic);
+
 function resizeKinetic() {
   if (document.getElementById("kinetic") && window.innerWidth < 600) {
     document.getElementById("storyboard-sketches").src = "compressed-images/mobile-storyboard.png";
