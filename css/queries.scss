@@ -176,10 +176,15 @@
     margin-top: 2rem;
   }
 
+  .active {
+    width: 20rem;
+  }
+
   /*~~~~~~~~~~~~~~~~~~~~~~~ ABOUT PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~*/
   .container-about {
     justify-content: center;
     display: flex;
+    padding-bottom: 5rem;
   }
 
   .block-about {
