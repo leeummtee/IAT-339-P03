@@ -18,14 +18,14 @@
     <div class="topnav">
       <div class="topnav-left">
         <a href="projects.html">
-          <span class="logo" tabindex="0"> Liam Tangilag </span>
+          <span class="logo"> Liam Tangilag </span>
         </a>
       </div>
     </div>
 
     <!-- reference for sidenav from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav -->
     <!-- reference for making sidenav accessible with tab index https://knowbility.org/blog/2020/accessible-slide-menus/ -->
-    <button role="menu" class="icon-right-justified" onclick="openNav()">&#9776;</button>
+    <button class="icon-right-justified" onclick="openNav()">&#9776;</button>
     <div id="mySidenav" class="sidenav inactive">
       <a href="javascript:void(0)" role="button" class="closebtn" aria-label="close navigation" onclick="closeNav()">&times;</a>
       <a href="#interactive_elements">interactive elements</a>
@@ -242,7 +242,7 @@
       <h3> Project Listing Template </h3>
       <div class="container-projects">
         <div class="block-projects" data-aos-duration="1000" data-aos="fade-right">
-          <h2> project 1: poster </h2>
+          <h2 class="divider"> project 1: poster </h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui.
           </p>
@@ -264,7 +264,7 @@
         </div>
 
         <div class="block-projects" data-aos-duration="1000" data-aos="fade-left" id=project2-pic>
-          <h2> project 2: kinetic typography</h2>
+          <h2 class="divider"> project 2: motion graphic</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui.
           </p>
@@ -323,7 +323,6 @@
         <img class="almost-full-width-img" src="compressed-images/placeholder.jpg" alt="initial illustrator render">
       </div>
 
-      <!-- type 5 -->
       <div class="block-poster">
         <h3> c. outcome </h3>
         <p>
@@ -332,14 +331,12 @@
         </p>
       </div>
 
-      <!-- type 6 -->
       <div class="block-poster" data-aos-duration="1000" data-aos="fade-up">
         <img class="almost-full-width-img" src="compressed-images/placeholder.jpg" alt="final poster & render">
       </div>
 
-      <!-- type 7 -->
-      <div class="block-poster">
-        <h2 class="divider" id="reflection-poster"> 03. reflection </h2>
+      <div class="block-poster" id="reflection-poster">
+        <h2 class="divider left-aligned"> 03. reflection </h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In cursus turpis massa tincidunt dui. Convallis posuere morbi leo urna molestie at. Consectetur libero id faucibus
           nisl tincidunt eget nullam non nisi. Cursus turpis massa tincidunt dui.
@@ -437,19 +434,19 @@
       <h3> Colour palettes: </h3>
       <ul>
         <li> monochromatic color scheme to allow my work to be the focus </li>
+        <li> simple and minimalist layout to align with my ethos </li>
+
       </ul>
 
       <!-- Colored rectangles reference from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_shapes_rectangle -->
-      <div class="rectangle"> </div>
-      <p> #ededed </p>
       <div class="rectangle1"> </div>
-      <p> #d6d6d6</p>
+      <p> #d6d6d6 ($light-grey)</p>
       <div class="rectangle2"> </div>
-      <p> #808080; </p>
+      <p> #808080 ($grey-hover)</p>
       <div class="rectangle4"> </div>
-      <p> #000000</p>
+      <p> #000000 ($black)</p>
       <div class="rectangle5"> </div>
-      <p> #000000</p>
+      <p> #DAA520 ($gold-color)</p>
     </section>
   </section>
   <!-- END OF COMPONENTS SECTION -->

@@ -327,6 +327,10 @@
   display: none;
 }
 
+.drop-content a {
+  margin-left: 2rem;
+}
+
 /* logo in the top left */
 .topnav-left {
   float: left;

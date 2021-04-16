@@ -18,14 +18,14 @@
     <div class="topnav">
       <div class="topnav-left">
         <a href="projects.html">
-          <span class="logo" tabindex="0"> Liam Tangilag </span>
+          <span class="logo"> Liam Tangilag </span>
         </a>
       </div>
     </div>
 
     <!-- reference for sidenav from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav -->
     <!-- reference for making sidenav accessible with tab index https://knowbility.org/blog/2020/accessible-slide-menus/ -->
-    <button role="menu" class="icon-right-justified" onclick="openNav()">&#9776;</button>
+    <button class="icon-right-justified" onclick="openNav()">&#9776;</button>
     <div id="mySidenav" class="sidenav inactive">
       <a href="javascript:void(0)" role="button" class="closebtn" aria-label="close navigation" onclick="closeNav()">&times;</a>
       <a href="contact.html">contact</a>
@@ -33,11 +33,11 @@
 
       <!-- drop down reference from https://stackoverflow.com/questions/35579569/hide-show-menu-onclick-javascript -->
       <button id="menu" class="dropbtn" onclick="toggleMenu()"> projects <i class="small-arrow down"> </i></button>
-      <ul id="menu-box" class="drop-content">
+      <div id="menu-box" class="drop-content">
         <a href="projects.html">overview</a>
         <a href="poster.html">poster</a>
         <a href="kinetic.html">motion graphic</a>
-      </ul>
+      </div>
     </div>
   </nav>
 
@@ -120,8 +120,8 @@
     <div class="block-poster" id="animating-block">
       <h3> d. animating </h3>
       <p>
-        My biggest challenges were getting the timing right and making the motion filled with energy. I addressed the first problem by slowing down the preview frame by frame so that I could line everything up with the audio better. As for making the
-        movement more energetic, I ended up doing this by using motion blur and adding ease-in and ease-out effects to each movement.
+        My biggest challenges were getting the timing right and making the motion less robotic. I addressed the first problem by slowing down the preview frame by frame so that I could line everything up with the audio better. As for making the
+        movement more natural, I ended up doing this by using motion blur and adding ease-in and ease-out effects to each movement.
       </p>
     </div>
 
