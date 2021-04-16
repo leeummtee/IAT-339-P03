@@ -10,6 +10,7 @@ function closeNav() {
   sideNavigation.classList.add("inactive");
 }
 
+// reference from https://stackoverflow.com/questions/35579569/hide-show-menu-onclick-javascript
 function toggleMenu() {
   var menuBox = document.getElementById('menu-box');
   if(menuBox.style.display == "block") { // if is menuBox displayed, hide it
