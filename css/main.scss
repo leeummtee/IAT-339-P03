@@ -70,7 +70,7 @@ $black: #000000;
   margin-bottom: 6rem;
 }
 
-.element .container-poster-view h2 {
+.element .container-detailed-view h2 {
   margin-top: 1rem;
 }
 
@@ -712,7 +712,7 @@ strong {
   margin-top: -2rem;
 }
 
-.container-poster {
+.container-detailed {
   @include detailed-view-margins;
   display: flex;
   flex-wrap: wrap;
@@ -720,15 +720,15 @@ strong {
   justify-content: center;
 }
 
-.container-poster h2.left-aligned{
+.container-detailed h2.left-aligned{
   margin-bottom: 2rem;
 }
 
-.container-poster .divider {
+.container-detailed .divider {
   margin-bottom: 0rem;
 }
 
-.container-poster p {
+.container-detailed p {
   max-width: 35vw;
 }
 
@@ -742,28 +742,28 @@ strong {
   width: 100vw;
 }
 
-.block-poster h3{
+.block-detailed h3{
   margin-top: 20rem;
   margin-bottom: -1rem;
 }
 
-.block-poster h2{
+.block-detailed h2{
   margin-top: 20rem;
 }
 
 /* making sure these left-aligned blocks do not share a row with another block */
-.block-poster:nth-of-type(1), .block-poster:nth-of-type(2), .block-poster:nth-of-type(4), .block-poster:nth-of-type(5), .block-poster:nth-of-type(6), #reflection-poster, .block-poster:nth-of-type(8), .block-poster:nth-of-type(9), .block-poster:nth-of-type(10), {
+.block-detailed:nth-of-type(1), .block-detailed:nth-of-type(2), .block-detailed:nth-of-type(4), .block-detailed:nth-of-type(5), .block-detailed:nth-of-type(6), #reflection-poster, .block-detailed:nth-of-type(8), .block-detailed:nth-of-type(9), .block-detailed:nth-of-type(10), {
   flex: 0 100%;
 }
 
 /* right-aligning these blocks */
-.block-poster:nth-of-type(3), #animating-block {
+.block-detailed:nth-of-type(3), #animating-block {
   align-self: flex-end;
   margin-left: auto;
 }
 
 /* moving the first block element closer to the top */
-.block-poster:nth-of-type(1){
+.block-detailed:nth-of-type(1){
   margin-top: -20rem;
 }
 
@@ -772,7 +772,7 @@ strong {
 
 }
 
-.container-poster p, h3, h2 {
+.container-detailed p, h3, h2 {
   color: white;
 }
 
