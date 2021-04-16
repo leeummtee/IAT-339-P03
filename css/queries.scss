@@ -9,13 +9,16 @@
   margin-right: 1rem;
 }
 
+@mixin top-margin-padding-zero {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 @media screen and (max-width: 457px) {
 
   /*~~~~~~~~~~~~~~~~~~~~~~~ HOME PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~*/
   body {
     @include zero-margin-left-right;
-    // margin-left: 0;
-    // margin-right: 0;
   }
 
   .block-projects h2 {
@@ -90,8 +93,6 @@
   .container-summary {
     margin-top: -20rem;
     @include zero-margin-left-right;
-    // margin-left: 0;
-    // margin-right: 0;
   }
 
   .block-summary h2 {
@@ -110,20 +111,15 @@
 
   .container-poster {
     @include zero-margin-left-right;
-    // margin-left: 0;
-    // margin-right: 0;
     padding-top: 5rem;
   }
 
   .container-poster p {
     max-width: 100vw;
-    // max-width: 100%;
   }
 
   .block-poster p {
     width: 100vw;
-    // width: 100vw;
-
   }
 
   .block-poster:nth-of-type(3) {
@@ -252,8 +248,6 @@
 
   .container-projects {
     @include one-margin-left-right;
-    // margin-left: 1rem;
-    // margin-right: 1rem;
   }
 
 /* ~~~~~~~~~~~~~DETAILED VIEWS~~~~~~~~~~~~~~~ */
@@ -271,8 +265,6 @@
 
   .container-summary {
     @include one-margin-left-right;
-    // margin-right: 1rem;
-    // margin-left: 1rem;
   }
 
   .block-summary h2 {
@@ -310,17 +302,6 @@
 /* making the header text move to the center when the screen is small enough */
 /* also making the contact page elements space properly at smaller sizes */
 @media screen and (max-width: 1050px) {
-  // .header-text {
-  //   color: white;
-  //   font-size: 20px;
-  //   position: absolute;
-  //   top: 30rem;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-  //   text-align: center;
-  //   width: 100vw;
-  // }
-
   .section-divider-footer {
     margin-top: 1rem;
   }
@@ -350,9 +331,6 @@
   .block-projects {
     flex: 0 100%;
     @include zero-margin-left-right;
-    // margin-left: 0;
-    // margin-right: 0;
-    // text-align: center;
   }
 
   .block-projects h2 {
@@ -370,28 +348,22 @@
     z-index: 1;
     padding-top: 0rem;
     @include zero-margin-left-right;
-    // margin-left: 0;
-    // margin-right: 0;
   }
 
   .block-projects:nth-of-type(4) {
     z-index: 1;
     padding-top: 0rem;
     @include zero-margin-left-right;
-    // margin-left: 0;
-    // margin-right: 0;
   }
 
   /* realigining images */
   .block-projects:nth-of-type(2) {
-    margin-top: 0rem;
-    padding-top: 0rem;
+    @include top-margin-padding-zero;
     margin-bottom: -5rem;
   }
 
   .block-projects:nth-of-type(3) {
-    margin-top: 0rem;
-    padding-top: 0rem;
+    @include top-margin-padding-zero;
   }
 }
 
@@ -400,8 +372,6 @@
   /* ~~~~~~~~~~~~~~~~~~~ about page ~~~~~~~~~~~~~~~~~~~~~~~~ */
   .container-about {
     @include one-margin-left-right;
-    // margin-left: 1rem;
-    // margin-right: 1rem;
     justify-content: left;
   }
 
@@ -414,7 +384,6 @@
   }
 
   .about-img {
-    /* width: 100%; */
     align-self:center;
     margin-left: auto;
     margin-right: auto;
@@ -435,8 +404,6 @@
 @media screen and (max-width: 1231px) {
   body {
     @include one-margin-left-right;
-    // margin-left: 1rem;
-    // margin-right: 1rem;
   }
 }
 

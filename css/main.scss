@@ -9,7 +9,9 @@ $gold-color: #DAA520;
 
 $link-hover: #95731C;
 
-$gold-focus: #d6d6d6;
+$light-grey: #d6d6d6;
+
+$black: #000000;
 
 
 //rectangle dimensions for style style guide
@@ -28,6 +30,16 @@ $gold-focus: #d6d6d6;
   margin-right: 10rem;
 }
 
+@mixin grey-hover-transition {
+  color: $grey-hover;
+  transition-duration: 0.5s;
+}
+
+@mixin flex-wrap-center{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 
 /* lines separating section - reference from style guide template */
@@ -94,12 +106,12 @@ $gold-focus: #d6d6d6;
 
 .button-nav:hover {
   color: $grey-hover;
-  background-color: #d6d6d6;
+  background-color: $light-grey;
 }
 
 .button-nav:focus {
   border-color: $gold-color;
-  border: 3px solid #DAA520;
+  border: 3px solid $gold-color;
 }
 
 /* Styling for form buttons. Reference from https://www.tyssendesign.com.au/articles/css/styling-form-buttons/ */
@@ -117,11 +129,11 @@ $gold-focus: #d6d6d6;
 
 .button-form:hover {
   color: #FFF;
-  background-color: #d6d6d6;
+  background-color: $grey-hover;
 }
 
 .button-form:focus {
-  outline-color: #DAA520;
+  outline-color: $gold-color;
 }
 
 /* Styling for text input fields. Reference from https://learn.shayhowe.com/html-css/building-forms/#text-and-textareas */
@@ -139,8 +151,8 @@ $gold-focus: #d6d6d6;
 
 .input-text:focus {
   background: #e0e0e0;
-  border-color: #d6d6d6;
-  outline-color: #d6d6d6;
+  border-color: $light-grey;
+  outline-color: $light-grey;
 }
 
 .input-text-label {
@@ -158,17 +170,17 @@ $gold-focus: #d6d6d6;
 }
 
 .input-text-contact-us:hover {
-  background: #DAA520;
+  background: $gold-color;
 }
 
 .input-text-contact-us:hover {
-  background: #DAA520;
+  background: $gold-color;
 }
 
 .input-text-contact-us:focus {
   background: #e0e0e0;
-  border-color: #DAA520;
-  outline-color: #DAA520;
+  border-color: $gold-color;
+  outline-color: $gold-color;
 }
 
 /* Styling for image as a link. Reference from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity */
@@ -180,7 +192,7 @@ $gold-focus: #d6d6d6;
 }
 
 .image-link:focus {
-  outline: 3px solid #DAA520;
+  outline: 3px solid $gold-color;
 }
 
 .larger-element {
@@ -207,12 +219,12 @@ $gold-focus: #d6d6d6;
 
 .rectangle2 {
   @include rectangle;
-  background-color: #808080;
+  background-color: $grey-hover;
 }
 
 .rectangle4 {
   @include rectangle;
-  background-color: #000000;
+  background-color: $black;
 }
 
 .rectangle5 {
@@ -220,7 +232,6 @@ $gold-focus: #d6d6d6;
   background-color: $gold-color;
 }
 
-/* Styling for brand component headings */
 /* styling for the logo (my name)*/
 .logo {
   margin-left: -2.5rem;
@@ -256,7 +267,6 @@ $gold-focus: #d6d6d6;
   flex-wrap: wrap;
   border-radius: 3px;
   padding-bottom: 15rem;
-  /* justify-content: center; */
 }
 
 /* end of reference for block image overlays */
@@ -328,14 +338,12 @@ $gold-focus: #d6d6d6;
 }
 
 .icon-right-justified:hover {
-  color: $grey-hover;
-  transition-duration: 0.5s;
+  @include grey-hover-transition;
 }
 
 .icon-right-justified:focus {
   outline-color: $gold-color;
-  color: $grey-hover;
-  transition-duration: 0.5s;
+  @include grey-hover-transition;
 }
 
 /* reference for drop down from https://stackoverflow.com/questions/35579569/hide-show-menu-onclick-javascript  */
@@ -348,13 +356,7 @@ $gold-focus: #d6d6d6;
   color: white;
   display: block;
   transition: 0.3s;
-
-  // background-color: Transparent;
-  // background-repeat:no-repeat;
-  // border: none;
   cursor:pointer;
-  // overflow: hidden;
-  // outline:none;
 }
 
 .dropbtn:hover{
@@ -399,10 +401,6 @@ $gold-focus: #d6d6d6;
 /* https://www.w3schools.com/howto/howto_css_image_text.asp */
 .header-text {
   position: absolute;
-  /* top: 20rem; */
-  /* margin-left: 5rem; */
-  /* left: 10%; */
-  /* right: 10rem; */
   color: white;
   padding-left: 20px;
   padding-right: 20px;
@@ -437,7 +435,6 @@ $gold-focus: #d6d6d6;
  justify-content: center;
  display: flex;
  flex-wrap: wrap;
- /* justify-content: space-around; */
  align-items: center;
  padding-bottom: 0rem;
  margin-bottom: 0rem;
@@ -477,12 +474,6 @@ button {
   border:none;
   background-color:transparent;
   color: white;
-  // outline:none;
-  // background-color: transparent;
-  // background-repeat:no-repeat;
-  // cursor:pointer;
-  // overflow: hidden;
-  // outline:none;
 }
 
 h2 {
@@ -500,18 +491,14 @@ h1 {
 }
 
 p {
-  /* max-width: 60rem; */
   font-family: 'Nunito', sans-serif;
   font-weight: 500;
-  /* font-weight: lighter; */
   font-size: 1.5rem;
 }
 
 h3 {
   font-family: 'Open Sans';
   font-style: italic;
-  /* text-decoration: underline; */
-  /* font-weight: 600; */
   font-weight: 500;
   font-size: 3rem
 }
@@ -532,7 +519,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: white;
   background-color: black;
-  /* transition: background-color 0.2s; */
   transition: background-color 1s ease;
 }
 
@@ -557,9 +543,7 @@ p, h1, h2, h3 {
 }
 
 .container-about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include flex-wrap-center;
   padding-top: 10rem;
 }
 
@@ -568,16 +552,11 @@ p, h1, h2, h3 {
 }
 
 .about-img {
-  /* float: left; */
   width: 40rem;
   height: 50rem;
   object-fit: cover;
-  /* padding: 1px; */
 }
 
-// .block-about:nth-of-type(1) {
-//   z-index: 1;
-// }
 
 
 .block-about p {
@@ -593,9 +572,7 @@ p, h1, h2, h3 {
 
 /* ~~~~~~~~~~~~~~~~~~~~ CONTACT PAGE ~~~~~~~~~~~~~~~~~~~~~~~ */
 .container-contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include flex-wrap-center;
   padding-top: 10rem;
   text-align: center;
 }
@@ -619,9 +596,7 @@ p, h1, h2, h3 {
 
 /* ~~~~~~~~~~~~~~~PROJECTS OVERVIEW~~~~~~~~~~~~~~~~~~~~~ */
 .container-projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  @include flex-wrap-center;
   padding-top: 0;
   margin-top: -15rem;
 }
@@ -631,7 +606,6 @@ p, h1, h2, h3 {
 }
 
 .block-projects {
-  // flex-grow: 0 100%;
   overflow: hidden;
   margin-top: 15rem;
 }
@@ -741,9 +715,6 @@ strong {
   flex-wrap: wrap;
   padding-top: 20rem;
   justify-content: center;
-  /* margin-bottom: -20rem; */
-  /* padding-bottom: 0rem; */
-  /* background-color: red; */
 }
 
 .container-poster h2.left-aligned{
@@ -758,16 +729,6 @@ strong {
   max-width: 35vw;
 }
 
-.full-width-img {
-  left: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  max-width: 99.5vw;
-  position: relative;
-  right: 50%;
-  width: 100vw;
-}
-
 .almost-full-width-img {
   left: 50%;
   margin-left: -45vw;
@@ -776,20 +737,6 @@ strong {
   position: relative;
   right: 50%;
   width: 100vw;
-/*
-  left: 50%;
-  margin-left: -45vw;
-  margin-right: -50vw;
-  max-width: 75vw;
-  position: relative;
-  right: 50%;
-  width: 100vw; */
-}
-
-.block-poster {
-  /* flex: 0 35%; */
-  // margin-top: 10rem;
-  /* margin-bottom: 20rem; */
 }
 
 .block-poster h3{
@@ -805,12 +752,6 @@ strong {
 .block-poster:nth-of-type(1), .block-poster:nth-of-type(2), .block-poster:nth-of-type(4), .block-poster:nth-of-type(5), .block-poster:nth-of-type(6), #reflection-poster, .block-poster:nth-of-type(8), .block-poster:nth-of-type(9), .block-poster:nth-of-type(10), {
   flex: 0 100%;
 }
-
-/* making these blocks move to the right of the screen */
-// .block-poster:nth-of-type(3), .block-poster:nth-of-type(7), .block-poster:nth-of-type(10) {
-//   align-self: flex-end;
-//   margin-left: auto;
-// }
 
 /* right-aligning these blocks */
 .block-poster:nth-of-type(3), #animating-block {
@@ -850,6 +791,10 @@ strong {
   width: 20rem;
 }
 
+#citations {
+  margin-top: 10rem;
+}
+
 /* responsive video embed, reference from https://www.ostraining.com/blog/coding/responsive-videos/ */
 .video-responsive{
     overflow:hidden;
@@ -864,16 +809,6 @@ strong {
     width:100%;
     position:absolute;
     border: 0;
-}
-
-.color-black {
-  background-color: #000000;
-}
-.color-white {
-  background-color: #e9edef;
-}
-.color-grey {
-  background-color: #9B9B9B;
 }
 
 /* dividers for site */

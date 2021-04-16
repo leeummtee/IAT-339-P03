@@ -86,7 +86,7 @@
 
 .button-form:hover {
   color: #FFF;
-  background-color: #d6d6d6;
+  background-color: #808080;
 }
 
 .button-form:focus {
@@ -193,7 +193,6 @@
   background-color: #DAA520;
 }
 
-/* Styling for brand component headings */
 /* styling for the logo (my name)*/
 .logo {
   margin-left: -2.5rem;
@@ -228,7 +227,6 @@
   flex-wrap: wrap;
   border-radius: 3px;
   padding-bottom: 15rem;
-  /* justify-content: center; */
 }
 
 /* end of reference for block image overlays */
@@ -362,10 +360,6 @@
 /* https://www.w3schools.com/howto/howto_css_image_text.asp */
 .header-text {
   position: absolute;
-  /* top: 20rem; */
-  /* margin-left: 5rem; */
-  /* left: 10%; */
-  /* right: 10rem; */
   color: white;
   padding-left: 20px;
   padding-right: 20px;
@@ -399,7 +393,6 @@
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-around; */
   align-items: center;
   padding-bottom: 0rem;
   margin-bottom: 0rem;
@@ -455,18 +448,14 @@ h1 {
 }
 
 p {
-  /* max-width: 60rem; */
   font-family: 'Nunito', sans-serif;
   font-weight: 500;
-  /* font-weight: lighter; */
   font-size: 1.5rem;
 }
 
 h3 {
   font-family: 'Open Sans';
   font-style: italic;
-  /* text-decoration: underline; */
-  /* font-weight: 600; */
   font-weight: 500;
   font-size: 3rem;
 }
@@ -486,7 +475,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: white;
   background-color: black;
-  /* transition: background-color 0.2s; */
   transition: background-color 1s ease;
 }
 
@@ -519,11 +507,9 @@ p, h1, h2, h3 {
 }
 
 .about-img {
-  /* float: left; */
   width: 40rem;
   height: 50rem;
   object-fit: cover;
-  /* padding: 1px; */
 }
 
 .block-about p {
@@ -684,9 +670,6 @@ strong {
   flex-wrap: wrap;
   padding-top: 20rem;
   justify-content: center;
-  /* margin-bottom: -20rem; */
-  /* padding-bottom: 0rem; */
-  /* background-color: red; */
 }
 
 .container-poster h2.left-aligned {
@@ -701,16 +684,6 @@ strong {
   max-width: 35vw;
 }
 
-.full-width-img {
-  left: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  max-width: 99.5vw;
-  position: relative;
-  right: 50%;
-  width: 100vw;
-}
-
 .almost-full-width-img {
   left: 50%;
   margin-left: -45vw;
@@ -719,19 +692,6 @@ strong {
   position: relative;
   right: 50%;
   width: 100vw;
-  /*
-  left: 50%;
-  margin-left: -45vw;
-  margin-right: -50vw;
-  max-width: 75vw;
-  position: relative;
-  right: 50%;
-  width: 100vw; */
-}
-
-.block-poster {
-  /* flex: 0 35%; */
-  /* margin-bottom: 20rem; */
 }
 
 .block-poster h3 {
@@ -748,7 +708,6 @@ strong {
   flex: 0 100%;
 }
 
-/* making these blocks move to the right of the screen */
 /* right-aligning these blocks */
 .block-poster:nth-of-type(3), #animating-block {
   align-self: flex-end;
@@ -786,6 +745,10 @@ strong {
   width: 20rem;
 }
 
+#citations {
+  margin-top: 10rem;
+}
+
 /* responsive video embed, reference from https://www.ostraining.com/blog/coding/responsive-videos/ */
 .video-responsive {
   overflow: hidden;
@@ -801,18 +764,6 @@ strong {
   width: 100%;
   position: absolute;
   border: 0;
-}
-
-.color-black {
-  background-color: #000000;
-}
-
-.color-white {
-  background-color: #e9edef;
-}
-
-.color-grey {
-  background-color: #9B9B9B;
 }
 
 /* dividers for site */
